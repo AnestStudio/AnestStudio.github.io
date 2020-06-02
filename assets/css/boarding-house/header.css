@@ -1,0 +1,14 @@
+.site-header {
+  width: calc(100% - 3rem);
+  background-color: #121212;
+  padding-top: 1.5rem;
+  z-index: 1;
+  position: fixed;
+}
+
+@media (max-width: 575.98px) {
+  .site-header {
+    position: relative;
+    width: 100%;
+  }
+}

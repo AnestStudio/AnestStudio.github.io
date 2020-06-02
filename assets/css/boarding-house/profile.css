@@ -1,0 +1,620 @@
+body {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  /* background: url(../../images/system/bg.png) #121212; */
+}
+
+@media (max-width: 575.98px) {
+  body {
+    padding: 0 .75rem .75rem;
+  }
+}
+
+.left {
+  top: 10rem;
+  overflow: hidden;
+  position: fixed;
+  width: 17rem;
+}
+
+.right {
+  width: calc(100% - 17rem - 1rem);
+  margin-top: 10rem;
+  float: right;
+}
+
+@media (max-width: 991.98px) {
+  .left {
+    width: 100%;
+    position: relative;
+  }
+  .right {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .left {
+    top: 0;
+  }
+  .right {
+    margin-top: 0;
+  }
+}
+
+
+/*----- Profile Section -----*/
+
+.profile {
+  background-color: #1d1d1d;
+  border-radius: .75rem;
+}
+
+.profile-name {
+  padding: 1rem 1.25rem .85rem;
+}
+
+.profile .name {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: .25rem;
+}
+
+.profile .username {
+  font-size: .85rem;
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+.profile-image {
+  margin-top: -1rem;
+  -webkit-clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+  clip-path: polygon(0 9%, 100% 0, 100% 94%, 0% 100%);
+}
+
+.profile-image img {
+  width: 100%;
+}
+
+ul.profile-information {
+  list-style: none;
+  margin: .25rem 0 0;
+  padding-left: 1.5rem;
+}
+
+ul.profile-information li {
+  border-left: solid 2px #ffcf5c;
+  padding: 0 0 23px 20px;
+  color: #ffcf5c;
+}
+
+ul.profile-information li p {
+  color: #dfdfdf;
+  line-height: 12px;
+  margin-bottom: 0;
+}
+
+ul.profile-information li:last-child {
+  border: 0;
+  margin-left: 2px;
+  margin-top: -2px;
+}
+
+ul.profile-information li:before {
+  content: "";
+  border: solid 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  font-size: 8px;
+  margin-left: -25px;
+  margin-top: 2px;
+  font-weight: 400;
+  background: #1d1d1d;
+  display: block;
+  position: absolute;
+}
+
+ul.profile-information li span {
+  color: #c7af8b;
+}
+
+ul.profile-information li:first-child {
+  margin-top: -9px;
+}
+
+ul.profile-information li:first-child::before {
+  display: none;
+}
+
+
+/*----- Social Section -----*/
+
+.social {
+  background: #1d1d1d;
+  border-radius: .75rem;
+  padding: .25rem 1.25rem 1.25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social div {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 2px solid #333;
+  background-color: #333;
+  border-radius: 50%;
+  margin-left: .35rem;
+  margin-right: .35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.social div:hover {
+  border: 2px solid #736959;
+}
+
+.social div a {
+  font-size: 1.125rem;
+  color: #c7af8b;
+  pointer-events: auto;
+}
+
+.social div a:hover {
+  color: #ffcf5c;
+}
+
+
+/*----- Action Section -----*/
+
+.action .action-btn {
+  padding: .2rem 0;
+  border-radius: .75rem;
+  background-color: #1d1d1d;
+  border: 2px solid #1d1d1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.action .action-btn:hover {
+  border: 2px solid #736959;
+}
+
+.action .action-btn a {
+  color: #c7af8b;
+  font-weight: 500;
+  pointer-events: auto;
+}
+
+.action .action-btn a:hover {
+  color: #ffcf5c;
+  text-decoration: none;
+}
+
+
+/*----- Rate Section -----*/
+
+.rate {
+  background: #1d1d1d;
+  border-radius: .75rem;
+  padding: 1rem 1.25rem;
+  width: 100%;
+  display: flex;
+}
+
+.rate h1 {
+  line-height: 1;
+  margin-bottom: .275rem;
+}
+
+.rate i {
+  font-size: .75rem;
+  color: #ffcf5c;
+}
+
+.rate .reviews {
+  font-size: .8rem;
+  color: #888;
+  font-style: italic;
+  margin-top: .1rem;
+}
+
+.rate .number {
+  font-size: .75rem;
+  margin-top: -5px;
+  margin-right: .25rem;
+  width: 1rem;
+}
+
+
+/*----- Overview Section -----*/
+
+.overview {
+  margin-bottom: 0;
+}
+
+.overview .label-info {
+  border-radius: .75rem;
+  padding: 1rem 1rem .75rem;
+  background-color: #1d1d1d;
+  height: 100%;
+}
+
+.overview .label-info .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview .label-info .flex i {
+  font-size: 2rem;
+}
+
+.overview .label-info .flex h4 {
+  margin: 0;
+}
+
+.overview .label-info span {
+  font-size: .95rem;
+}
+
+
+/*----- Action Section -----*/
+
+.action {
+  margin-bottom: 0;
+}
+
+.action .rent-btn,
+.action .chat-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  border-radius: .75rem;
+  padding: 1rem;
+  background-color: #1d1d1d;
+  height: 100%;
+}
+
+.action .rent-btn i,
+.action .chat-btn i {
+  font-size: 1.25rem;
+}
+
+.action .rent-btn:hover,
+.action .chat-btn:hover {
+  box-shadow: 0 0 0 2px rgba(199, 175, 139, 0.35);
+}
+
+.action .rent-btn a,
+.action .chat-btn a {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #c7af8b;
+  pointer-events: auto;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.action .rent-btn a:hover,
+.action .chat-btn a:hover {
+  text-decoration: none;
+  color: #ffcf5c;
+}
+
+
+/*----- Sub menu Section -----*/
+
+.menu a {
+  color: #c7af8b;
+}
+
+.menu .nav-pills .nav-link {
+  background-color: #1d1d1d;
+  border-radius: .75rem;
+}
+
+.menu .nav-pills .nav-link.active,
+.menu .nav-pills .show>.nav-link {
+  color: #ffcf5c;
+  background-color: #333 !important;
+}
+
+.menu .nav-link {
+  padding: .75rem 1rem;
+}
+
+#pills-tabContent h6 {
+  margin: 1.5rem 0 .75rem;
+  font-size: .95rem;
+  color: #c7af8b;
+}
+
+#pills-tabContent p {
+  margin-bottom: 0;
+}
+
+.skills {
+  margin-bottom: .25rem;
+}
+
+fieldset {
+  background-color: #1d1d1d;
+  border-radius: .75rem;
+  padding: 1.5rem 1.25rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+legend {
+  background-color: #333;
+  width: auto;
+  max-width: 100%;
+  font-size: 1rem;
+  padding: .25rem .85rem;
+  border-radius: .5rem;
+  color: #ffcf5c;
+  margin-bottom: 0;
+}
+
+fieldset .media img {
+  width: 3.5rem;
+  border-radius: 50%;
+}
+
+fieldset .media .media-body h5 {
+  margin-top: .5rem;
+  font-size: .95rem;
+  margin-bottom: .125rem;
+}
+
+fieldset .media .media-body p {
+  font-size: .85rem;
+  margin-bottom: .5rem;
+}
+
+
+/* ----- Boarding house detail ----- */
+
+
+/* ----- Responsive ----- */
+
+@media (max-width: 991.98px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .room-type-info {
+    margin-top: 1.25rem;
+  }
+  .m-d-none {
+    display: none;
+  }
+  .room-type-info .d-text .price {
+    margin-top: .5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .room-type-info .structure-room {
+    padding-right: .625rem;
+  }
+  .room-type-info .equipment {
+    padding-left: .625rem;
+  }
+  .map-info {
+    text-align: center;
+  }
+  .map-info a {
+    display: block;
+    float: none;
+    margin-top: .5rem;
+  }
+  #mapInfoModal .modal-content .modal-footer {
+    padding: 1rem 0 0;
+  }
+  #mapInfoModal .modal-content .modal-footer button {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .room-type-info ul {
+    float: none;
+    margin-top: .25rem;
+  }
+  .room-type-info .nav-link {
+    margin-left: 0;
+    margin-right: .5rem;
+  }
+}
+
+
+/*
+ * Light box (Modal Image Gallery)
+ */
+
+.boarding-house-image .row-img {
+  margin: 0 -.65rem;
+}
+
+.boarding-house-image .row-img>.column {
+  margin: .75rem .65rem .25rem;
+}
+
+.boarding-house-image .row-img:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Create four equal columns that floats next to each other */
+
+.boarding-house-image .column {
+  float: left;
+  width: calc(16.666% - 1.3rem);
+  height: 10rem;
+  overflow: hidden;
+  border-radius: .35rem;
+}
+
+.boarding-house-image .column img {
+  width: 100%;
+  height: 100%;
+}
+
+.boarding-house-image .column img:hover {
+  cursor: pointer;
+  opacity: .75;
+}
+
+
+/* The Modal (background) */
+
+.boarding-house-image .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #222;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+
+/* Modal Content */
+
+.boarding-house-image .modal-content {
+  position: relative;
+  background-color: #222;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+
+/* The Close Button */
+
+.boarding-house-image .close {
+  color: #888;
+  position: absolute;
+  top: .75rem;
+  right: 1.25rem;
+  font-size: 2.5rem;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.boarding-house-image .close:hover,
+.boarding-house-image .close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
+}
+
+
+/* Hide the slides by default */
+
+.boarding-house-image .my-slides {
+  display: none;
+}
+
+.boarding-house-image .my-slides img {
+  border-radius: .5rem;
+  max-height: 80vh;
+  max-width: 90%;
+}
+
+
+/* Next & previous buttons */
+
+.boarding-house-image .prev,
+.boarding-house-image .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -2rem;
+  color: #888 !important;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transition: 0.6s ease;
+  border-radius: .5rem;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: #333;
+  border: 1px solid #333;
+}
+
+
+/* Position the "next button" to the right */
+
+.boarding-house-image .next {
+  right: 0;
+  border-radius: .5rem;
+  background-color: #333;
+  border: 1px solid #333;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.boarding-house-image .prev:hover,
+.boarding-house-image .next:hover {
+  color: #fff !important;
+  border: 1px solid #444;
+}
+
+
+/* Number text (1/3 etc) */
+
+.boarding-house-image .numbertext {
+  color: #888;
+  font-size: 1rem;
+  padding: 0 .5rem;
+  position: absolute;
+  bottom: .5rem;
+  background-color: #222;
+  border-radius: .25rem;
+  right: calc(50% - 25px);
+}
+
+
+/* ----- Responsive for Light box ----- */
+
+@media (max-width: 991.98px) {
+  .boarding-house-image .column {
+    width: calc(33.333% - 1.3rem);
+    height: 9rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .boarding-house-image .column {
+    width: calc(50% - 1.3rem);
+    height: 8rem;
+  }
+}

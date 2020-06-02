@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="assets/images/cover/favicon.ico">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="assets/css/all.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/boarding-house/common.css">
+  <link rel="stylesheet" href="assets/css/boarding-house/index.css">
+
+  <title>Trang chủ</title>
+</head>
+
+<body id="page-top" class="dark" onload="startTime()" style="height: 3000px;">
+
+  <header class="site-header">
+    <div class="top-header-bar">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 top-left">
+            <ul class="float-left">
+              <li>
+                <a href="javascript:void(0)">
+                  <i class="fas fa-phone fa-fw fa-sm"></i> 0973 876 107
+                </a>
+              </li>
+              <li><a href="javascript:void(0)">|</a></li>
+              <li>
+                <a href="javascript:void(0)">
+                  <i class="far fa-envelope fa-fw"></i> anest.studio@gmail.com
+                </a>
+              </li>
+              <li><a href="javascript:void(0)">|</a></li>
+              <li>
+                <a href="#" class="px-0">
+                  <i class="fab fa-youtube fa-fw icon-size"></i>
+                </a>
+              </li>
+              <li><a href="#">|</a></li>
+              <li>
+                <a href="#" class="px-0">
+                  <i class="fab fa-facebook-f fa-fw icon-size"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-6 top-right">
+            <div class="header-bar-menu">
+              <ul class="flex">
+                <li>
+                  <a href="javascript:void(0)" data-toggle="modal" data-target="#infoModal">Đăng ký</a>
+                </li>
+                <li><a href="javascript:void(0)" class="hide">|</a></li>
+                <li>
+                  <a href="javascript:void(0)" data-toggle="modal" data-target="#infoModal">Đăng nhập</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-bar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="row px-c-4">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars fa-fw mr-2"></i>Danh mục
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <div class="navbar-brand">
+              <a class="color-gradient" href="index.html">EASY LEARNING</a>
+            </div>
+            <ul class="navbar-nav mt-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-tasks fa-fw"></i>Ngôn ngữ
+                </a>
+                <div class="dropdown-menu" aria-labelledby="language">
+                  <a class="dropdown-item" href="#">C</a>
+                  <a class="dropdown-item" href="#">C#</a>
+                  <a class="dropdown-item" href="#">C++</a>
+                  <a class="dropdown-item" href="#">Go</a>
+                  <a class="dropdown-item" href="#">Python</a>
+                  <a class="dropdown-item" href="#">HTML/CSS</a>
+                  <a class="dropdown-item" href="#">Java</a>
+                  <a class="dropdown-item" href="#">JavaScript</a>
+                  <a class="dropdown-item" href="#">Kotlyn</a>
+                  <a class="dropdown-item" href="#">PHP</a>
+                  <a class="dropdown-item" href="#">Python</a>
+                  <a class="dropdown-item" href="#">Ruby</a>
+                  <a class="dropdown-item" href="#">Swift</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-database fa-fw"></i>Database
+                </a>
+                <div class="dropdown-menu" aria-labelledby="database">
+                  <a class="dropdown-item" href="#">Oracle</a>
+                  <a class="dropdown-item" href="#">MySQL</a>
+                  <a class="dropdown-item" href="#">Microsoft SQL Server</a>
+                  <a class="dropdown-item" href="#">PostgreSQL</a>
+                  <a class="dropdown-item" href="#">MongoDB</a>
+                  <a class="dropdown-item" href="#">DB2</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-cog fa-fw"></i>Framework
+                </a>
+                <div class="dropdown-menu" aria-labelledby="framework">
+                  <a class="dropdown-item" href="#">.NET</a>
+                  <a class="dropdown-item" href="#">Spring </a>
+                  <a class="dropdown-item" href="#">Laravel </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Angular</a>
+                  <a class="dropdown-item" href="#">ReactJS</a>
+                  <a class="dropdown-item" href="#">VueJS</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Flutter</a>
+                  <a class="dropdown-item" href="#">Xamarin</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Bootstrap</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="btn filter" href="javascript:void(0)" data-toggle="modal" data-target="#searchModal"><i class="fas fa-search fa-fw"></i>Tìm kiếm</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="cover">
+    <div class="container text-left">
+      <div class="row">
+        <div class="col-lg-9">
+          <h1>EASY <span class="highlight">LEARNING.</span></h1>
+          <p>TIẾT KIỆM THỜI GIAN VÀ TIỀN BẠC CỦA BẠN BẰNG SỰ LỰA CHỌN ĐÚNG ĐẮN_</p>
+        </div>
+        <div class="col-lg-3 text-left">
+          <!-- <div class="align-left"><a class="btn btn-view-more" href="javascript:void(0)" data-toggle="modal" data-target="#aboutModal">Xem thêm</a></div> -->
+          <div class="wrap">
+            <img src="assets/images/system/1.svg" alt="Mobirise" class="image-1 animated-elements1">
+            <img src="assets/images/system/2.svg" alt="Mobirise" class="image-2 animated-elements2">
+            <img src="assets/images/system/3.svg" alt="Mobirise" class="image-3 animated-elements3">
+            <img src="assets/images/system/4.svg" alt="Mobirise" class="image-4 animated-elements4">
+            <img src="assets/images/system/5.svg" alt="Mobirise" class="image-5 animated-elements5">
+            <img src="assets/images/system/6.svg" alt="Mobirise" class="image-6 animated-elements6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tags">
+    <div class="recommend-tags" id="style-tags">
+      <a href="" class="tag">Java</a>
+      <a href="" class="tag">JavaScript</a>
+      <a href="" class="tag">TypeScript</a>
+      <a href="" class="tag">Python</a>
+      <a href="" class="tag">C/C++</a>
+      <a href="" class="tag">Go</a>
+      <a href="" class="tag">HTML/CSS</a>
+      <a href="" class="tag">Kotlyn</a>
+      <a href="" class="tag">Swift</a>
+      <a href="" class="tag">Flutter</a>
+      <a href="" class="tag">Ruby</a>
+      <a href="" class="tag">C#</a>
+      <a href="" class="tag">MongoDB</a>
+      <a href="" class="tag">MySQL</a>
+      <a href="" class="tag">SQLServer</a>
+      <a href="" class="tag">PostgreSQL</a>
+      <a href="" class="tag">Oracle</a>
+      <a href="" class="tag">Spring</a>
+      <a href="" class="tag">Angular</a>
+      <a href="" class="tag">VueJS</a>
+    </div>
+  </section>
+
+  <section id="online">
+    <div class="title">
+      <h5 class="tan"><i class="fas fa-wifi fa-fw mr-2"></i>ONLINE</h5>
+    </div>
+    <div class="container-fluid">
+      <div class="online-user">
+        <div class="label">
+          <div class="card">
+            <a class="heading highlight" href="">Online</a>
+            <a class="view-all highlight ml-1" href=""><i class="far fa-eye fa-fw"></i> Xem tất cả</a>
+          </div>
+        </div>
+        <div class="list-online-user" id="style-online">
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-circle"></i><span>ONLINE</span>
+            </div>
+            <div class="card-body">
+              <div class="media">
+                <a href="" class="circle">
+                  <img class="avatar" src="assets/images/system/v.png" alt="avatar">
+                </a>
+                <div class="media-body">
+                  <a href="">Đinh Tuấn Anh</a>
+                  <a href="" class="username">@anhdt0407</a>
+                  <p>Web developer</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <div class="tags">
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="Hello">Java</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">JavaScript</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">Python</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-circle"></i><span>ONLINE</span>
+            </div>
+            <div class="card-body">
+              <div class="media">
+                <a href="" class="circle">
+                  <img class="avatar" src="assets/images/system/v.png" alt="avatar">
+                </a>
+                <div class="media-body">
+                  <a href="">Tô Hoàng Anh</a>
+                  <a href="" class="username">@anhth</a>
+                  <p>Android developer</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <div class="tags">
+                  <a href="" class="tag" data-toggle="tooltip" data-placement="top" title="">Java</a>
+                  <a href="" class="tag" data-toggle="tooltip" data-placement="top" title="">PostgreSQL</a>
+                  <a href="" class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-circle"></i><span>ONLINE</span>
+            </div>
+            <div class="card-body">
+              <div class="media">
+                <a href="" class="circle">
+                  <img class="avatar" src="assets/images/system/v2.png" alt="avatar">
+                </a>
+                <div class="media-body">
+                  <a href="">Mai Quỳnh Anh</a>
+                  <a href="" class="username">@sandy225</a>
+                  <p>Web developer</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <div class="tags">
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">Java</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">JavaScript</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-circle"></i><span>ONLINE</span>
+            </div>
+            <div class="card-body">
+              <div class="media">
+                <a href="" class="circle">
+                  <img class="avatar" src="assets/images/system/v.png" alt="avatar">
+                </a>
+                <div class="media-body">
+                  <a href="">Đinh Tuấn Anh</a>
+                  <a href="" class="username">@anhdt0407</a>
+                  <p>Web developer</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <div class="tags">
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="Hello">Java</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">JavaScript</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">Python</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-circle"></i><span>ONLINE</span>
+            </div>
+            <div class="card-body">
+              <div class="media">
+                <a href="" class="circle">
+                  <img class="avatar" src="assets/images/system/v.png" alt="avatar">
+                </a>
+                <div class="media-body">
+                  <a href="">Tô Hoàng Anh</a>
+                  <a href="" class="username">@anhth</a>
+                  <p>Android developer</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <div class="tags">
+                  <a href="" class="tag" data-toggle="tooltip" data-placement="top" title="">Java</a>
+                  <a href="" class="tag" data-toggle="tooltip" data-placement="top" title="">PostgreSQL</a>
+                  <a href="" class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-circle"></i><span>ONLINE</span>
+            </div>
+            <div class="card-body">
+              <div class="media">
+                <a href="" class="circle">
+                  <img class="avatar" src="assets/images/system/v2.png" alt="avatar">
+                </a>
+                <div class="media-body">
+                  <a href="">Mai Quỳnh Anh</a>
+                  <a href="" class="username">@sandy225</a>
+                  <p>Web developer</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <div class="tags">
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">Java</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">JavaScript</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-circle"></i><span>ONLINE</span>
+            </div>
+            <div class="card-body">
+              <div class="media">
+                <a href="" class="circle">
+                  <img class="avatar" src="assets/images/system/v.png" alt="avatar">
+                </a>
+                <div class="media-body">
+                  <a href="">Đinh Tuấn Anh</a>
+                  <a href="" class="username">@anhdt0407</a>
+                  <p>Web developer</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <div class="tags">
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="Hello">Java</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">JavaScript</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">Python</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-circle"></i><span>ONLINE</span>
+            </div>
+            <div class="card-body">
+              <div class="media">
+                <a href="" class="circle">
+                  <img class="avatar" src="assets/images/system/v.png" alt="avatar">
+                </a>
+                <div class="media-body">
+                  <a href="">Tô Hoàng Anh</a>
+                  <a href="" class="username">@anhth</a>
+                  <p>Android developer</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <div class="tags">
+                  <a href="" class="tag" data-toggle="tooltip" data-placement="top" title="">Java</a>
+                  <a href="" class="tag" data-toggle="tooltip" data-placement="top" title="">PostgreSQL</a>
+                  <a href="" class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-circle"></i><span>ONLINE</span>
+            </div>
+            <div class="card-body">
+              <div class="media">
+                <a href="" class="circle">
+                  <img class="avatar" src="assets/images/system/v2.png" alt="avatar">
+                </a>
+                <div class="media-body">
+                  <a href="">Mai Quỳnh Anh</a>
+                  <a href="" class="username">@sandy225</a>
+                  <p>Web developer</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <div class="tags">
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">Java</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">JavaScript</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-circle"></i><span>ONLINE</span>
+            </div>
+            <div class="card-body">
+              <div class="media">
+                <a href="" class="circle">
+                  <img class="avatar" src="assets/images/system/v.png" alt="avatar">
+                </a>
+                <div class="media-body">
+                  <a href="">Tô Hoàng Anh</a>
+                  <a href="" class="username">@anhth</a>
+                  <p>Android developer</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <div class="tags">
+                  <a href="" class="tag" data-toggle="tooltip" data-placement="top" title="">Java</a>
+                  <a href="" class="tag" data-toggle="tooltip" data-placement="top" title="">PostgreSQL</a>
+                  <a href="" class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <i class="fas fa-circle"></i><span>ONLINE</span>
+            </div>
+            <div class="card-body">
+              <div class="media">
+                <a href="" class="circle">
+                  <img class="avatar" src="assets/images/system/v2.png" alt="avatar">
+                </a>
+                <div class="media-body">
+                  <a href="">Mai Quỳnh Anh</a>
+                  <a href="" class="username">@sandy225</a>
+                  <p>Web developer</p>
+                </div>
+              </div>
+              <div class="card-text">
+                <div class="tags">
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">Java</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">JavaScript</div>
+                  <div class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="request">
+    <div class="title">
+      <h5 class="tan"><i class="fas fa-question fa-fw mr-2"></i>REQUEST</h5>
+    </div>
+    <div class="container-fluid">
+      <div class="requests">
+        <div class="label">
+          <div class="card">
+            <a class="heading highlight" href="">Request</a>
+            <a class="view-all highlight ml-1" href=""><i class="far fa-eye fa-fw"></i> Xem tất cả</a>
+          </div>
+        </div>
+        <div class="list-request" id="style-online">
+          <div style="height: 400px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Service -->
+  <!-- <div class="title">
+    <h5>
+      <a class="color-gradient" href="">
+        <i class="fab fa-google-play fa-fw mr-2"></i>Dịch vụ - Tiện ích
+      </a>
+    </h5>
+  </div>
+  <div class="container-fluid row-list">
+    <div class="utilities" id="style-2">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-code fa-fw icon-lg"></i>Học thêm lập trình</h5>
+          <p class="card-text">Coming soon...</p>
+          <a class="link" href="#">Chi tiết</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-wifi fa-fw icon-lg"></i>Lặp đặt mạng</h5>
+          <p class="card-text">Coming soon...</p>
+          <a class="link" href="#">Chi tiết</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-wifi fa-fw icon-lg"></i>Lặp đặt mạng</h5>
+          <p class="card-text">Coming soon...</p>
+          <a class="link" href="#">Chi tiết</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-wifi fa-fw icon-lg"></i>Lặp đặt mạng</h5>
+          <p class="card-text">Coming soon...</p>
+          <a class="link" href="#">Chi tiết</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div id="footer">
+    <div class="container-fluid">
+      <div class="row f-bot">
+        <div class="col-12 col-sm-12 col-md-6">
+          <i class="far fa-clock fa-fw mr-1"></i><span id=clock></span>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 copyright">
+          <span>Copyright © 2019 ANEST</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal info -->
+  <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="text-danger mb-4">
+              <i class="fas fa-exclamation-triangle fa-3x"></i>
+            </div>
+            <h4>Tính năng đang phát triển. Vui lòng quay lại sau!</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal search -->
+  <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="divider tan">Tìm kiếm</div>
+            <form class="form-row">
+              <div class="form-group col-md-8 input-text">
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group col-md-2">
+                <select class="form-control">
+                  <option>Mentor</option>
+                  <option>Ngôn ngữ</option>
+                  <option>Database</option>
+                  <option>Framework</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <button type="submit" class="btn-search tan"><i class="fas fa-search"></i> Tìm kiếm</button>
+              </div>
+            </form>
+            <div class="divider tan">Thẻ phổ biến</div>
+            <div class="popular-tags text-center">
+              <a href="" class="tag">Java</a>
+              <a href="" class="tag">JavaScript</a>
+              <a href="" class="tag">TypeScript</a>
+              <a href="" class="tag">Python</a>
+              <a href="" class="tag">C/C++</a>
+              <a href="" class="tag">Ruby</a>
+              <a href="" class="tag">C#</a>
+              <a href="" class="tag">MongoDB</a>
+              <a href="" class="tag">MySQL</a>
+              <a href="" class="tag">SQLServer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+  <script src="assets/js/bootstrap/popper.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <!-- Custom scripts for all pages-->
+  <script src="assets/js/boarding-house/boarding-house.js"></script>
+  <script src="assets/js/boarding-house/index.js"></script>
+
+</body>
+
+</html>
