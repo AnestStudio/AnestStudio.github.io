@@ -329,6 +329,10 @@ ul.profile-information li:first-child::before {
   border-radius: .75rem;
 }
 
+.menu .nav-pills .nav-link:hover {
+  color: #ffcf5c;
+}
+
 .menu .nav-pills .nav-link.active,
 .menu .nav-pills .show>.nav-link {
   color: #ffcf5c;
@@ -349,9 +353,8 @@ ul.profile-information li:first-child::before {
   margin-bottom: 0;
 }
 
-.skills {
-  margin-bottom: .25rem;
-}
+
+/*----- Info -----*/
 
 fieldset {
   background-color: #1d1d1d;
@@ -387,8 +390,19 @@ fieldset .media .media-body p {
   margin-bottom: .5rem;
 }
 
+.skills {
+  margin-bottom: .25rem;
+}
 
-/* ----- Boarding house detail ----- */
+
+/* -----  ----- */
+
+.bb {
+  background-color: #1d1d1d;
+  border-radius: .75rem;
+  padding: 1.25rem 1.25rem 1.25rem;
+  margin-bottom: 1rem;
+}
 
 
 /* ----- Responsive ----- */
