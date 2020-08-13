@@ -5,6 +5,10 @@ body {
 
 /*----- Profile Section -----*/
 
+.left .profile {
+  padding: 0;
+}
+
 .left .profile .profile-name {
   padding: 1rem 1.25rem .85rem;
 }
@@ -219,30 +223,7 @@ body {
 }
 
 
-/*----- Sub menu Section -----*/
-
-.right .menu a {
-  color: #e4e6eb;
-}
-
-.right .menu .nav-pills .nav-link {
-  background-color: #242526;
-  border-radius: .55rem;
-  font-weight: 500;
-}
-
-.right .menu .nav-pills .nav-link:hover {
-  background-color: #3a3b3c;
-}
-
-.right .menu .nav-pills .nav-link.active,
-.right .menu .nav-pills .show>.nav-link {
-  background-color: #3a3b3c;
-}
-
-.right .menu .nav-link {
-  padding: .65rem 1rem;
-}
+/*----- Tab content -----*/
 
 .right #pills-tabContent h6 {
   margin: 1.25rem 0 .5rem;
@@ -254,7 +235,15 @@ body {
 }
 
 
-/*----- Info -----*/
+/* ----- Tab content ui ----- */
+
+.right .tab-content .content {
+  padding: 1rem 1rem 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+
+/*----- Tab content - Info -----*/
 
 .right .tab-content fieldset {
   border-radius: .75rem;
@@ -290,14 +279,6 @@ body {
 
 .right .tab-content .skills {
   margin-bottom: .25rem;
-}
-
-
-/* ----- Tab content ui ----- */
-
-.right .tab-content .content {
-  padding: 1rem 1rem 1rem 1.25rem;
-  margin-bottom: 1rem;
 }
 
 

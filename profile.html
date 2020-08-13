@@ -127,7 +127,7 @@
           </div>
         </div>
       </div>
-      <div class="sub-menu bg-dark-ui border-ui mb-3">
+      <div class="sidebar-menu bg-dark-ui border-ui mb-3">
         <ul>
           <li>
             <a href="">
@@ -136,7 +136,21 @@
           </li>
         </ul>
       </div>
-      <div class="sub-menu bg-dark-ui border-ui mb-3">
+      <div class="sidebar-menu bg-dark-ui border-ui mb-3">
+        <ul>
+          <li>
+            <a href="profile-cv.html">
+              <i class="fas fa-eye text-success mr-2 fa-fw"></i>Xem trang hồ sơ
+            </a>
+            <!-- </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user-edit text-danger mr-2 fa-fw"></i>Chỉnh sửa trang hồ sơ
+            </a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="sidebar-menu bg-dark-ui border-ui mb-3">
         <ul>
           <li>
             <a href="">
@@ -155,21 +169,7 @@
           </li>
         </ul>
       </div>
-      <div class="sub-menu bg-dark-ui border-ui mb-3">
-        <ul>
-          <li>
-            <a href="profile-cv.html">
-              <i class="fas fa-eye text-success mr-2 fa-fw"></i>Xem trang hồ sơ
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fas fa-user-edit text-danger mr-2 fa-fw"></i>Chỉnh sửa trang hồ sơ
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="sub-menu bg-dark-ui border-ui mb-3">
+      <div class="sidebar-menu bg-dark-ui border-ui mb-3">
         <ul>
           <li>
             <a href="">
@@ -184,7 +184,7 @@
           <hr />
           <li>
             <a href="">
-              <i class="fas fa-sign-out-alt text-tomato mr-2 fa-fw"></i>Đăng xuât
+              <i class="fas fa-sign-out-alt text-tomato mr-2 fa-fw"></i>Đăng xuất
             </a>
           </li>
         </ul>
@@ -231,12 +231,12 @@
           <div class="menu">
             <ul class="row nav nav-pills" id="pills-tab" role="tablist">
               <li class="col-6 col-md-6 mb-3 nav-item text-center" role="presentation">
-                <a class="nav-link font-weight-500" id="pills-profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <a class="nav-link font-weight-500 active" id="pills-profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="pills-profile" aria-selected="false">
                   Trang cá nhân
                 </a>
               </li>
               <li class="col-6 col-md-6 mb-3 nav-item text-center" role="presentation">
-                <a class="nav-link font-weight-500 active" id="pills-profile-tab" data-toggle="pill" href="#partner-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <a class="nav-link font-weight-500" id="pills-profile-tab" data-toggle="pill" href="#partner-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
                   Trang hồ sơ
                 </a>
               </li>
@@ -244,16 +244,23 @@
           </div>
 
           <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="pills-profile-tab">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="content bg-dark-ui border-ui">
+                  <div class="about">
+                    <h6 class="title">Thông tin cá nhân</h6>
+                    <div class="bg-dark-ui border-ui">
+                      <div class="row">
+                        <div class="col-12 col-md-12 mb-3">
 
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade show active" id="partner-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="tab-pane fade" id="partner-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
               <div class="row">
                 <div class="col-md-12">
                   <!-- <div class="content bg-dark-ui border-ui">
@@ -320,7 +327,7 @@
                           <div class="label-info bg-dark-ui border-ui">
                             <div class="flex">
                               <div>
-                                <i class="far fa-calendar-minus"></i>
+                                <i class="far fa-calendar-minus text-info"></i>
                               </div>
                               <div>
                                 <h5>550.000<sup>đ</sup></h5>
@@ -335,7 +342,7 @@
                           <div class="label-info bg-dark-ui border-ui">
                             <div class="flex">
                               <div>
-                                <i class="far fa-calendar-check"></i>
+                                <i class="far fa-calendar-check  text-info"></i>
                               </div>
                               <div>
                                 <h5>2.200.000<sup>đ</sup></h5>
@@ -350,7 +357,7 @@
                           <div class="label-info bg-dark-ui border-ui">
                             <div class="flex">
                               <div>
-                                <i class="far fa-calendar-alt"></i>
+                                <i class="far fa-calendar-alt  text-info"></i>
                               </div>
                               <div>
                                 <h5>24.000.000<sup>đ</sup></h5>
@@ -492,8 +499,6 @@
     </div>
 
   </div>
-  </div>
-
 
   <!-- Bootstrap core JavaScript-->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

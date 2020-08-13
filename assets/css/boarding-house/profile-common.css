@@ -32,3 +32,138 @@
     width: 100%;
   }
 }
+
+
+/*----- Profile -----*/
+
+.profile {
+  padding: .65rem;
+}
+
+.profile .media {
+  padding: .65rem;
+  border-radius: .45rem;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.profile .media:hover {
+  background-color: #3a3b3c;
+}
+
+.profile .media .circle {
+  border: 3px solid #28a745;
+  border-radius: 50%;
+  margin-right: .75rem;
+  padding: .25rem;
+}
+
+.profile .media .avatar {
+  border-radius: 50%;
+  pointer-events: auto;
+}
+
+.profile .media .media-body a {
+  color: #e4e6eb;
+  font-size: 1.05rem;
+  font-weight: 500;
+  display: block;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+  pointer-events: auto;
+}
+
+.profile .media .media-body a.username {
+  font-size: .9rem;
+  color: #b0b3b8;
+  pointer-events: auto;
+}
+
+.profile .media .media-body a:hover {
+  text-decoration: none;
+}
+
+.profile-info {
+  padding: .65rem;
+}
+
+.profile-info ul.profile-information {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-info ul.profile-information li {
+  padding: .5rem .65rem;
+  color: #c7af8b;
+}
+
+.profile-info ul.profile-information li p {
+  color: #e4e6eb;
+  margin-bottom: 0;
+}
+
+.profile-info ul.profile-information li span {
+  color: #c7af8b;
+}
+
+
+/*----- Sidebar menu -----*/
+
+.sidebar-menu {
+  padding: .65rem;
+}
+
+.sidebar-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebar-menu ul hr {
+  margin-top: .65rem;
+  margin-bottom: .65rem;
+  border-top: 1px solid #3a3b3c;
+}
+
+.sidebar-menu ul li {
+  list-style: none;
+}
+
+.sidebar-menu ul li a {
+  color: #e4e6eb;
+  padding: .5rem .65rem;
+  display: block;
+}
+
+.sidebar-menu ul li a:hover {
+  background-color: #3a3b3c;
+  border-radius: .45rem;
+  text-decoration: none;
+}
+
+
+/*----- Sub menu pills -----*/
+
+.right .menu a {
+  color: #e4e6eb;
+}
+
+.right .menu .nav-pills .nav-link {
+  background-color: #242526;
+  border-radius: .55rem;
+  font-weight: 500;
+}
+
+.right .menu .nav-pills .nav-link:hover {
+  background-color: #3a3b3c;
+}
+
+.right .menu .nav-pills .nav-link.active,
+.right .menu .nav-pills .show>.nav-link {
+  background-color: #3a3b3c;
+}
+
+.right .menu .nav-link {
+  padding: .65rem 1rem;
+}
