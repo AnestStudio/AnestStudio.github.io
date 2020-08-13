@@ -8,7 +8,7 @@ body {
 
 @media (max-width: 575.98px) {
   body {
-    padding: 1.5rem .75rem .75rem;
+    padding: 1.5rem 1rem 1rem;
   }
 }
 
@@ -36,8 +36,14 @@ body {
   }
 }
 
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .title h5 {
-  padding: .25rem 1.125rem;
+  padding: .438rem 0;
   margin: 0;
   font-size: 1.25rem;
   font-weight: 500;
@@ -46,6 +52,43 @@ body {
 
 .title h5 i {
   color: #ffc107;
+}
+
+.title .div-hidden {
+  display: none;
+}
+
+.title .view-all-link,
+.title .view-all-link-sm {
+  color: #d0d0d0;
+  background-color: #242526;
+  border: 1px solid #242526;
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.title .view-all-link {
+  padding: .5rem 1rem;
+}
+
+.title .view-all-link-sm {
+  padding: .35rem 1rem;
+}
+
+.title .view-all-link:hover,
+.title .view-all-link-sm:hover {
+  text-decoration: none;
+  background-color: #3a3b3c;
+  border: 1px solid #3a3b3c;
+}
+
+@media (max-width: 575.98px) {
+  .title .view-all-link {
+    display: none;
+  }
+  .title .div-hidden {
+    display: inline-block;
+  }
 }
 
 hr {
@@ -302,19 +345,14 @@ hr {
 }
 
 
-/*----- List online use -----*/
+/*----- Component -----*/
 
-#online {
-  width: 100%;
-  padding: 2.5rem 0;
-}
-
-.online-user .label {
+.label {
   position: absolute;
   padding: 1.5rem 0;
 }
 
-.online-user .label .card {
+.label .card {
   width: 15rem;
   height: 25rem;
   padding: 1.75rem;
@@ -322,28 +360,49 @@ hr {
   background-image: linear-gradient(0deg, #28a745, #ffc107);
 }
 
-.online-user .label .card .heading {
+.label .card .heading {
   font-size: 3.125rem;
   position: absolute;
-  bottom: 2.75rem;
+  bottom: 1.35rem;
   line-height: 1.2;
   font-weight: 600;
-  margin-bottom: .5rem;
 }
 
-.online-user .label .card .view-all {
-  position: absolute;
-  bottom: 1.25rem;
-  font-weight: 500;
-}
-
-.online-user .label .card .heading:hover,
-.online-user .label .card .view-all:hover {
+.label .card .heading:hover {
   color: #ffc107;
   text-decoration: none;
 }
 
-.list-online-user {
+@media (max-width: 767.98px) {
+  .label {
+    position: absolute;
+    padding: 1.25rem 0;
+  }
+  .label .card .view-all {
+    display: none;
+  }
+  .label .card {
+    width: 5rem;
+  }
+  .label .card .heading {
+    position: absolute;
+    transform: rotate(-90deg);
+    width: 22rem;
+    left: -8.5rem;
+    bottom: 11rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+#online,
+#request {
+  width: 100%;
+  padding: 2.5rem 0;
+}
+
+.card-row {
   align-items: stretch;
   display: flex;
   flex-direction: row;
@@ -355,40 +414,47 @@ hr {
   margin-left: 18rem;
 }
 
-.list-online-user .card {
+.card-row .card {
   flex-basis: 18rem;
   height: 25rem;
   flex-grow: 0;
   flex-shrink: 0;
   box-shadow: -15px 15px 20px 0px #18191a;
-  margin-left: -8rem;
+  margin-left: -5rem;
   transition: .3s;
   border: none;
   margin-right: .25rem;
 }
 
-.list-online-user .card:first-child {
+.card-row .card:first-child {
   margin-left: 0;
 }
 
-.list-online-user .card:focus-within,
-.list-online-user .card:hover {
+.card-row .card:focus-within,
+.card-row .card:hover {
   -webkit-transform: translateY(-1rem);
   transform: translateY(-1rem);
+  cursor: pointer;
 }
 
-.list-online-user .card:focus-within~.card,
-.list-online-user .card:hover~.card {
-  -webkit-transform: translateX(8rem);
-  transform: translateX(8rem);
+.card-row .card:focus-within~.card,
+.card-row .card:hover~.card {
+  -webkit-transform: translateX(5.25rem);
+  transform: translateX(5.25rem);
 }
 
-.list-online-user .card-header {
+.card-row .card-header {
   background-color: transparent;
   border-bottom: none;
   border-radius: .55rem .55rem 0 0;
-  color: #28a745;
   padding: 1.25rem 1.75rem;
+}
+
+
+/*----- List online use -----*/
+
+.list-online-user .card-header {
+  color: #28a745;
 }
 
 .list-online-user .card-header i {
@@ -476,26 +542,6 @@ hr {
 }
 
 @media (max-width: 767.98px) {
-  .online-user .label {
-    position: absolute;
-    padding: 1.25rem 0;
-  }
-  .online-user .label .card .view-all {
-    display: none;
-  }
-  .online-user .label .card {
-    width: 5rem;
-  }
-  .online-user .label .card .heading {
-    position: absolute;
-    transform: rotate(-90deg);
-    width: 22rem;
-    left: -8.5rem;
-    bottom: 11rem;
-    font-size: 2rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
   .list-online-user {
     margin-left: 6.5rem;
     padding: 1.25rem 0;
@@ -521,45 +567,6 @@ hr {
 
 
 /*----- Request -----*/
-
-#request {
-  width: 100%;
-  padding: 2.5rem 0;
-}
-
-.requests .label {
-  position: absolute;
-  padding: 1.5rem 0;
-}
-
-.requests .label .card {
-  width: 15rem;
-  height: 25rem;
-  padding: 1.75rem;
-  border: none;
-  background-image: linear-gradient(0deg, #28a745, #ffc107);
-}
-
-.requests .label .card .heading {
-  font-size: 3.125rem;
-  position: absolute;
-  bottom: 2.75rem;
-  line-height: 1.2;
-  font-weight: 600;
-  margin-bottom: .5rem;
-}
-
-.requests .label .card .view-all {
-  position: absolute;
-  bottom: 1.25rem;
-  font-weight: 500;
-}
-
-.requests .label .card .heading:hover,
-.requests .label .card .view-all:hover {
-  color: #ffc107;
-  text-decoration: none;
-}
 
 .list-request {
   align-items: stretch;
