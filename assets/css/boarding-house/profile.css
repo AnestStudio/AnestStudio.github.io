@@ -170,7 +170,7 @@
   }
 }
 
-.right .quick-settings a {
+.right .quick-action a {
   color: #b0b3b8;
   font-weight: 500;
   display: block;
@@ -179,7 +179,7 @@
   padding: .65rem 1rem;
 }
 
-.right .quick-settings a:hover {
+.right .quick-action a:hover {
   text-decoration: none;
   background-color: #3a3b3c;
 }
