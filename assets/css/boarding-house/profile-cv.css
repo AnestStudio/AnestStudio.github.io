@@ -2,34 +2,6 @@ body {
   /* background: url(../../images/system/bg.png) #121212; */
 }
 
-.left {
-  overflow: hidden;
-  position: fixed;
-  width: 17rem;
-}
-
-.right {
-  width: calc(100% - 17rem - 1rem);
-  float: right;
-}
-
-@media (max-width: 991.98px) {
-  .left {
-    width: 100%;
-    position: relative;
-  }
-  .right {
-    width: 100%;
-    float: none;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .right {
-    margin-top: 0;
-  }
-}
-
 
 /*----- Profile Section -----*/
 
@@ -247,54 +219,6 @@ body {
 }
 
 
-/*----- Action Section -----*/
-
-
-/* 
-.action {
-  margin-bottom: 0;
-}
-
-.action .rent-btn,
-.action .chat-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  border-radius: .55rem;
-  padding: 1rem;
-  background-color: #242526;
-  height: 100%;
-}
-
-.action .rent-btn i,
-.action .chat-btn i {
-  font-size: 1.25rem;
-}
-
-.action .rent-btn:hover,
-.action .chat-btn:hover {
-  box-shadow: 0 0 0 2px rgba(199, 175, 139, 0.35);
-}
-
-.action .rent-btn a,
-.action .chat-btn a {
-  font-size: 1.125rem;
-  font-weight: 500;
-  color: #c7af8b;
-  pointer-events: auto;
-  width: 100%;
-  text-align: center;
-  display: block;
-}
-
-.action .rent-btn a:hover,
-.action .chat-btn a:hover {
-  text-decoration: none;
-  color: #ffc107;
-} */
-
-
 /*----- Sub menu Section -----*/
 
 .right .menu a {
@@ -304,6 +228,7 @@ body {
 .right .menu .nav-pills .nav-link {
   background-color: #242526;
   border-radius: .55rem;
+  font-weight: 500;
 }
 
 .right .menu .nav-pills .nav-link:hover {
