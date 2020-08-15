@@ -66,10 +66,6 @@ body {
   padding: 0 10px;
 }
 
-.top-header-bar ul .icon-size {
-  width: 30px;
-}
-
 .top-header-bar ul {
   margin-bottom: 0;
   padding: 0;
@@ -84,7 +80,7 @@ body {
   color: #e4e6eb;
   padding: 8px 5px;
   display: block;
-  font-size: .825rem;
+  font-size: .9rem;
 }
 
 .top-header-bar ul li a.hide {
@@ -200,33 +196,15 @@ body {
 .nav-bar ul>li>a {
   color: #e4e6eb;
   font-size: 1rem;
-}
-
-.navbar-nav .nav-item .home,
-.navbar-nav .nav-item .filter {
-  padding: .45rem .75rem;
-  border-radius: .5rem;
-  margin-left: .75rem;
-}
-
-.navbar-nav .nav-item .home:hover,
-.navbar-nav .nav-item .filter:hover {
-  color: #ffc107;
-  background-color: #3a3b3c;
-}
-
-@media (max-width: 575.98px) {
-  .navbar-nav .nav-item .home,
-  .navbar-nav .nav-item .filter {
-    background-color: #3a3b3c;
-  }
+  border-radius: .45rem;
 }
 
 
 /*----- Dropdown -----*/
 
 .nav-bar ul>li>a:hover {
-  color: #ffc107;
+  color: #e4e6eb;
+  background-color: #3a3b3c;
 }
 
 .dropdown a i,
@@ -241,9 +219,8 @@ body {
 .dropdown-menu {
   top: 2px !important;
   background-color: #242526;
-  border: 1px solid #3a3b3c;
+  border: 1px solid #2f3031;
   border-radius: .5rem;
-  padding: .5rem 0;
   left: -1.2rem !important;
 }
 
@@ -263,18 +240,24 @@ body {
 
 .dropdown-menu .dropdown-item:focus,
 .dropdown-menu .dropdown-item:hover {
-  color: #ffc107;
-  background-color: #333;
+  background-color: #3a3b3c;
 }
 
 .dropdown-menu .dropdown-divider {
-  border-top: 1px solid #444;
+  border-top: 1px solid #3a3b3c;
 }
 
 .top-header-bar .dropdown-menu .dropdown-item:focus,
 .top-header-bar .dropdown-menu .dropdown-item:hover {
   background-color: transparent;
   transform: translateX(.4rem);
+}
+
+@media (max-width: 575.98px) {
+  .dropdown a i,
+  .nav-item a i {
+    margin-right: .5rem;
+  }
 }
 
 
@@ -329,7 +312,7 @@ body {
 
 @media (max-width: 991.98px) {
   .top-header-bar .dropdown-menu {
-    left: -1.1rem !important;
+    left: -1.25rem !important;
   }
 }
 
@@ -499,7 +482,8 @@ body {
   line-height: 1.5;
 }
 
-.btn-sm {
+
+/* .btn-sm {
   border-radius: .2rem;
   font-size: .85rem;
   padding: .275rem .9rem .3rem;
@@ -509,10 +493,20 @@ body {
   border-radius: .2rem;
   font-size: .95rem;
   padding: .35rem 1rem;
-}
+} */
 
 .btn-lg {
-  border-radius: .25rem;
+  border-radius: .45rem;
   font-size: .95rem;
-  padding: .45rem 1.25rem;
+  padding: .5rem 1.25rem;
+}
+
+.btn-gray {
+  border: 2px solid #3a3b3c;
+  color: #e4e6eb;
+}
+
+.btn-gray:hover {
+  background-color: #3a3b3c;
+  color: #e4e6eb;
 }

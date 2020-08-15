@@ -26,6 +26,12 @@
   }
 }
 
+.form-row>.col,
+.form-row>[class*=col-] {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+
 .col,
 .col-1,
 .col-10,

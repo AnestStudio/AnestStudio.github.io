@@ -1,64 +1,8 @@
-/*----- Tab content -----*/
-
-.right .label-info {
-  padding: 1rem 1rem .75rem;
-  height: 100%;
-}
-
-.right .label-info .flex {
-  display: flex;
-  justify-content: space-between;
-}
-
-.right .label-info .flex i {
-  font-size: 2rem;
-}
-
-.right .label-info .flex h4 {
-  margin: 0;
-}
-
-.right .label-info span {
-  font-size: .95rem;
-}
-
-@media (max-width: 575.98px) {
-  .right .label-info .flex h5 {
-    font-size: 1.5rem;
-  }
-}
-
-.right .quick-action a {
-  color: #b0b3b8;
-  font-weight: 500;
-  display: block;
-  text-align: center;
-  background-color: #242526;
-  padding: .65rem 1rem;
-}
-
-.right .quick-action a:hover {
-  text-decoration: none;
-  background-color: #3a3b3c;
-}
-
-
-/*----- Tab content ui -----*/
-
-.right .tab-content .content {
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.right .tab-content .title {
-  font-size: 1.05rem;
-  margin-left: 1rem;
-  margin-top: .5rem;
-  margin-bottom: 1rem;
-}
-
-
 /*----- Tab content - Profile -----*/
+
+.right .tab-content .about .about-info {
+  padding: 1rem 1rem .25rem 1rem;
+}
 
 
 /*----- Tab content - Partner profile -----*/

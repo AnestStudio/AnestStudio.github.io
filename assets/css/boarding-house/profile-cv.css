@@ -3,7 +3,7 @@ body {
 }
 
 
-/*----- Profile Section -----*/
+/*----- Profile CV -----*/
 
 .left .profile {
   padding: 0;
@@ -168,6 +168,7 @@ body {
 .left .rate h1 {
   line-height: 1;
   margin-bottom: .275rem;
+  font-weight: 400;
 }
 
 .left .rate i {
@@ -194,33 +195,7 @@ body {
 }
 
 
-/*----- Overview Section -----*/
-
-.right .overview {
-  margin-bottom: 0;
-}
-
-.right .overview .label-info {
-  padding: 1rem 1rem .75rem;
-  height: 100%;
-}
-
-.right .overview .label-info .flex {
-  display: flex;
-  justify-content: space-between;
-}
-
-.right .overview .label-info .flex i {
-  font-size: 2rem;
-}
-
-.right .overview .label-info .flex h4 {
-  margin: 0;
-}
-
-.right .overview .label-info span {
-  font-size: .95rem;
-}
+/*----- Overview -----*/
 
 
 /*----- Tab content -----*/
@@ -298,34 +273,34 @@ body {
   color: #b0b3b8;
 }
 
-.right .tab-content #comment .media-body {
+.right .tab-content #pills-comment .media-body {
   background-color: #3a3b3c;
   padding: .75rem 1rem;
 }
 
-.right .tab-content #comment .media-body hr {
+.right .tab-content #pills-comment .media-body hr {
   border-top: 1px solid #585858;
   margin-top: .55rem;
   margin-bottom: .5rem;
 }
 
-.right .tab-content #comment .media-body .comment-info {
+.right .tab-content #pills-comment .media-body .comment-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.right .tab-content #comment .media-body .comment-info .time {
+.right .tab-content #pills-comment .media-body .comment-info .time {
   font-size: 14px;
   color: #b0b3b8;
 }
 
-.right .tab-content #comment .media-body .comment-info .rate i {
+.right .tab-content #pills-comment .media-body .comment-info .rate i {
   font-size: .75rem;
   color: #ffc107;
 }
 
-.right .tab-content #comment .pagination .page-item {
+.right .tab-content #pills-comment .pagination .page-item {
   background-color: #242526;
   position: relative;
   display: block;
@@ -337,6 +312,6 @@ body {
   text-align: center;
 }
 
-.right .tab-content #comment .pagination .page-item.active {
+.right .tab-content #pills-comment .pagination .page-item.active {
   background-color: #3a3b3c;
 }
