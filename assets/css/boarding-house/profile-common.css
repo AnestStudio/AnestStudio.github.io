@@ -36,7 +36,7 @@
 
 /*----- Navbar -----*/
 
-.nav-bar ul li.btn-icon {
+.nav-bar .btn-icon {
   width: 2.5rem;
   height: 2.5rem;
   background-color: #3a3b3c;
@@ -50,27 +50,27 @@
   transition: .3s;
 }
 
-.nav-bar ul li.btn-icon .dropdown-toggle::after {
+.nav-bar .btn-icon .dropdown-toggle::after {
   display: none;
 }
 
-.nav-bar ul li.btn-icon:hover {
+.nav-bar .btn-icon:hover {
   background-color: #4e4f50;
 }
 
-.nav-bar ul li.btn-icon a {
+.nav-bar .btn-icon a {
   pointer-events: auto;
 }
 
-.nav-bar ul li.btn-icon .icon {
+.nav-bar .btn-icon .icon {
   font-size: 1.125rem !important;
 }
 
-.nav-bar ul li.btn-icon>a:hover {
+.nav-bar .btn-icon>a:hover {
   background-color: transparent !important;
 }
 
-.nav-bar ul li.btn-icon .c-badge {
+.nav-bar .btn-icon .c-badge {
   position: absolute;
   top: -2px;
   right: -5px;
@@ -84,25 +84,25 @@
   text-align: center;
 }
 
-.nav-bar ul li.btn-icon .dropdown-menu {
+.nav-bar .btn-icon .dropdown-menu {
   top: 18px !important;
 }
 
-.nav-bar ul li.btn-icon .dropdown-menu {
+.nav-bar .btn-icon .dropdown-menu {
   padding: .6rem;
 }
 
-.nav-bar ul li.btn-icon .dropdown-menu .dropdown-item {
+.nav-bar .btn-icon .dropdown-menu .dropdown-item {
   border-radius: .45rem;
   font-size: .95rem;
   padding: .45rem 3rem .45rem .65rem;
 }
 
-.nav-bar ul li.btn-icon .dropdown-menu .dropdown-item:hover {
+.nav-bar .btn-icon .dropdown-menu .dropdown-item:hover {
   background-color: #3a3b3c;
 }
 
-.nav-bar ul li.btn-icon .dropdown-menu .dropdown-item i {
+.nav-bar .btn-icon .dropdown-menu .dropdown-item i {
   margin-right: .75rem !important;
 }
 
@@ -315,13 +315,13 @@
 
 /*----- Form -----*/
 
-fieldset {
+.right form fieldset {
   border: 2px solid #3a3b3c;
   padding: 0 .75rem .5rem;
   border-radius: .45rem;
 }
 
-fieldset legend {
+.right form fieldset legend {
   background-color: #242526;
   width: auto;
   max-width: 100%;
@@ -333,7 +333,7 @@ fieldset legend {
   color: #b0b3b8;
 }
 
-fieldset .form-control {
+.right form fieldset .form-control {
   color: #e4e6eb;
   border: 1px solid transparent;
   background-color: transparent;
@@ -341,12 +341,12 @@ fieldset .form-control {
   height: calc(1em + .75rem + 2px);
 }
 
-.form-control:disabled,
-.form-control[readonly] {
+.right form .form-control:disabled,
+.right form .form-control[readonly] {
   background-color: transparent;
 }
 
-fieldset .form-control:focus {
+.right form fieldset .form-control:focus {
   color: #e4e6eb;
   box-shadow: none;
   border-color: transparent;

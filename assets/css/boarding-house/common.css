@@ -147,7 +147,12 @@ body {
   margin-bottom: 1.25rem;
 }
 
-.nav-bar .px-c-4 {
+.nav-bar .px-nav {
+  padding-left: .5rem !important;
+  padding-right: .5rem !important;
+}
+
+.nav-bar .px-profile {
   padding-left: .5rem !important;
   padding-right: .5rem !important;
 }
@@ -286,7 +291,7 @@ body {
     width: 100%;
     margin: .5rem 0;
   }
-  .nav-bar .px-c-4 {
+  .nav-bar .px-nav {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
   }
@@ -312,7 +317,7 @@ body {
 
 @media (max-width: 991.98px) {
   .top-header-bar .dropdown-menu {
-    left: -1.25rem !important;
+    left: -1.75rem !important;
   }
 }
 
