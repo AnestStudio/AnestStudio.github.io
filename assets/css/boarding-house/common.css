@@ -8,6 +8,12 @@ body {
   padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
+@media (max-width: 575.98px) {
+  body {
+    padding: 0 1rem 1rem;
+  }
+}
+
 .bg-dark {
   background-color: #18191a !important;
 }
@@ -57,6 +63,23 @@ body {
 
 .font-weight-500 {
   font-weight: 500;
+}
+
+
+/*----- Site header -----*/
+
+.site-header {
+  width: calc(100% - 3rem);
+  padding-top: 1.5rem;
+  z-index: 1;
+  position: fixed;
+}
+
+@media (max-width: 575.98px) {
+  .site-header {
+    position: relative;
+    width: 100%;
+  }
 }
 
 
@@ -147,38 +170,6 @@ body {
   margin-bottom: 1.25rem;
 }
 
-.nav-bar .px-nav {
-  padding-left: .5rem !important;
-  padding-right: .5rem !important;
-}
-
-.nav-bar .px-profile {
-  padding-left: .5rem !important;
-  padding-right: .5rem !important;
-}
-
-.nav-bar .navbar-nav {
-  margin: auto;
-  margin-right: 0;
-}
-
-.nav-bar .navbar-toggler {
-  padding: 0;
-  font-size: 1.15rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
-  color: #c7af8b;
-}
-
-.nav-bar .navbar-toggler:focus {
-  outline: none;
-}
-
-.nav-bar .navbar-toggler i {
-  color: #c7af8b;
-}
-
 .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
@@ -186,7 +177,7 @@ body {
 
 .nav-bar .navbar-brand a {
   color: #c7af8b;
-  padding: 0 .65rem;
+  padding: 0 .35rem;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.55rem;
@@ -202,6 +193,110 @@ body {
   color: #e4e6eb;
   font-size: 1rem;
   border-radius: .45rem;
+}
+
+.nav-bar .nav-bar-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar .nav-bar-content .nav-btn ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar .btn-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #3a3b3c;
+  border-radius: 50%;
+  margin-left: .35rem;
+  margin-right: .35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: .3s;
+  position: relative;
+}
+
+.nav-bar .btn-icon .dropdown-toggle::after {
+  display: none;
+}
+
+.nav-bar .btn-icon:hover {
+  background-color: #4e4f50;
+}
+
+.nav-bar .btn-icon a {
+  pointer-events: auto;
+  position: relative;
+}
+
+.nav-bar .btn-icon .icon {
+  font-size: 1.125rem !important;
+}
+
+.nav-bar .btn-icon>a:hover {
+  background-color: transparent !important;
+}
+
+.nav-bar .btn-icon .c-badge {
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: #dc3545;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+}
+
+.nav-bar .btn-icon .dropdown-menu {
+  top: 18px !important;
+}
+
+.nav-bar .btn-icon .dropdown-menu {
+  padding: .6rem;
+}
+
+.nav-bar .btn-icon .dropdown-menu .dropdown-item {
+  border-radius: .45rem;
+  font-size: .95rem;
+  padding: .45rem 3rem .45rem .65rem;
+}
+
+.nav-bar .btn-icon .dropdown-menu .dropdown-item:hover {
+  background-color: #3a3b3c;
+}
+
+.nav-bar .btn-icon .dropdown-menu .dropdown-item i {
+  margin-right: .75rem !important;
+}
+
+@media (max-width: 991.98px) {
+  .nav-bar .navbar-brand {
+    display: none;
+  }
+  .nav-bar .px-fix {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+  .nav-bar .nav-bar-content .nav-btn {
+    width: 100%;
+  }
+  .nav-bar .nav-bar-content .nav-btn ul {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .nav-bar .btn-icon .dropdown-menu .dropdown-item {
+    padding: .45rem .65rem .45rem .65rem;
+  }
 }
 
 
@@ -262,62 +357,6 @@ body {
   .dropdown a i,
   .nav-item a i {
     margin-right: .5rem;
-  }
-}
-
-
-/* ----- Responsive for Nav bar ----- */
-
-@media (max-width: 991.98px) {
-  .nav-bar {
-    padding: 1rem .125rem;
-  }
-  .nav-bar .navbar-nav {
-    margin-top: .75rem;
-  }
-  .nav-bar .navbar-brand {
-    display: none;
-  }
-  .nav-bar .nav-link {
-    padding: .35rem 2rem;
-  }
-  .navbar-nav .nav-item .home,
-  .navbar-nav .nav-item .filter {
-    width: 100%;
-    margin-left: 0;
-    margin-top: .75rem;
-  }
-  .navbar-nav .nav-item .btn-search-advanced {
-    width: 100%;
-    margin: .5rem 0;
-  }
-  .nav-bar .px-nav {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-  }
-  .dropdown a i {
-    margin-right: .5rem;
-  }
-  .top-header-bar .dropdown a i {
-    margin-right: .2rem;
-  }
-  .dropdown-menu {
-    right: auto !important;
-    left: 1rem !important;
-    margin-top: 0 !important;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: .75rem;
-    padding-left: .75rem;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .top-header-bar .dropdown-menu {
-    left: -1.75rem !important;
   }
 }
 
