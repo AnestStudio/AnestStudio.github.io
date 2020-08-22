@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="assets/images/cover/favicon.ico">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="assets/css/all.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/boarding-house/common.css">
+  <link rel="stylesheet" href="assets/css/boarding-house/nav.css">
+  <link rel="stylesheet" href="assets/css/boarding-house/grip.css">
+  <link rel="stylesheet" href="assets/css/boarding-house/profile-common.css">
+  <link rel="stylesheet" href="assets/css/boarding-house/profile-transaction-history.css">
+
+  <title>Transaction history</title>
+</head>
+
+<body id="page-top" class="bg-dark" onload="startTime()">
+
+  <header class="site-header bg-dark">
+    <div class="top-header-bar bg-dark-ui border-ui">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 top-left">
+            <ul class="float-left">
+              <li>
+                <a href="javascript:void(0)">
+                  anest.studio@gmail.com
+                </a>
+              </li>
+              <li><a class="text-secondary" href="javascript:void(0)">|</a></li>
+              <li>
+                <a href="#">
+                  Youtube
+                </a>
+              </li>
+              <li><a class="text-secondary" href="#">|</a></li>
+              <li>
+                <a href="#">
+                  Facebook
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-6 top-right">
+            <div class="header-bar-menu">
+              <ul class="flex">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Đinh Tuấn Anh
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="database">
+                    <div class="username">
+                      <div>
+                        <i class="fas fa-user-tag"></i>
+                      </div>
+                      <div>
+                        <span>@anhdt0407</span>
+                      </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="far fa-comment-alt fa-fw"></i>Đóng góp ý kiến</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="far fa-question-circle fa-fw"></i>Trợ giúp & hỗ trợ</a>
+                    <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-fw"></i>Đăng xuất</a>
+                  </div>
+                </li>
+                <li>
+                  <a class="mr-3" href="javascript:void(0)">
+                    Trang cá nhân
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-bar bg-dark-ui border-ui">
+      <div class="container-fluid">
+        <div class="nav-bar-content px-fix">
+          <div class="navbar-brand">
+            <a class="color-gradient" href="index.html">EASY LEARNING</a>
+          </div>
+          <div class="nav-btn">
+            <ul class="m-0 p-0">
+              <li class="dropdown btn-icon">
+                <a class="icon dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-bell m-0 fa-fw"></i>
+                </a>
+                <span class="c-badge">8</span>
+                <div class="dropdown-menu" aria-labelledby="language">
+                  <a class="dropdown-item" href="#">Thông báo</a>
+                </div>
+              </li>
+              <li class="dropdown btn-icon">
+                <a class="icon dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fab fa-facebook-messenger m-0 fa-fw"></i>
+                </a>
+                <span class="c-badge">2</span>
+                <div class="dropdown-menu" aria-labelledby="language">
+                  <a class="dropdown-item" href="#">Cuộc hội thoại</a>
+                </div>
+              </li>
+              <li class="dropdown btn-icon">
+                <a class="icon dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-caret-down m-0 fa-fw"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="language">
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-pencil-alt text-success fa-fw"></i>Tạo bài đăng
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-user-check text-violet fa-fw"></i>Thuê Mentor
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="left">
+      <div class="profile bg-dark-ui border-ui mb-3">
+        <div class="media">
+          <a href="" class="circle">
+            <img class="avatar" src="assets/images/system/v.png" alt="avatar" width="50">
+          </a>
+          <div class="media-body">
+            <a href="profile.html">Nguyễn Thị Huyền</a>
+            <a href="profile.html" class="username">@sandy020407</a>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-menu bg-dark-ui border-ui mb-3">
+        <ul>
+          <li>
+            <a href="">
+              <i class="fas fa-user-plus text-pink mr-2 fa-fw"></i>Đăng ký đối tác
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-menu bg-dark-ui border-ui mb-3">
+        <ul>
+          <li>
+            <a href="profile-cv.html">
+              <i class="fas fa-eye text-success mr-2 fa-fw"></i>Trang hồ sơ
+            </a>
+            <!-- </li>
+          <li>
+            <a href="">
+              <i class="fas fa-user-edit text-danger mr-2 fa-fw"></i>Chỉnh sửa trang hồ sơ
+            </a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="sidebar-menu bg-dark-ui border-ui mb-3">
+        <ul>
+          <li>
+            <a href="profile-pay-in.html">
+              <i class="fas fa-plus text-violet mr-2 fa-fw"></i>Nạp tiền
+            </a>
+          </li>
+          <li>
+            <a href="profile-withdraw.html">
+              <i class="fas fa-reply text-sea-green mr-2 fa-fw"></i>Rút tiền
+            </a>
+          </li>
+          <li>
+            <a href="profile-transaction-history.html">
+              <i class="fas fa-history text-info mr-2 fa-fw"></i>Lịch sử giao dịch
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-menu bg-dark-ui border-ui mb-3">
+        <ul>
+          <li>
+            <a href="profile-manager.html">
+              <i class="fas fa-chart-line text-primary mr-2 fa-fw"></i>Quản lý tài khoản
+            </a>
+          </li>
+          <li>
+            <a href="profile-setting.html">
+              <i class="fas fa-cog text-warning mr-2 fa-fw"></i>Cài đặt tài khoản
+            </a>
+          </li>
+          <hr />
+          <li>
+            <a href="">
+              <i class="fas fa-sign-out-alt text-tomato mr-2 fa-fw"></i>Đăng xuất
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="overview">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-6 mb-3">
+                <div class="label-info bg-dark-ui border-ui">
+                  <div class="flex">
+                    <div class="icon">
+                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-wallet2 text-sea-green" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 4l10-3A1.5 1.5 0 0 1 14 2.5v2h-1v-2a.5.5 0 0 0-.5-.5L5.833 4H2.5z"/>
+                        <path fill-rule="evenodd" d="M1 5.5A1.5 1.5 0 0 1 2.5 4h11A1.5 1.5 0 0 1 15 5.5v8a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 13.5v-8zM2.5 5a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-11z"/>
+                      </svg>
+                    </div>
+                    <div class="number">
+                      <h4>7.000.000<sup>đ</sup></h4>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <span>Ví nạp / Tổng tiền còn lại</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6 mb-3">
+                <div class="label-info bg-dark-ui border-ui">
+                  <div class="flex">
+                    <div class="icon">
+                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle text-violet" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      </svg>
+                    </div>
+                    <div class="number">
+                      <h4>777.000.000<sup>đ</sup></h4>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <span>Tổng tiền đã nạp</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu">
+            <ul class="row nav nav-pills" id="pills-tab" role="tablist">
+              <li class="col-6 col-md-6 mb-3 nav-item text-center" role="presentation">
+                <a class="nav-link font-weight-500 active" id="pills-pay-in-history-tab" data-toggle="pill" href="#pills-pay-in" role="tab" aria-controls="pills-pay-in" aria-selected="true">
+                  Lịch sử nạp tiền
+                </a>
+              </li>
+              <li class="col-6 col-md-6 mb-3 nav-item text-center" role="presentation">
+                <a class="nav-link font-weight-500" id="pills-withdraw-tab" data-toggle="pill" href="#pills-withdraw" role="tab" aria-controls="pills-withdraw" aria-selected="false">
+                  Lịch sử rút tiền
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-pay-in" role="tabpanel" aria-labelledby="pills-pay-in-history-tab">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="overview">
+                    <h6 class="title">Thống kê</h6>
+                    <div class="overview-report">
+                      <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
+                          <div class="label-info bg-dark-ui border-ui">
+                            <div class="flex">
+                              <div class="icon">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                  <path fill-rule="evenodd" d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                              </div>
+                              <div class="number">
+                                <h4>50.000<sup>đ</sup></h4>
+                              </div>
+                            </div>
+                            <div class="description">
+                              <span>Nạp trong ngày</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
+                          <div class="label-info bg-dark-ui border-ui">
+                            <div class="flex">
+                              <div class="icon">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3-week" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                  <path fill-rule="evenodd" d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm2-3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                              </div>
+                              <div class="number">
+                                <h4>200.000<sup>đ</sup></h4>
+                              </div>
+                            </div>
+                            <div class="description">
+                              <span>Nạp trong tuần</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
+                          <div class="label-info bg-dark-ui border-ui">
+                            <div class="flex">
+                              <div class="icon">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                  <path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                              </div>
+                              <div class="number">
+                                <h4>4.000.000<sup>đ</sup></h4>
+                              </div>
+                            </div>
+                            <div class="description">
+                              <span>Nạp trong tháng</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transaction-history">
+                    <h6 class="title">Lịch sử nạp tiền</h6>
+                    <div class="transaction-history-info content bg-dark-ui border-ui mb-4">
+                      <div class="row data-tables">
+                        <div class="col-lg-12">
+                          <table id="pay-in-table" table class="table" cellspacing="0" width="100%">
+                            <thead>
+                              <tr>
+                                <th>Mã giao dịch<i class="fas fa-sort fa-size"></i></th>
+                                <th>Thời gian<i class="fas fa-sort fa-size"></i></th>
+                                <th>Phương thức<i class="fas fa-sort fa-size"></i></th>
+                                <th>Số tiền<i class="fas fa-sort fa-size"></i></th>
+                                <th>Trạng thái<i class="fas fa-sort fa-size"></i></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>#2653489526</td>
+                                <td>25/08/2020</td>
+                                <td>Nạp thẻ</td>
+                                <td>250.000<sup>đ</sup></td>
+                                <td class="text-sea-green">Thành công</td>
+                              </tr>
+                              <tr>
+                                <td>#2653489527</td>
+                                <td>24/08/2020</td>
+                                <td>Internet Banking</td>
+                                <td>500.000<sup>đ</sup></td>
+                                <td class="text-tomato">Thất bại</td>
+                              </tr>
+                              <tr>
+                                <td>#2253489528</td>
+                                <td>25/06/2020</td>
+                                <td>Nạp thẻ</td>
+                                <td>200.000<sup>đ</sup></td>
+                                <td class="text-sea-green">Thành công</td>
+                              </tr>
+                              <tr>
+                                <td>#2652349666</td>
+                                <td>11/06/2020</td>
+                                <td>Nạp thẻ</td>
+                                <td>200.000<sup>đ</sup></td>
+                                <td class="text-sea-green">Thành công</td>
+                              </tr>
+                              <tr>
+                                <td>#2667889526</td>
+                                <td>08/06/2020</td>
+                                <td>Nạp thẻ</td>
+                                <td>50.000<sup>đ</sup></td>
+                                <td class="text-sea-green">Thành công</td>
+                              </tr>
+                              <tr>
+                                <td>#2564484567</td>
+                                <td>04/05/2020</td>
+                                <td>Ví điện tử</td>
+                                <td>200.000<sup>đ</sup></td>
+                                <td class="text-sea-green">Thành công</td>
+                              </tr>
+                              <tr>
+                                <td>#2655439526</td>
+                                <td>25/04/2020</td>
+                                <td>Nạp thẻ</td>
+                                <td>200.000<sup>đ</sup></td>
+                                <td class="text-tomato">Thất bại</td>
+                              </tr>
+                              <tr>
+                                <td>#2653467826</td>
+                                <td>22/04/2020</td>
+                                <td>Nạp thẻ</td>
+                                <td>500.000<sup>đ</sup></td>
+                                <td class="text-sea-green">Thành công</td>
+                              </tr>
+                              <tr>
+                                <td>#2653486546</td>
+                                <td>08/04/2020</td>
+                                <td>Ví điện tử</td>
+                                <td>200.000<sup>đ</sup></td>
+                                <td class="text-sea-green">Thành công</td>
+                              </tr>
+                              <tr>
+                                <td>#2653433326</td>
+                                <td>15/03/2020</td>
+                                <td>Internet Banking</td>
+                                <td>200.000<sup>đ</sup></td>
+                                <td class="text-sea-green">Thành công</td>
+                              </tr>
+                              <tr>
+                                <td>#2345489526</td>
+                                <td>25/01/2020</td>
+                                <td>Nạp thẻ</td>
+                                <td>100.000<sup>đ</sup></td>
+                                <td class="text-tomato">Thất bại</td>
+                              </tr>
+                              <tr>
+                                <td>#2653344526</td>
+                                <td>22/04/2020</td>
+                                <td>Nạp thẻ</td>
+                                <td>20.000<sup>đ</sup></td>
+                                <td class="text-sea-green">Thành công</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quick-action">
+                    <h6 class="title">Tìm kiếm cái gì khác</h6>
+                    <div class="row">
+                      <div class="col-12 col-md-4 col-lg-4 mb-3">
+                        <a href="" class="border-ui">
+                          <i class="fas fa-plus mr-2"></i>Nạp tiền
+                        </a>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-4 mb-3">
+                        <a href="" class="border-ui">
+                          <i class="fas fa-reply mr-2"></i>Rút tiền
+                        </a>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-4 mb-3">
+                        <a href="" class="border-ui">
+                          <i class="fas fa-plus mr-2"></i>Thêm thẻ ngân hàng
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-withdraw" role="tabpanel" aria-labelledby="pills-withdraw-tab">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="overview">
+                    <h6 class="title">Thống kê</h6>
+                    <div class="overview-report">
+                      <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
+                          <div class="label-info bg-dark-ui border-ui">
+                            <div class="flex">
+                              <div class="icon">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                  <path fill-rule="evenodd" d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                              </div>
+                              <div class="number">
+                                <h4>50.000<sup>đ</sup></h4>
+                              </div>
+                            </div>
+                            <div class="description">
+                              <span>Rút trong ngày</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
+                          <div class="label-info bg-dark-ui border-ui">
+                            <div class="flex">
+                              <div class="icon">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3-week" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                  <path fill-rule="evenodd" d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm2-3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                              </div>
+                              <div class="number">
+                                <h4>200.000<sup>đ</sup></h4>
+                              </div>
+                            </div>
+                            <div class="description">
+                              <span>Rút trong tuần</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-3">
+                          <div class="label-info bg-dark-ui border-ui">
+                            <div class="flex">
+                              <div class="icon">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                                  <path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>
+                              </div>
+                              <div class="number">
+                                <h4>4.000.000<sup>đ</sup></h4>
+                              </div>
+                            </div>
+                            <div class="description">
+                              <span>Rút trong tháng</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transaction-history">
+                    <h6 class="title">Lịch sử rút tiền</h6>
+                    <div class="transaction-history-info content bg-dark-ui border-ui mb-4">
+                      <div class="row data-tables">
+                        <div class="col-lg-12">
+                          <table id="withdraw-table" table class="table" cellspacing="0" width="100%">
+                            <thead>
+                              <tr>
+                                <th>Mã giao dịch<i class="fas fa-sort fa-size"></i></th>
+                                <th>Thời gian<i class="fas fa-sort fa-size"></i></th>
+                                <th>Rút về<i class="fas fa-sort fa-size"></i></th>
+                                <th>Số tiền<i class="fas fa-sort fa-size"></i></th>
+                                <th>Trạng thái<i class="fas fa-sort fa-size"></i></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>#2653489527</td>
+                                <td>24/08/2020</td>
+                                <td>TP Bank</td>
+                                <td>500.000<sup>đ</sup></td>
+                                <td class="text-tomato">Thất bại</td>
+                              </tr>
+                              <tr>
+                                <td>#2564484567</td>
+                                <td>04/05/2020</td>
+                                <td>Ví điện tử</td>
+                                <td>200.000<sup>đ</sup></td>
+                                <td class="text-sea-green">Thành công</td>
+                              </tr>
+                              <tr>
+                                <td>#2653433326</td>
+                                <td>15/03/2020</td>
+                                <td>Vietcombank</td>
+                                <td>200.000<sup>đ</sup></td>
+                                <td class="text-sea-green">Thành công</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="quick-action">
+                    <h6 class="title">Tìm kiếm cái gì khác</h6>
+                    <div class="row">
+                      <div class="col-12 col-md-4 col-lg-4 mb-3">
+                        <a href="" class="border-ui">
+                          <i class="fas fa-plus mr-2"></i>Nạp tiền
+                        </a>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-4 mb-3">
+                        <a href="" class="border-ui">
+                          <i class="fas fa-reply mr-2"></i>Rút tiền
+                        </a>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-4 mb-3">
+                        <a href="" class="border-ui">
+                          <i class="fas fa-plus mr-2"></i>Thêm thẻ ngân hàng
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+  <script src="assets/js/bootstrap/popper.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+  <!-- Custom scripts for all pages-->
+  <script src="assets/js/boarding-house/boarding-house.js"></script>
+  <!-- Data Tables -->
+  <script src="assets/js/datatables/jquery.dataTables.min.js"></script>
+  <script src="assets/js/datatables/datatables.vietnamese.js"></script>
+
+</body>
+
+</html>

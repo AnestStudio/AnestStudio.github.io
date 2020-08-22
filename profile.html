@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/boarding-house/common.css">
+  <link rel="stylesheet" href="assets/css/boarding-house/nav.css">
   <link rel="stylesheet" href="assets/css/boarding-house/grip.css">
   <link rel="stylesheet" href="assets/css/boarding-house/profile-common.css">
   <link rel="stylesheet" href="assets/css/boarding-house/profile.css">
@@ -94,31 +95,127 @@
                   <i class="fas fa-bell m-0 fa-fw"></i>
                 </a>
                 <span class="c-badge">8</span>
-                <div class="dropdown-menu" aria-labelledby="language">
-                  <a class="dropdown-item" href="#">Thông báo</a>
-                </div>
+                <ul class="dropdown-menu notification-dropdown" aria-labelledby="language">
+                  <li class="dropdown-item notification-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-0">John Smith</h6>
+                          <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                          <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item notification-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-0">John Smith</h6>
+                          <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                          <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item notification-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-0">John Smith</h6>
+                          <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                          <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item view-all-link">
+                    <a href="" class="text-right">
+                      Xem tất cả
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="dropdown btn-icon">
                 <a class="icon dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fab fa-facebook-messenger m-0 fa-fw"></i>
                 </a>
                 <span class="c-badge">2</span>
-                <div class="dropdown-menu" aria-labelledby="language">
-                  <a class="dropdown-item" href="#">Cuộc hội thoại</a>
-                </div>
+                <ul class="dropdown-menu message-dropdown" aria-labelledby="language">
+                  <li class="dropdown-item message-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-1">John Smith</h6>
+                          <p class="text text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                          <p class="small text-muted mb-0">2 giờ</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item message-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-1">John Smith</h6>
+                          <p class="text text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                          <p class="small text-muted mb-0">5 giờ</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item message-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-1">John Smith</h6>
+                          <p class="text text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                          <p class="small text-muted mb-0">7 giờ</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item view-all-link">
+                    <a href="" class="text-right">
+                      Xem tất cả
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="dropdown btn-icon">
                 <a class="icon dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fas fa-caret-down m-0 fa-fw"></i>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="language">
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-pencil-alt text-success fa-fw"></i>Tạo bài đăng
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-user-check text-violet fa-fw"></i>Thuê Mentor
-                  </a>
-                </div>
+                <ul class="dropdown-menu action-dropdown">
+                  <li class="dropdown-item">
+                    <a href="#">
+                      <i class="fas fa-pencil-alt text-success fa-fw"></i>Tạo bài đăng
+                    </a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">
+                      <i class="fas fa-user-check text-violet fa-fw"></i>Thuê Mentor
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -135,8 +232,8 @@
             <img class="avatar" src="assets/images/system/v.png" alt="avatar" width="50">
           </a>
           <div class="media-body">
-            <a href="">Nguyễn Thị Huyền</a>
-            <a href="" class="username">@sandy020407</a>
+            <a href="profile.html">Nguyễn Thị Huyền</a>
+            <a href="profile.html" class="username">@sandy020407</a>
           </div>
         </div>
       </div>
@@ -166,17 +263,17 @@
       <div class="sidebar-menu bg-dark-ui border-ui mb-3">
         <ul>
           <li>
-            <a href="">
+            <a href="profile-pay-in.html">
               <i class="fas fa-plus text-violet mr-2 fa-fw"></i>Nạp tiền
             </a>
           </li>
           <li>
-            <a href="withdraw.html">
+            <a href="profile-withdraw.html">
               <i class="fas fa-reply text-sea-green mr-2 fa-fw"></i>Rút tiền
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="profile-transaction-history.html">
               <i class="fas fa-history text-info mr-2 fa-fw"></i>Lịch sử giao dịch
             </a>
           </li>
@@ -185,12 +282,12 @@
       <div class="sidebar-menu bg-dark-ui border-ui mb-3">
         <ul>
           <li>
-            <a href="">
+            <a href="profile-manager.html">
               <i class="fas fa-chart-line text-primary mr-2 fa-fw"></i>Quản lý tài khoản
             </a>
           </li>
           <li>
-            <a href="setting.html">
+            <a href="profile-setting.html">
               <i class="fas fa-cog text-warning mr-2 fa-fw"></i>Cài đặt tài khoản
             </a>
           </li>
@@ -403,9 +500,9 @@
             <div class="tab-pane fade" id="pills-partner-profile" role="tabpanel" aria-labelledby="pills-partner-profile-tab">
               <div class="row">
                 <div class="col-md-12">
-                  <!-- <div class="content bg-dark-ui border-ui">
+                  <div class="content bg-dark-ui border-ui">
                     <h5 class="text-center my-3">Bạn chưa đăng ký làm đối tác.</h5>
-                  </div> -->
+                  </div>
                   <div class="balance">
                     <h6 class="title">Tài khoản</h6>
                     <div class="balance-report">
