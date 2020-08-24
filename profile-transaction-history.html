@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="assets/css/boarding-house/nav.css">
   <link rel="stylesheet" href="assets/css/boarding-house/grip.css">
   <link rel="stylesheet" href="assets/css/boarding-house/profile-common.css">
-  <link rel="stylesheet" href="assets/css/boarding-house/profile-transaction-history.css">
 
   <title>Transaction history</title>
 </head>
@@ -95,31 +94,127 @@
                   <i class="fas fa-bell m-0 fa-fw"></i>
                 </a>
                 <span class="c-badge">8</span>
-                <div class="dropdown-menu" aria-labelledby="language">
-                  <a class="dropdown-item" href="#">Thông báo</a>
-                </div>
+                <ul class="dropdown-menu notification-dropdown" aria-labelledby="language">
+                  <li class="dropdown-item notification-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-0">John Smith</h6>
+                          <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                          <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item notification-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-0">John Smith</h6>
+                          <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                          <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item notification-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-0">John Smith</h6>
+                          <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                          <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item view-all-link">
+                    <a href="" class="text-right">
+                      Xem tất cả
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="dropdown btn-icon">
                 <a class="icon dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fab fa-facebook-messenger m-0 fa-fw"></i>
                 </a>
                 <span class="c-badge">2</span>
-                <div class="dropdown-menu" aria-labelledby="language">
-                  <a class="dropdown-item" href="#">Cuộc hội thoại</a>
-                </div>
+                <ul class="dropdown-menu message-dropdown" aria-labelledby="language">
+                  <li class="dropdown-item message-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-1">John Smith</h6>
+                          <p class="text text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                          <p class="small text-muted mb-0">2 giờ</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item message-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-1">John Smith</h6>
+                          <p class="text text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                          <p class="small text-muted mb-0">5 giờ</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item message-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-1">John Smith</h6>
+                          <p class="text text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                          <p class="small text-muted mb-0">7 giờ</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item view-all-link">
+                    <a href="" class="text-right">
+                      Xem tất cả
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="dropdown btn-icon">
                 <a class="icon dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fas fa-caret-down m-0 fa-fw"></i>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="language">
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-pencil-alt text-success fa-fw"></i>Tạo bài đăng
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-user-check text-violet fa-fw"></i>Thuê Mentor
-                  </a>
-                </div>
+                <ul class="dropdown-menu action-dropdown">
+                  <li class="dropdown-item">
+                    <a href="#">
+                      <i class="fas fa-pencil-alt text-success fa-fw"></i>Tạo bài đăng
+                    </a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">
+                      <i class="fas fa-user-check text-violet fa-fw"></i>Thuê Mentor
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -268,69 +363,8 @@
             <div class="tab-pane fade show active" id="pills-pay-in" role="tabpanel" aria-labelledby="pills-pay-in-history-tab">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="overview">
-                    <h6 class="title">Thống kê</h6>
-                    <div class="overview-report">
-                      <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4 mb-3">
-                          <div class="label-info bg-dark-ui border-ui">
-                            <div class="flex">
-                              <div class="icon">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                  <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
-                                  <path fill-rule="evenodd" d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                                </svg>
-                              </div>
-                              <div class="number">
-                                <h4>50.000<sup>đ</sup></h4>
-                              </div>
-                            </div>
-                            <div class="description">
-                              <span>Nạp trong ngày</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-3">
-                          <div class="label-info bg-dark-ui border-ui">
-                            <div class="flex">
-                              <div class="icon">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3-week" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                  <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
-                                  <path fill-rule="evenodd" d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm2-3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                                </svg>
-                              </div>
-                              <div class="number">
-                                <h4>200.000<sup>đ</sup></h4>
-                              </div>
-                            </div>
-                            <div class="description">
-                              <span>Nạp trong tuần</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-3">
-                          <div class="label-info bg-dark-ui border-ui">
-                            <div class="flex">
-                              <div class="icon">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                  <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
-                                  <path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                                </svg>
-                              </div>
-                              <div class="number">
-                                <h4>4.000.000<sup>đ</sup></h4>
-                              </div>
-                            </div>
-                            <div class="description">
-                              <span>Nạp trong tháng</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <div class="transaction-history">
-                    <h6 class="title">Lịch sử nạp tiền</h6>
+                    <h6 class="title">Lịch sử giao dịch</h6>
                     <div class="transaction-history-info content bg-dark-ui border-ui mb-4">
                       <div class="row data-tables">
                         <div class="col-lg-12">
@@ -461,69 +495,8 @@
             <div class="tab-pane fade" id="pills-withdraw" role="tabpanel" aria-labelledby="pills-withdraw-tab">
               <div class="row">
                 <div class="col-md-12">
-                  <div class="overview">
-                    <h6 class="title">Thống kê</h6>
-                    <div class="overview-report">
-                      <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4 mb-3">
-                          <div class="label-info bg-dark-ui border-ui">
-                            <div class="flex">
-                              <div class="icon">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                  <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
-                                  <path fill-rule="evenodd" d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                                </svg>
-                              </div>
-                              <div class="number">
-                                <h4>50.000<sup>đ</sup></h4>
-                              </div>
-                            </div>
-                            <div class="description">
-                              <span>Rút trong ngày</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-3">
-                          <div class="label-info bg-dark-ui border-ui">
-                            <div class="flex">
-                              <div class="icon">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3-week" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                  <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
-                                  <path fill-rule="evenodd" d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm2-3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-5 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                                </svg>
-                              </div>
-                              <div class="number">
-                                <h4>200.000<sup>đ</sup></h4>
-                              </div>
-                            </div>
-                            <div class="description">
-                              <span>Rút trong tuần</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 mb-3">
-                          <div class="label-info bg-dark-ui border-ui">
-                            <div class="flex">
-                              <div class="icon">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                  <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
-                                  <path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                                </svg>
-                              </div>
-                              <div class="number">
-                                <h4>4.000.000<sup>đ</sup></h4>
-                              </div>
-                            </div>
-                            <div class="description">
-                              <span>Rút trong tháng</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <div class="transaction-history">
-                    <h6 class="title">Lịch sử rút tiền</h6>
+                    <h6 class="title">Lịch sử giao dịch</h6>
                     <div class="transaction-history-info content bg-dark-ui border-ui mb-4">
                       <div class="row data-tables">
                         <div class="col-lg-12">

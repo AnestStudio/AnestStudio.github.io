@@ -95,31 +95,127 @@
                   <i class="fas fa-bell m-0 fa-fw"></i>
                 </a>
                 <span class="c-badge">8</span>
-                <div class="dropdown-menu" aria-labelledby="language">
-                  <a class="dropdown-item" href="#">Thông báo</a>
-                </div>
+                <ul class="dropdown-menu notification-dropdown" aria-labelledby="language">
+                  <li class="dropdown-item notification-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-0">John Smith</h6>
+                          <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                          <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item notification-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-0">John Smith</h6>
+                          <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                          <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item notification-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-0">John Smith</h6>
+                          <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                          <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item view-all-link">
+                    <a href="" class="text-right">
+                      Xem tất cả
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="dropdown btn-icon">
                 <a class="icon dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fab fa-facebook-messenger m-0 fa-fw"></i>
                 </a>
                 <span class="c-badge">2</span>
-                <div class="dropdown-menu" aria-labelledby="language">
-                  <a class="dropdown-item" href="#">Cuộc hội thoại</a>
-                </div>
+                <ul class="dropdown-menu message-dropdown" aria-labelledby="language">
+                  <li class="dropdown-item message-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-1">John Smith</h6>
+                          <p class="text text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                          <p class="small text-muted mb-0">2 giờ</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item message-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-1">John Smith</h6>
+                          <p class="text text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                          <p class="small text-muted mb-0">5 giờ</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item message-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-1">John Smith</h6>
+                          <p class="text text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                          <p class="small text-muted mb-0">7 giờ</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item view-all-link">
+                    <a href="" class="text-right">
+                      Xem tất cả
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="dropdown btn-icon">
                 <a class="icon dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fas fa-caret-down m-0 fa-fw"></i>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="language">
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-pencil-alt text-success fa-fw"></i>Tạo bài đăng
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-user-check text-violet fa-fw"></i>Thuê Mentor
-                  </a>
-                </div>
+                <ul class="dropdown-menu action-dropdown">
+                  <li class="dropdown-item">
+                    <a href="#">
+                      <i class="fas fa-pencil-alt text-success fa-fw"></i>Tạo bài đăng
+                    </a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">
+                      <i class="fas fa-user-check text-violet fa-fw"></i>Thuê Mentor
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -341,110 +437,94 @@
                       <!-- Pill bank card content -->
                       <div class="tab-content" id="pills-tabContent-2">
                         <div class="tab-pane fade show active" id="pills-bank-card-1" role="tabpanel" aria-labelledby="pills-bank-card-1-tab">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="bank-card">
-                                <h6 class="title">Thông tin rút tiền</h6>
-                                <div class="bank-card-info bg-dark-ui border-ui mb-3">
-                                  <div class="row">
-                                    <div class="col-md-12">
-                                      <form>
-                                        <div class="form-row">
-                                          <div class="form-group col-md-6">
-                                            <fieldset class="bg-dark-ui">
-                                              <legend>Họ & tên chủ thẻ</legend>
-                                              <input type="text" class="form-control" value="NGUYEN THI HUYEN" readonly>
-                                            </fieldset>
-                                          </div>
-                                          <div class="form-group col-md-6">
-                                            <fieldset class="bg-dark-ui">
-                                              <legend>Ngân hàng</legend>
-                                              <input type="text" class="form-control" value="TP Bank" readonly>
-                                            </fieldset>
-                                          </div>
-                                          <div class="form-group col-md-6">
-                                            <fieldset class="bg-dark-ui">
-                                              <legend>Số tài khoản</legend>
-                                              <input type="text" class="form-control" value="00091710001" readonly>
-                                            </fieldset>
-                                          </div>
-                                          <div class="form-group col-md-6">
-                                            <fieldset class="bg-dark-ui">
-                                              <legend>Chi nhánh</legend>
-                                              <input type="text" class="form-control" value="Phạm Hùng" readonly>
-                                            </fieldset>
-                                          </div>
-                                          <div class="form-group col-md-12">
-                                            <fieldset class="bg-dark-ui">
-                                              <legend>Số tiền</legend>
-                                              <input type="number" class="form-control" placeholder="Nhập số tiền muốn rút">
-                                            </fieldset>
-                                          </div>
-                                          <div class="col-md-12 text-right">
-                                            <button type="submit" class="btn btn-lg btn-gray mb-3">
-                                              <i class="fas fa-reply text-sea-green mr-2"></i>Rút tiền
-                                            </button>
-                                          </div>
-                                        </div>
-                                      </form>
-                                    </div>
+                          <div class="bank-card">
+                            <h6 class="title">Thông tin rút tiền</h6>
+                            <div class="bank-card-info bg-dark-ui border-ui mb-3">
+                              <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <fieldset class="bg-dark-ui">
+                                      <legend>Họ & tên chủ thẻ</legend>
+                                      <input type="text" class="form-control" value="NGUYEN THI HUYEN" readonly>
+                                    </fieldset>
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <fieldset class="bg-dark-ui">
+                                      <legend>Ngân hàng</legend>
+                                      <input type="text" class="form-control" value="TP Bank" readonly>
+                                    </fieldset>
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <fieldset class="bg-dark-ui">
+                                      <legend>Số tài khoản</legend>
+                                      <input type="text" class="form-control" value="00091710001" readonly>
+                                    </fieldset>
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <fieldset class="bg-dark-ui">
+                                      <legend>Chi nhánh</legend>
+                                      <input type="text" class="form-control" value="Phạm Hùng" readonly>
+                                    </fieldset>
+                                  </div>
+                                  <div class="form-group col-md-12">
+                                    <fieldset class="bg-dark-ui">
+                                      <legend>Số tiền</legend>
+                                      <input type="number" class="form-control" placeholder="Nhập số tiền muốn rút">
+                                    </fieldset>
+                                  </div>
+                                  <div class="col-md-12 text-right">
+                                    <button type="submit" class="btn btn-lg btn-gray mb-3">
+                                      <i class="fas fa-reply text-sea-green mr-2"></i>Rút tiền
+                                    </button>
                                   </div>
                                 </div>
-                              </div>
+                              </form>
                             </div>
                           </div>
                         </div>
                         <div class="tab-pane fade" id="pills-bank-card-2" role="tabpanel" aria-labelledby="pills-bank-card-2-tab">
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="bank-card">
-                                <h6 class="title">Thông tin rút tiền</h6>
-                                <div class="bank-card-info bg-dark-ui border-ui mb-3">
-                                  <div class="row">
-                                    <div class="col-md-12">
-                                      <form>
-                                        <div class="form-row">
-                                          <div class="form-group col-md-6">
-                                            <fieldset class="bg-dark-ui">
-                                              <legend>Họ & tên chủ thẻ</legend>
-                                              <input type="text" class="form-control" value="NGUYEN THI HUYEN" readonly>
-                                            </fieldset>
-                                          </div>
-                                          <div class="form-group col-md-6">
-                                            <fieldset class="bg-dark-ui">
-                                              <legend>Ngân hàng</legend>
-                                              <input type="text" class="form-control" value="Vietcombank" readonly>
-                                            </fieldset>
-                                          </div>
-                                          <div class="form-group col-md-6">
-                                            <fieldset class="bg-dark-ui">
-                                              <legend>Số tài khoản</legend>
-                                              <input type="text" class="form-control" value="0451000428234" readonly>
-                                            </fieldset>
-                                          </div>
-                                          <div class="form-group col-md-6">
-                                            <fieldset class="bg-dark-ui">
-                                              <legend>Chi nhánh</legend>
-                                              <input type="text" class="form-control" value="Thành Công" readonly>
-                                            </fieldset>
-                                          </div>
-                                          <div class="form-group col-md-12">
-                                            <fieldset class="bg-dark-ui">
-                                              <legend>Số tiền</legend>
-                                              <input type="number" class="form-control" placeholder="Nhập số tiền muốn rút">
-                                            </fieldset>
-                                          </div>
-                                          <div class="col-md-12 text-right">
-                                            <button type="submit" class="btn btn-lg btn-gray mb-3">
-                                              <i class="fas fa-reply text-sea-green mr-2"></i>Rút tiền
-                                            </button>
-                                          </div>
-                                        </div>
-                                      </form>
-                                    </div>
+                          <div class="bank-card">
+                            <h6 class="title">Thông tin rút tiền</h6>
+                            <div class="bank-card-info bg-dark-ui border-ui mb-3">
+                              <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <fieldset class="bg-dark-ui">
+                                      <legend>Họ & tên chủ thẻ</legend>
+                                      <input type="text" class="form-control" value="NGUYEN THI HUYEN" readonly>
+                                    </fieldset>
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <fieldset class="bg-dark-ui">
+                                      <legend>Ngân hàng</legend>
+                                      <input type="text" class="form-control" value="Vietcombank" readonly>
+                                    </fieldset>
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <fieldset class="bg-dark-ui">
+                                      <legend>Số tài khoản</legend>
+                                      <input type="text" class="form-control" value="0451000428234" readonly>
+                                    </fieldset>
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <fieldset class="bg-dark-ui">
+                                      <legend>Chi nhánh</legend>
+                                      <input type="text" class="form-control" value="Thành Công" readonly>
+                                    </fieldset>
+                                  </div>
+                                  <div class="form-group col-md-12">
+                                    <fieldset class="bg-dark-ui">
+                                      <legend>Số tiền</legend>
+                                      <input type="number" class="form-control" placeholder="Nhập số tiền muốn rút">
+                                    </fieldset>
+                                  </div>
+                                  <div class="col-md-12 text-right">
+                                    <button type="submit" class="btn btn-lg btn-gray mb-3">
+                                      <i class="fas fa-reply text-sea-green mr-2"></i>Rút tiền
+                                    </button>
                                   </div>
                                 </div>
-                              </div>
+                              </form>
                             </div>
                           </div>
                         </div>

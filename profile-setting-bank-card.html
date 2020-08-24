@@ -240,7 +240,7 @@
       <div class="sidebar-menu bg-dark-ui border-ui mb-3">
         <ul>
           <li>
-            <a href="">
+            <a href="profile-setting.html">
               <i class="fas fa-user-edit text-pink mr-2 fa-fw"></i>Thông tin cá nhân
             </a>
           </li>
@@ -268,7 +268,7 @@
       <div class="sidebar-menu bg-dark-ui border-ui mb-3">
         <ul>
           <li>
-            <a href="profile-setting-bank-card.html">
+            <a href="">
               <i class="far fa-credit-card text-violet mr-2 fa-fw"></i>Thẻ ngân hàng
             </a>
           </li>
@@ -299,58 +299,141 @@
       </div>
     </div>
     <div class="right">
-      <div class="row">
-        <div class="col-md-12">
 
-          <div class="about">
-            <h6 class="title">Thông tin cá nhân</h6>
-            <div class="about-info bg-dark-ui border-ui mb-4">
+      <div class="quick-action">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-4">
+            <a class="border-ui" data-toggle="collapse" href="#add-bank-card" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+              <i class="fas fa-plus text-violet mr-2"></i>Thêm thẻ ngân hàng
+            </a>
+          </div>
+        </div>
+        <!--Collapse-->
+        <div class="row input-bank-card-info">
+          <div class="col-12 mt-3">
+            <div class="collapse multi-collapse mb-3" id="add-bank-card">
+              <div class="card card-body">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Họ & tên chủ thẻ</legend>
+                        <input type="text" class="form-control">
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Tên ngân hàng</legend>
+                        <input type="text" class="form-control">
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Số tài khoản</legend>
+                        <input type="text" class="form-control">
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Chi nhánh</legend>
+                        <input type="text" class="form-control">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12 text-right">
+                      <button type="submit" class="btn btn-lg btn-gray mb-3">
+                        <i class="fas fa-check text-sea-green mr-2"></i> Xác nhận
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu">
+        <h6 class="title">Danh sách thẻ</h6>
+
+        <!-- Pill select bank card -->
+        <ul class="row nav nav-pills" id="pills-tab-2" role="tablist">
+          <li class="col-12 col-md-6 col-lg-4 mb-3 nav-item text-center" role="presentation">
+            <a class="label-info d-block border-ui active" id="pills-bank-card-1-tab" data-toggle="pill" href="#pills-bank-card-1" role="tab" aria-controls="pills-bank-card-1" aria-selected="true">
+              <div class="flex">
+                <div class="icon">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-credit-card-2-front" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+                    <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
+                    <path fill-rule="evenodd" d="M2 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                </div>
+                <div class="number">
+                  <h4>**** 1699</h4>
+                </div>
+              </div>
+              <div class="description text-left">
+                <span>TP Bank</span>
+              </div>
+            </a>
+          </li>
+          <li class="col-12 col-md-6 col-lg-4 mb-3 nav-item text-center" role="presentation">
+            <a class="label-info d-block border-ui" id="pills-bank-card-2-tab" data-toggle="pill" href="#pills-bank-card-2" role="tab" aria-controls="pills-bank-card-2" aria-selected="false">
+              <div class="flex">
+                <div class="icon">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-credit-card-2-front" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14 3H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+                    <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z"/>
+                    <path fill-rule="evenodd" d="M2 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+                </div>
+                <div class="number">
+                  <h4>**** 1255</h4>
+                </div>
+              </div>
+              <div class="description text-left">
+                <span>Vietcombank</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Pill bank card content -->
+      <div class="tab-content mb-4" id="pills-tabContent-2">
+        <div class="tab-pane fade show active" id="pills-bank-card-1" role="tabpanel" aria-labelledby="pills-bank-card-1-tab">
+          <div class="bank-card">
+            <h6 class="title">Thông tin thẻ</h6>
+            <div class="bank-card-info bg-dark-ui border-ui mb-3">
               <form>
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <fieldset class="bg-dark-ui">
-                      <legend>Họ & tên</legend>
-                      <input type="text" class="form-control" value="Nguyễn Thị Huyền">
+                      <legend>Họ & tên chủ thẻ</legend>
+                      <input type="text" class="form-control" value="NGUYEN THI HUYEN">
                     </fieldset>
                   </div>
                   <div class="form-group col-md-6">
                     <fieldset class="bg-dark-ui">
-                      <legend>Ngày sinh</legend>
-                      <input type="date" class="form-control" value="-- /-- / ----">
+                      <legend>Ngân hàng</legend>
+                      <input type="text" class="form-control" value="TP Bank">
                     </fieldset>
                   </div>
                   <div class="form-group col-md-6">
                     <fieldset class="bg-dark-ui">
-                      <legend>Giới tính</legend>
-                      <div class="custom-control custom-radio custom-control-inline ml-2">
-                        <input type="radio" id="male" name="gender" class="custom-control-input">
-                        <label class="custom-control-label" for="male">Nam</label>
-                      </div>
-                      <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="female" name="gender" class="custom-control-input">
-                        <label class="custom-control-label" for="female">Nữ </label>
-                      </div>
+                      <legend>Số tài khoản</legend>
+                      <input type="text" class="form-control" value="00091710001">
                     </fieldset>
                   </div>
                   <div class="form-group col-md-6">
                     <fieldset class="bg-dark-ui">
-                      <legend>Ngày tham gia</legend>
-                      <input type="date" class="form-control" value="2020-08-28">
-                    </fieldset>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <fieldset class="bg-dark-ui">
-                      <legend>Số điện thoại</legend>
-                      <input type="text" class="form-control" value="0983 756 123">
-                    </fieldset>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <fieldset class="bg-dark-ui">
-                      <legend>Email</legend>
-                      <input type="email" class="form-control" value="huyennt123@gmail.com">
+                      <legend>Chi nhánh</legend>
+                      <input type="text" class="form-control" value="Phạm Hùng">
                     </fieldset>
                   </div>
                   <div class="col-md-12 text-right">
+                    <button type="submit" class="btn btn-lg btn-gray mb-3 mr-2">
+                      <i class="fas fa-ban text-danger mr-2"></i>Xoá thẻ
+                    </button>
                     <button type="submit" class="btn btn-lg btn-gray mb-3">
                       <i class="fas fa-check text-sea-green mr-2"></i>Cập nhật thông tin
                     </button>
@@ -359,33 +442,43 @@
               </form>
             </div>
           </div>
-
-          <div class="change-password">
-            <h6 class="title">Đổi mật khẩu</h6>
-            <div class="change-password-info bg-dark-ui border-ui mb-4">
+        </div>
+        <div class="tab-pane fade" id="pills-bank-card-2" role="tabpanel" aria-labelledby="pills-bank-card-2-tab">
+          <div class="bank-card">
+            <h6 class="title">Thông tin thẻ</h6>
+            <div class="bank-card-info bg-dark-ui border-ui mb-3">
               <form>
                 <div class="form-row">
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-6">
                     <fieldset class="bg-dark-ui">
-                      <legend>Mật khẩu cũ</legend>
-                      <input type="password" class="form-control" />
+                      <legend>Họ & tên chủ thẻ</legend>
+                      <input type="text" class="form-control" value="NGUYEN THI HUYEN">
                     </fieldset>
                   </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-6">
                     <fieldset class="bg-dark-ui">
-                      <legend>Mật khẩu mới</legend>
-                      <input type="password" class="form-control" />
+                      <legend>Ngân hàng</legend>
+                      <input type="text" class="form-control" value="Vietcombank">
                     </fieldset>
                   </div>
-                  <div class="form-group col-md-4">
+                  <div class="form-group col-md-6">
                     <fieldset class="bg-dark-ui">
-                      <legend>Xác nhận mật khẩu mới</legend>
-                      <input type="password" class="form-control" />
+                      <legend>Số tài khoản</legend>
+                      <input type="text" class="form-control" value="0451000428234">
+                    </fieldset>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <fieldset class="bg-dark-ui">
+                      <legend>Chi nhánh</legend>
+                      <input type="text" class="form-control" value="Thành Công">
                     </fieldset>
                   </div>
                   <div class="col-md-12 text-right">
+                    <button type="submit" class="btn btn-lg btn-gray mb-3 mr-2">
+                      <i class="fas fa-ban text-danger mr-2"></i>Xoá thẻ
+                    </button>
                     <button type="submit" class="btn btn-lg btn-gray mb-3">
-                      <i class="fas fa-check text-sea-green mr-2"></i>Xác nhận
+                      <i class="fas fa-check text-sea-green mr-2"></i>Cập nhật thông tin
                     </button>
                   </div>
                 </div>
@@ -394,6 +487,7 @@
           </div>
         </div>
       </div>
+
     </div>
 
   </div>
