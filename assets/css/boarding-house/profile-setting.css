@@ -6,6 +6,11 @@
   padding: 1rem 1rem .25rem 1rem;
 }
 
+.fix-height {
+  padding-top: 4px;
+  padding-bottom: 3px;
+}
+
 
 /**/
 

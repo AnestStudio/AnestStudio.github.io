@@ -263,6 +263,10 @@
 }
 
 @media (max-width: 575.98px) {
+  .nav-bar .px-fix {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
   .nav-bar .btn-icon .dropdown-menu .dropdown-item {
     padding: .45rem .65rem;
   }
