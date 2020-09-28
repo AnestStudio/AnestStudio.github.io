@@ -99,31 +99,127 @@
                   <i class="fas fa-bell m-0 fa-fw"></i>
                 </a>
                 <span class="c-badge">8</span>
-                <div class="dropdown-menu" aria-labelledby="language">
-                  <a class="dropdown-item" href="#">Thông báo</a>
-                </div>
+                <ul class="dropdown-menu notification-dropdown" aria-labelledby="language">
+                  <li class="dropdown-item notification-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-0">John Smith</h6>
+                          <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                          <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item notification-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-0">John Smith</h6>
+                          <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                          <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item notification-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-0">John Smith</h6>
+                          <p class="small text-muted mb-1">Yesterday at 4:32 PM</p>
+                          <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item btn-link">
+                    <a href="" class="text-right">
+                      Xem tất cả
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="dropdown btn-icon">
                 <a class="icon dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fab fa-facebook-messenger m-0 fa-fw"></i>
                 </a>
                 <span class="c-badge">2</span>
-                <div class="dropdown-menu" aria-labelledby="language">
-                  <a class="dropdown-item" href="#">Cuộc hội thoại</a>
-                </div>
+                <ul class="dropdown-menu message-dropdown" aria-labelledby="language">
+                  <li class="dropdown-item message-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-1">John Smith</h6>
+                          <p class="text text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                          <p class="small text-muted mb-0">2 giờ</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item message-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-1">John Smith</h6>
+                          <p class="text text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                          <p class="small text-muted mb-0">5 giờ</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item message-preview">
+                    <a href="">
+                      <div class="media">
+                        <span class="mr-3">
+                          <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                        </span>
+                        <div class="media-body">
+                          <h6 class="media-heading mb-1">John Smith</h6>
+                          <p class="text text-muted mb-0">Lorem ipsum dolor sit amet...</p>
+                          <p class="small text-muted mb-0">7 giờ</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="dropdown-item btn-link">
+                    <a href="" class="text-right">
+                      Xem tất cả
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="dropdown btn-icon">
                 <a class="icon dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="fas fa-caret-down m-0 fa-fw"></i>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="language">
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-pencil-alt text-success fa-fw"></i>Tạo bài đăng
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <i class="fas fa-user-check text-violet fa-fw"></i>Thuê Mentor
-                  </a>
-                </div>
+                <ul class="dropdown-menu action-dropdown">
+                  <li class="dropdown-item">
+                    <a href="#">
+                      <i class="fas fa-pencil-alt text-success fa-fw"></i>Tạo bài đăng
+                    </a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">
+                      <i class="fas fa-user-check text-violet fa-fw"></i>Thuê Mentor
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -182,12 +278,12 @@
 
     <section id="online">
       <div class="title">
-        <h5><i class="fas fa-wifi text-success fa-fw mr-2"></i>DANH SÁCH MENTOR TRỰC TUYẾN</h5>
+        <h5><i class="fas fa-wifi text-success fa-fw mr-2"></i>MENTOR TRỰC TUYẾN</h5>
         <div>
-          <a class="view-all-link" href=""><i class="fas fa-eye mr-2 fa-fw"></i>Xem tất cả</a>
+          <a class="btn-link" href=""><i class="fas fa-eye mr-2 fa-fw"></i>Xem tất cả</a>
         </div>
         <div class="div-hidden">
-          <a class="view-all-link-sm" href=""><i class="fas fa-eye fa-fw"></i></a>
+          <a class="btn-link-sm" href=""><i class="fas fa-eye fa-fw"></i></a>
         </div>
       </div>
       <div class="container-fluid">
@@ -469,7 +565,18 @@
 
     <section id="request">
       <div class="title">
-        <h5><i class="fas fa-question text-warning fa-fw mr-2"></i>DANH SÁCH YÊU CẦU</h5>
+        <h5><i class="fas fa-question text-warning fa-fw mr-2"></i>YÊU CẦU</h5>
+        <div class="d-flex">
+          <div>
+            <a class="btn-link mr-3" href=""><i class="fas fa-sort-amount-down mr-2 fa-fw"></i>Giá cao</a>
+          </div>
+          <div>
+            <a class="btn-link" href=""><i class="fas fa-eye mr-2 fa-fw"></i>Xem tất cả</a>
+          </div>
+        </div>
+        <div class="div-hidden">
+          <a class="btn-link-sm" href=""><i class="fas fa-eye fa-fw"></i></a>
+        </div>
       </div>
       <div class="container-fluid">
         <div class="requests">
@@ -651,53 +758,127 @@
                 </div>
               </div>
             </div>
+            <div class="card bg-dark-ui border-ui">
+              <div class="card-header">
+                <i class="far fa-clock"></i><span>12:00:00 - 30/11/2020</span>
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <a class="title" href="">Cần tìm người giúp đỡ làm đồ án tốt nghiệp</a>
+                  <div class="tags">
+                    <div class="tag" data-toggle="tooltip" data-placement="top" title="Hello">Java</div>
+                    <div class="tag" data-toggle="tooltip" data-placement="top" title="">JavaScript</div>
+                    <div class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</div>
+                  </div>
+                  <div class="price">
+                    <span>500.000<sup>đ</sup></span>
+                  </div>
+                </div>
+                <div class="user">
+                  <div class="media">
+                    <a href="" class="circle">
+                      <img class="avatar" src="assets/images/system/v.png" alt="avatar">
+                    </a>
+                    <div class="media-body">
+                      <a href="">Nguyễn Thị Thuỳ Dung</a>
+                      <a href="" class="username">@dungtt66</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-dark-ui border-ui">
+              <div class="card-header">
+                <i class="far fa-clock"></i><span>12:00:00 - 30/11/2020</span>
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <a class="title" href="">Cần tìm người giúp đỡ làm workshop</a>
+                  <div class="tags">
+                    <div class="tag" data-toggle="tooltip" data-placement="top" title="Hello">Java</div>
+                    <div class="tag" data-toggle="tooltip" data-placement="top" title="">JavaScript</div>
+                    <div class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</div>
+                  </div>
+                  <div class="price">
+                    <span>200.000<sup>đ</sup></span>
+                  </div>
+                </div>
+                <div class="user">
+                  <div class="media">
+                    <a href="" class="circle">
+                      <img class="avatar" src="assets/images/system/v.png" alt="avatar">
+                    </a>
+                    <div class="media-body">
+                      <a href="">Đinh Tuấn Anh</a>
+                      <a href="" class="username">@anhdt0407</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-dark-ui border-ui">
+              <div class="card-header">
+                <i class="far fa-clock"></i><span>12:00:00 - 30/11/2020</span>
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <a class="title" href="">Cần tìm người giúp đỡ làm đồ án tốt nghiệp</a>
+                  <div class="tags">
+                    <div class="tag" data-toggle="tooltip" data-placement="top" title="Hello">Java</div>
+                    <div class="tag" data-toggle="tooltip" data-placement="top" title="">JavaScript</div>
+                    <div class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</div>
+                  </div>
+                  <div class="price">
+                    <span>500.000<sup>đ</sup></span>
+                  </div>
+                </div>
+                <div class="user">
+                  <div class="media">
+                    <a href="" class="circle">
+                      <img class="avatar" src="assets/images/system/v.png" alt="avatar">
+                    </a>
+                    <div class="media-body">
+                      <a href="">Nguyễn Thị Thuỳ Dung</a>
+                      <a href="" class="username">@dungtt66</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-dark-ui border-ui">
+              <div class="card-header">
+                <i class="far fa-clock"></i><span>12:00:00 - 30/11/2020</span>
+              </div>
+              <div class="card-body">
+                <div class="card-text">
+                  <a class="title" href="">Cần tìm người giúp đỡ làm workshop</a>
+                  <div class="tags">
+                    <div class="tag" data-toggle="tooltip" data-placement="top" title="Hello">Java</div>
+                    <div class="tag" data-toggle="tooltip" data-placement="top" title="">JavaScript</div>
+                    <div class="tag" data-toggle="tooltip" data-placement="top" title="">TypeScript</div>
+                  </div>
+                  <div class="price">
+                    <span>200.000<sup>đ</sup></span>
+                  </div>
+                </div>
+                <div class="user">
+                  <div class="media">
+                    <a href="" class="circle">
+                      <img class="avatar" src="assets/images/system/v.png" alt="avatar">
+                    </a>
+                    <div class="media-body">
+                      <a href="">Đinh Tuấn Anh</a>
+                      <a href="" class="username">@anhdt0407</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
-
-
-  <!-- Service -->
-  <!-- <div class="title">
-    <h5>
-      <a class="color-gradient" href="">
-        <i class="fab fa-google-play fa-fw mr-2"></i>Dịch vụ - Tiện ích
-      </a>
-    </h5>
-  </div>
-  <div class="container-fluid row-list">
-    <div class="utilities" id="style-2">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><i class="fas fa-code fa-fw icon-lg"></i>Học thêm lập trình</h5>
-          <p class="card-text">Coming soon...</p>
-          <a class="link" href="#">Chi tiết</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><i class="fas fa-wifi fa-fw icon-lg"></i>Lặp đặt mạng</h5>
-          <p class="card-text">Coming soon...</p>
-          <a class="link" href="#">Chi tiết</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><i class="fas fa-wifi fa-fw icon-lg"></i>Lặp đặt mạng</h5>
-          <p class="card-text">Coming soon...</p>
-          <a class="link" href="#">Chi tiết</a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><i class="fas fa-wifi fa-fw icon-lg"></i>Lặp đặt mạng</h5>
-          <p class="card-text">Coming soon...</p>
-          <a class="link" href="#">Chi tiết</a>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
   <div id="footer" class="bg-dark-ui border-ui">
     <div class="container-fluid">

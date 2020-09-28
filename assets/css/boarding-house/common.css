@@ -165,7 +165,7 @@ small {
 }
 
 #style-online::-webkit-scrollbar {
-  height: .4rem;
+  height: .5rem;
   background-color: #242526;
   border-radius: .5rem;
 }
