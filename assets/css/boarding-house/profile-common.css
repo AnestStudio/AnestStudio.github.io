@@ -279,6 +279,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: url(../../images/system/calendar.png) center/80% no-repeat;
 }
 
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: url(../../images/system/calendar.png) center/80% no-repeat;
+}
+
 
 /*----- Table -----*/
 

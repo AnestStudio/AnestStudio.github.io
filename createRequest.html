@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/boarding-house/nav.css">
   <link rel="stylesheet" href="assets/css/boarding-house/grip.css">
   <link rel="stylesheet" href="assets/css/boarding-house/profile-common.css">
-  <link rel="stylesheet" href="assets/css/boarding-house/profile.css">
+  <link rel="stylesheet" href="assets/css/boarding-house/create-request.css">
 
   <title>Create Request</title>
 </head>
@@ -294,7 +294,63 @@
           </div>
 
           <div>
-            <h2>Create Request</h2>
+            <div class="create-request">
+              <h6 class="title">Tạo yêu cầu</h6>
+              <div class="create-request-form bg-dark-ui border-ui mb-4">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Tiêu đề</legend>
+                        <input type="text" class="form-control" />
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Ngày hết hạn</legend>
+                        <input type="date" class="form-control" />
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Giờ hết hạn</legend>
+                        <input type="time" class="form-control" />
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Số tiền trả</legend>
+                        <input type="text" class="form-control" />
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-md-12">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Nội dung yêu cầu</legend>
+                        <textarea class="form-control" rows="5"></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="form-group col-md-12">
+                      <fieldset class="bg-dark-ui">
+                        <legend>Lựa chọn 3 thẻ liên quan về yêu cầu</legend>
+                        <button class="tag">JAVA</button>
+                        <span class="tag">JAVASCRIPT</span>
+                        <span class="tag">TYPESCRIPT</span>
+                        <span class="tag">POSTGRESQL</span>
+                        <span class="tag">PYTHON</span>
+                        <span class="tag">C/C++</span>
+                        <span class="tag">GO</span>
+                        <span class="tag">HTML/CSS</span>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12 text-right">
+                      <button type="submit" class="btn btn-lg btn-gray mb-3">
+                        <i class="fas fa-check text-sea-green mr-2"></i>Xác nhận
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>

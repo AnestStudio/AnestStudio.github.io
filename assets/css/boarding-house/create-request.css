@@ -1,0 +1,37 @@
+.right .create-request .create-request-form {
+  padding: 1rem 1rem .25rem 1rem;
+}
+
+.right .create-request .create-request-form textarea.form-control {
+  height: auto !important;
+}
+
+button.tag {
+  display: inline-block;
+  margin: .5rem .15rem;
+  padding: .5rem 1rem;
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  color: #b0b3b8;
+  border: 2px solid #464646;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .75rem;
+  transition: .3s;
+  background-color: transparent;
+}
+
+span.tag {
+  display: inline-block;
+  margin: .5rem .15rem;
+  padding: .5rem 1rem;
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  color: #b0b3b8;
+  border: 2px solid #464646;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .75rem;
+  transition: .3s;
+  background-color: transparent;
+}
