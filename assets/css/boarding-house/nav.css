@@ -242,6 +242,41 @@
   font-size: .925rem;
 }
 
+.nav-bar .nav-btn .label-amount {
+  height: 2.5rem;
+  background-color: #3a3b3c;
+  border-radius: 30px;
+  margin-left: 0.5rem;
+  margin-right: 0.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: 0.3s;
+  position: relative;
+  padding-right: 0.85rem;
+  padding-left: 0.85rem;
+}
+
+.nav-bar .nav-btn .dropdown-toggle::after {
+  display: none;
+}
+
+.nav-bar .nav-btn .label-amount > a {
+  font-weight: 500;
+  font-size: 1rem;
+  pointer-events: auto;
+  position: relative;
+}
+
+.nav-bar .nav-btn .label-amount a:hover {
+  text-decoration: none;
+}
+
+.nav-bar .nav-btn .btn-icon:hover,
+.nav-bar .nav-btn .label-amount:hover {
+  background-color: #4e4f50;
+}
 
 /* ----- Responsive for Nav bar ----- */
 

@@ -1,6 +1,6 @@
 .left {
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   width: 17rem;
 }
 

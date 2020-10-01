@@ -57,6 +57,14 @@ body {
   color: #f18072 !important;
 }
 
+.text-orange {
+  color: #ff7441 !important;
+}
+
+.text-yellow {
+  color: #ffd557 !important;
+}
+
 .nav-link {
   padding: .5rem;
 }
