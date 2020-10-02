@@ -15,12 +15,12 @@
   <link rel="stylesheet" href="assets/css/boarding-house/nav.css">
   <link rel="stylesheet" href="assets/css/boarding-house/grip.css">
   <link rel="stylesheet" href="assets/css/boarding-house/profile-common.css">
-  <link rel="stylesheet" href="assets/css/boarding-house/profile-setting.css">
+  <link rel="stylesheet" href="assets/css/boarding-house/mentor-followed.css">
 
-  <title>Setting</title>
+  <title>Mentor followed</title>
 </head>
 
-<body id="page-top" class="bg-dark" onload="startTime()">
+<body id="page-top" class="bg-dark">
 
   <header class="site-header bg-dark">
     <div class="top-header-bar bg-dark-ui border-ui">
@@ -206,23 +206,16 @@
                 </a>
                 <ul class="dropdown-menu action-dropdown">
                   <li class="dropdown-item">
-                    <a href="create-request.html">
+                    <a href="#">
                       <i class="fas fa-pencil-alt text-success fa-fw"></i>Tạo yêu cầu
                     </a>
                   </li>
                   <li class="dropdown-item">
-                    <a href="hire-mentor.html">
+                    <a href="#">
                       <i class="fas fa-user-check text-violet fa-fw"></i>Thuê Mentor
                     </a>
                   </li>
                 </ul>
-              </li>
-              <li class="dropdown label-amount">
-                <a class="icon dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="text-tan d-inline-block">
-                    7.000.000 VND
-                  </span>
-                </a>
               </li>
             </ul>
           </div>
@@ -235,7 +228,7 @@
     <div class="left">
       <div class="profile bg-dark-ui border-ui mb-3">
         <div class="media">
-          <a href="profile.html" class="circle">
+          <a href="" class="circle">
             <img class="avatar" src="assets/images/system/v.png" alt="avatar" width="50">
           </a>
           <div class="media-body">
@@ -256,147 +249,68 @@
       <div class="sidebar-menu bg-dark-ui border-ui mb-3">
         <ul>
           <li>
-            <a href="edit-profile-cv.html">
-              <i class="fas fa-user-edit text-info mr-2 fa-fw"></i>Chỉnh sửa trang hồ sơ
+            <a href="#">
+              <i class="fas fa-bars text-orange mr-2 fa-fw"></i>Danh sách theo dõi
             </a>
           </li>
           <li>
-            <a href="profile-cv.html">
-              <i class="fas fa-eye text-yellow mr-2 fa-fw"></i>Cài đặt hiển thị trang hồ sơ
-            </a>
-          </li>
-          <li>
-            <a href="profile-cv.html">
-              <i class="fas fa-ban text-danger mr-2 fa-fw"></i>Huỷ đăng ký Mentor
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar-menu bg-dark-ui border-ui mb-3">
-        <ul>
-          <li>
-            <a href="profile-setting-bank-card.html">
-              <i class="far fa-credit-card text-violet mr-2 fa-fw"></i>Thẻ ngân hàng
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <i class="fas fa-wallet text-sea-green mr-2 fa-fw"></i>Ví điện tử
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar-menu bg-dark-ui border-ui mb-3">
-        <ul>
-          <li>
-            <a href="profile-manager.html">
-              <i class="fas fa-chart-line text-primary mr-2 fa-fw"></i>Quản lý tài khoản
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar-menu bg-dark-ui border-ui mb-3">
-        <ul>
-          <li>
-            <a href="">
-              <i class="fas fa-sign-out-alt text-tomato mr-2 fa-fw"></i>Đăng xuất
+            <a href="#">
+              <i class="far fa-trash-alt text-danger mr-2 fa-fw"></i>Xoá tất cả
             </a>
           </li>
         </ul>
       </div>
     </div>
+
     <div class="right">
       <div class="row">
         <div class="col-md-12">
-
-          <div class="about">
-            <h6 class="title">Thông tin cá nhân</h6>
-            <div class="about-info bg-dark-ui border-ui mb-4">
-              <form>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <fieldset class="bg-dark-ui">
-                      <legend>Họ & tên</legend>
-                      <input type="text" class="form-control" value="Nguyễn Thị Huyền">
-                    </fieldset>
+          <div class="overview">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-6 mb-3">
+                <div class="label-info bg-dark-ui border-ui">
+                  <div class="flex">
+                    <div class="icon">
+                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-wallet2 text-sea-green" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 4l10-3A1.5 1.5 0 0 1 14 2.5v2h-1v-2a.5.5 0 0 0-.5-.5L5.833 4H2.5z"/>
+                        <path fill-rule="evenodd" d="M1 5.5A1.5 1.5 0 0 1 2.5 4h11A1.5 1.5 0 0 1 15 5.5v8a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 13.5v-8zM2.5 5a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-11z"/>
+                      </svg>
+                    </div>
+                    <div class="number">
+                      <h4>7.000.000<sup>đ</sup></h4>
+                    </div>
                   </div>
-                  <div class="form-group col-md-6">
-                    <fieldset class="bg-dark-ui">
-                      <legend>Ngày sinh</legend>
-                      <input type="date" class="form-control" value="-- /-- / ----">
-                    </fieldset>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <fieldset class="bg-dark-ui">
-                      <legend>Giới tính</legend>
-                      <div class="custom-control custom-radio custom-control-inline fix-height ml-2">
-                        <input type="radio" id="male" name="gender" class="custom-control-input">
-                        <label class="custom-control-label" for="male">Nam</label>
-                      </div>
-                      <div class="custom-control custom-radio custom-control-inline fix-height">
-                        <input type="radio" id="female" name="gender" class="custom-control-input">
-                        <label class="custom-control-label" for="female">Nữ </label>
-                      </div>
-                    </fieldset>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <fieldset class="bg-dark-ui">
-                      <legend>Ngày tham gia</legend>
-                      <input type="date" class="form-control" value="2020-08-28">
-                    </fieldset>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <fieldset class="bg-dark-ui">
-                      <legend>Số điện thoại</legend>
-                      <input type="text" class="form-control" value="0983 756 123">
-                    </fieldset>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <fieldset class="bg-dark-ui">
-                      <legend>Email</legend>
-                      <input type="email" class="form-control" value="huyennt123@gmail.com">
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12 text-right">
-                    <button type="submit" class="btn btn-lg btn-gray mb-3">
-                      <i class="fas fa-check text-sea-green mr-2"></i>Cập nhật thông tin
-                    </button>
+                  <div class="description">
+                    <span>Ví nạp / Tổng tiền còn lại</span>
                   </div>
                 </div>
-              </form>
+              </div>
+              <div class="col-12 col-md-6 col-lg-6 mb-3">
+                <div class="label-info bg-dark-ui border-ui">
+                  <div class="flex">
+                    <div class="icon">
+                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle text-violet" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      </svg>
+                    </div>
+                    <div class="number">
+                      <h4>777.000.000<sup>đ</sup></h4>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <span>Tổng tiền đã nạp</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="change-password">
-            <h6 class="title">Đổi mật khẩu</h6>
-            <div class="change-password-info bg-dark-ui border-ui mb-4">
-              <form>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <fieldset class="bg-dark-ui">
-                      <legend>Mật khẩu cũ</legend>
-                      <input type="password" class="form-control" />
-                    </fieldset>
-                  </div>
-                  <div class="form-group col-md-4">
-                    <fieldset class="bg-dark-ui">
-                      <legend>Mật khẩu mới</legend>
-                      <input type="password" class="form-control" />
-                    </fieldset>
-                  </div>
-                  <div class="form-group col-md-4">
-                    <fieldset class="bg-dark-ui">
-                      <legend>Xác nhận mật khẩu mới</legend>
-                      <input type="password" class="form-control" />
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12 text-right">
-                    <button type="submit" class="btn btn-lg btn-gray mb-3">
-                      <i class="fas fa-check text-sea-green mr-2"></i>Xác nhận
-                    </button>
-                  </div>
-                </div>
-              </form>
+          <div>
+            <h6 class="title">Danh sách Mentor đã theo dõi</h6>
+            <div class="bg-dark-ui border-ui mentor-followed-content mb-3">
+              Mentor followed
             </div>
           </div>
         </div>
@@ -405,6 +319,36 @@
 
   </div>
 
+  <!-- Modal confirm -->
+  <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <div class="mb-4">
+              <i class="far fa-check-circle text-sea-green fa-5x"></i>
+            </div>
+            <h4>Xác nhận chấp nhận yêu cầu này?</h4>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="text-center w-100">
+            <button type="button" class="btn btn-lg btn-gray mr-2" data-dismiss="modal">
+              <i class="fas fa-times text-danger mr-2"></i>Huỷ bỏ
+            </button>
+            <button type="button" class="btn btn-lg btn-gray">
+              <i class="fas fa-check text-sea-green mr-2"></i>Xác nhận
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap core JavaScript-->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

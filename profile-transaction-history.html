@@ -217,14 +217,7 @@
                 </ul>
               </li>
               <li class="dropdown label-amount">
-                <a
-                  class="icon dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
+                <a class="icon dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="text-tan d-inline-block">
                     7.000.000 VND
                   </span>
@@ -253,8 +246,8 @@
       <div class="sidebar-menu bg-dark-ui border-ui mb-3">
         <ul>
           <li>
-            <a href="">
-              <i class="fas fa-user-plus text-success mr-2 fa-fw"></i>Đăng ký đối tác
+            <a href="register-mentor.html">
+              <i class="fas fa-user-plus text-success mr-2 fa-fw"></i>Đăng ký Mentor
             </a>
           </li>
         </ul>
@@ -267,8 +260,8 @@
             </a>
           </li>
           <li>
-            <a href="">
-              <i class="fas fa-user-edit text-info mr-2 fa-fw"></i>Chỉnh sửa trang hồ sơ
+            <a href="bookmarked-request.html">
+              <i class="fas fa-bookmark text-tan mr-2 fa-fw"></i>Yêu cầu đã lưu
             </a>
           </li>
         </ul>
@@ -276,13 +269,18 @@
       <div class="sidebar-menu bg-dark-ui border-ui mb-3">
         <ul>
           <li>
-            <a href="">
+            <a href="create-request.html">
               <i class="fas fa-pencil-alt text-yellow mr-2 fa-fw"></i>Tạo yêu cầu
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="hire-mentor.html">
               <i class="fas fa-user-check text-violet mr-2 fa-fw"></i>Thuê Mentor
+            </a>
+          </li>
+          <li>
+            <a href="mentor-followed.html">
+              <i class="fas fa-user-tag text-slate-blue mr-2 fa-fw"></i>Mentor đang theo dõi
             </a>
           </li>
         </ul>
@@ -330,6 +328,7 @@
         </ul>
       </div>
     </div>
+
     <div class="right">
       <div class="row">
         <div class="col-md-12">
@@ -379,12 +378,12 @@
             <ul class="row nav nav-pills" id="pills-tab" role="tablist">
               <li class="col-6 col-md-6 mb-3 nav-item text-center" role="presentation">
                 <a class="nav-link font-weight-500 active" id="pills-pay-in-history-tab" data-toggle="pill" href="#pills-pay-in" role="tab" aria-controls="pills-pay-in" aria-selected="true">
-                  Lịch sử nạp tiền
+                  Lịch sử nạp/rút tiền
                 </a>
               </li>
               <li class="col-6 col-md-6 mb-3 nav-item text-center" role="presentation">
                 <a class="nav-link font-weight-500" id="pills-withdraw-tab" data-toggle="pill" href="#pills-withdraw" role="tab" aria-controls="pills-withdraw" aria-selected="false">
-                  Lịch sử thuê
+                  Lịch sử giao dịch
                 </a>
               </li>
             </ul>
@@ -395,7 +394,7 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="transaction-history">
-                    <h6 class="title">Lịch sử giao dịch</h6>
+                    <h6 class="title">Chi tiết giao dịch</h6>
                     <div class="transaction-history-info content bg-dark-ui border-ui">
                       <div class="row data-tables">
                         <div class="col-lg-12">
@@ -404,7 +403,8 @@
                               <tr>
                                 <th>Mã giao dịch<i class="fas fa-sort fa-size"></i></th>
                                 <th>Thời gian<i class="fas fa-sort fa-size"></i></th>
-                                <th>Phương thức<i class="fas fa-sort fa-size"></i></th>
+                                <th>Hình thức<i class="fas fa-sort fa-size"></i></th>
+                                <th>Nguồn tiền<i class="fas fa-sort fa-size"></i></th>
                                 <th>Số tiền<i class="fas fa-sort fa-size"></i></th>
                                 <th>Trạng thái<i class="fas fa-sort fa-size"></i></th>
                               </tr>
@@ -413,85 +413,97 @@
                               <tr>
                                 <td>#2653489526</td>
                                 <td>25/08/2020</td>
-                                <td>Nạp thẻ</td>
-                                <td>250.000<sup>đ</sup></td>
+                                <td>Nạp tiền</td>
+                                <td>Thẻ ngân hàng</td>
+                                <td class="font-weight-500">+250.000<sup>đ</sup></td>
                                 <td class="text-sea-green">Thành công</td>
                               </tr>
                               <tr>
                                 <td>#2653489527</td>
                                 <td>24/08/2020</td>
-                                <td>Internet Banking</td>
-                                <td>500.000<sup>đ</sup></td>
+                                <td>Rút tiền</td>
+                                <td>Ví điện tử</td>
+                                <td class="font-weight-500">-500.000<sup>đ</sup></td>
                                 <td class="text-tomato">Thất bại</td>
                               </tr>
                               <tr>
                                 <td>#2253489528</td>
                                 <td>25/06/2020</td>
-                                <td>Nạp thẻ</td>
-                                <td>200.000<sup>đ</sup></td>
+                                <td>Nạp tiền</td>
+                                <td>Thẻ ngân hàng</td>
+                                <td class="font-weight-500">+200.000<sup>đ</sup></td>
                                 <td class="text-sea-green">Thành công</td>
                               </tr>
                               <tr>
                                 <td>#2652349666</td>
                                 <td>11/06/2020</td>
-                                <td>Nạp thẻ</td>
-                                <td>200.000<sup>đ</sup></td>
-                                <td class="text-sea-green">Thành công</td>
+                                <td>Nạp tiền</td>
+                                <td>Thẻ ngân hàng</td>
+                                <td class="font-weight-500">+200.000<sup>đ</sup></td>
+                                <td class="text-tan">Đang xử lý</td>
                               </tr>
                               <tr>
                                 <td>#2667889526</td>
                                 <td>08/06/2020</td>
-                                <td>Nạp thẻ</td>
-                                <td>50.000<sup>đ</sup></td>
+                                <td>Nạp tiền</td>
+                                <td>Thẻ ngân hàng</td>
+                                <td class="font-weight-500">+50.000<sup>đ</sup></td>
                                 <td class="text-sea-green">Thành công</td>
                               </tr>
                               <tr>
                                 <td>#2564484567</td>
                                 <td>04/05/2020</td>
+                                <td>Rút tiền</td>
                                 <td>Ví điện tử</td>
-                                <td>200.000<sup>đ</sup></td>
+                                <td class="font-weight-500">-200.000<sup>đ</sup></td>
                                 <td class="text-sea-green">Thành công</td>
                               </tr>
                               <tr>
                                 <td>#2655439526</td>
                                 <td>25/04/2020</td>
-                                <td>Nạp thẻ</td>
-                                <td>200.000<sup>đ</sup></td>
+                                <td>Nạp tiền</td>
+                                <td>Thẻ ngân hàng</td>
+                                <td class="font-weight-500">+200.000<sup>đ</sup></td>
                                 <td class="text-tomato">Thất bại</td>
                               </tr>
                               <tr>
                                 <td>#2653467826</td>
                                 <td>22/04/2020</td>
-                                <td>Nạp thẻ</td>
-                                <td>500.000<sup>đ</sup></td>
+                                <td>Nạp tiền</td>
+                                <td>Thẻ ngân hàng</td>
+                                <td class="font-weight-500">+500.000<sup>đ</sup></td>
                                 <td class="text-sea-green">Thành công</td>
                               </tr>
                               <tr>
                                 <td>#2653486546</td>
                                 <td>08/04/2020</td>
-                                <td>Ví điện tử</td>
-                                <td>200.000<sup>đ</sup></td>
+                                <td>Rút tiền</td>
+                                <td>Thẻ ngân hàng</td>
+                                <td class="font-weight-500">-200.000<sup>đ</sup></td>
                                 <td class="text-sea-green">Thành công</td>
                               </tr>
                               <tr>
                                 <td>#2653433326</td>
                                 <td>15/03/2020</td>
-                                <td>Internet Banking</td>
-                                <td>200.000<sup>đ</sup></td>
+                                <td>Rút tiền</td>
+                                <td>Ví điện tử</td>
+                                <td class="font-weight-500">-200.000<sup>đ</sup></td>
                                 <td class="text-sea-green">Thành công</td>
                               </tr>
                               <tr>
                                 <td>#2345489526</td>
                                 <td>25/01/2020</td>
-                                <td>Nạp thẻ</td>
-                                <td>100.000<sup>đ</sup></td>
+                                <td>Nạp tiền</td>
+                                <td>Thẻ ngân hàng</td>
+                                <td class="font-weight-500">+100.000<sup>đ</sup></td>
                                 <td class="text-tomato">Thất bại</td>
                               </tr>
                               <tr>
                                 <td>#2653344526</td>
                                 <td>22/04/2020</td>
-                                <td>Nạp thẻ</td>
-                                <td>20.000<sup>đ</sup></td>
+                                <td>Nạp tiền</td>
+                                <td>Thẻ ngân hàng</td>
+                                <td class="font-weight-500">+20.000<sup>đ</sup></td>
                                 <td class="text-sea-green">Thành công</td>
                               </tr>
                             </tbody>
@@ -516,7 +528,7 @@
                               <tr>
                                 <th>Mã giao dịch<i class="fas fa-sort fa-size"></i></th>
                                 <th>Thời gian<i class="fas fa-sort fa-size"></i></th>
-                                <th>Rút về<i class="fas fa-sort fa-size"></i></th>
+                                <th>Loại giao dịch<i class="fas fa-sort fa-size"></i></th>
                                 <th>Số tiền<i class="fas fa-sort fa-size"></i></th>
                                 <th>Trạng thái<i class="fas fa-sort fa-size"></i></th>
                               </tr>
@@ -525,22 +537,29 @@
                               <tr>
                                 <td>#2653489527</td>
                                 <td>24/08/2020</td>
-                                <td>TP Bank</td>
-                                <td>500.000<sup>đ</sup></td>
+                                <td>Nhận tiền</td>
+                                <td class="font-weight-500">-100.000<sup>đ</sup></td>
                                 <td class="text-tomato">Thất bại</td>
+                              </tr>
+                              <tr>
+                                <td>#2653489527</td>
+                                <td>24/08/2020</td>
+                                <td>Nhận tiền</td>
+                                <td class="font-weight-500">-400.000<sup>đ</sup></td>
+                                <td class="text-tan">Đang xử lý</td>
                               </tr>
                               <tr>
                                 <td>#2564484567</td>
                                 <td>04/05/2020</td>
-                                <td>Ví điện tử</td>
-                                <td>200.000<sup>đ</sup></td>
+                                <td>Thanh toán</td>
+                                <td class="font-weight-500">+200.000<sup>đ</sup></td>
                                 <td class="text-sea-green">Thành công</td>
                               </tr>
                               <tr>
                                 <td>#2653433326</td>
                                 <td>15/03/2020</td>
-                                <td>Vietcombank</td>
-                                <td>200.000<sup>đ</sup></td>
+                                <td>Thanh toán</td>
+                                <td class="font-weight-500">+200.000<sup>đ</sup></td>
                                 <td class="text-sea-green">Thành công</td>
                               </tr>
                             </tbody>

@@ -15,12 +15,12 @@
   <link rel="stylesheet" href="assets/css/boarding-house/nav.css">
   <link rel="stylesheet" href="assets/css/boarding-house/grip.css">
   <link rel="stylesheet" href="assets/css/boarding-house/profile-common.css">
-  <link rel="stylesheet" href="assets/css/boarding-house/create-request.css">
+  <link rel="stylesheet" href="assets/css/boarding-house/request-detail.css">
 
   <title>Create Request</title>
 </head>
 
-<body id="page-top" class="bg-dark" onload="startTime()">
+<body id="page-top" class="bg-dark">
 
   <header class="site-header bg-dark">
     <div class="top-header-bar bg-dark-ui border-ui">
@@ -240,8 +240,8 @@
       <div class="sidebar-menu bg-dark-ui border-ui mb-3">
         <ul>
           <li>
-            <a href="">
-              <i class="fas fa-user-plus text-success mr-2 fa-fw"></i>Đăng ký đối tác
+            <a href="profile.html">
+              <i class="fas fa-user-edit text-success mr-2 fa-fw"></i>Trang cá nhân
             </a>
           </li>
         </ul>
@@ -250,21 +250,12 @@
         <ul>
           <li>
             <a href="profile-cv.html">
-              <i class="fas fa-pencil-alt text-yellow mr-2 fa-fw"></i>Tạo yêu cầu
+              <i class="fas fa-pencil-alt text-yellow mr-2 fa-fw"></i>Chỉnh sửa yêu cầu
             </a>
           </li>
           <li>
             <a href="">
-              <i class="fas fa-user-check text-violet mr-2 fa-fw"></i>Thuê Mentor
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="sidebar-menu bg-dark-ui border-ui mb-3">
-        <ul>
-          <li>
-            <a href="profile-pay-in.html">
-              <i class="fas fa-plus text-tan mr-2 fa-fw"></i>Nạp tiền
+              <i class="far fa-trash-alt text-danger mr-2 fa-fw"></i>Xoá yêu cầu
             </a>
           </li>
         </ul>
@@ -274,110 +265,7 @@
     <div class="right">
       <div class="row">
         <div class="col-md-12">
-          <div class="overview">
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-6 mb-3">
-                <div class="label-info bg-dark-ui border-ui">
-                  <div class="flex">
-                    <div class="icon">
-                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-wallet2 text-sea-green" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.5 4l10-3A1.5 1.5 0 0 1 14 2.5v2h-1v-2a.5.5 0 0 0-.5-.5L5.833 4H2.5z"/>
-                        <path fill-rule="evenodd" d="M1 5.5A1.5 1.5 0 0 1 2.5 4h11A1.5 1.5 0 0 1 15 5.5v8a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 13.5v-8zM2.5 5a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5v-8a.5.5 0 0 0-.5-.5h-11z"/>
-                      </svg>
-                    </div>
-                    <div class="number">
-                      <h4>7.000.000<sup>đ</sup></h4>
-                    </div>
-                  </div>
-                  <div class="description">
-                    <span>Ví nạp / Tổng tiền còn lại</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-6 mb-3">
-                <div class="label-info bg-dark-ui border-ui">
-                  <div class="flex">
-                    <div class="icon">
-                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-circle text-violet" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
-                        <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
-                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                      </svg>
-                    </div>
-                    <div class="number">
-                      <h4>777.000.000<sup>đ</sup></h4>
-                    </div>
-                  </div>
-                  <div class="description">
-                    <span>Tổng tiền đã nạp</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="create-request">
-              <h6 class="title">Tạo yêu cầu</h6>
-              <div class="create-request-form bg-dark-ui border-ui mb-4">
-                <form>
-                  <div class="form-row">
-                    <div class="form-group col-md-12">
-                      <fieldset class="bg-dark-ui">
-                        <legend>Tiêu đề</legend>
-                        <input type="text" class="form-control" />
-                      </fieldset>
-                    </div>
-                    <div class="form-group col-md-6">
-                      <fieldset class="bg-dark-ui">
-                        <legend>Ngày hết hạn</legend>
-                        <input type="date" class="form-control" />
-                      </fieldset>
-                    </div>
-                    <div class="form-group col-md-6">
-                      <fieldset class="bg-dark-ui">
-                        <legend>Giờ hết hạn</legend>
-                        <input type="time" class="form-control" />
-                      </fieldset>
-                    </div>
-                    <div class="form-group col-md-6">
-                      <fieldset class="bg-dark-ui">
-                        <legend>Số tiền trả</legend>
-                        <input type="text" class="form-control" />
-                      </fieldset>
-                    </div>
-                    <div class="form-group col-md-12">
-                      <fieldset class="bg-dark-ui">
-                        <legend>Nội dung yêu cầu</legend>
-                        <textarea class="form-control" rows="5"></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="form-group col-md-12">
-                      <fieldset class="bg-dark-ui">
-                        <legend class="mb-2">Lựa chọn 3 thẻ liên quan về yêu cầu</legend>
-                        <button class="tag">JAVA</button>
-                        <button class="tag">JAVASCRIPT</button>
-                        <button class="tag">TYPESCRIPT</button>
-                        <button class="tag">POSTGRESQL</button>
-                        <button class="tag">PYTHON</button>
-                        <button class="tag">C/C++</button>
-                        <button class="tag">GO</button>
-                        <button class="tag">HTML/CSS</button>
-                        <button class="tag">C#</button>
-                        <button class="tag">VUEJS</button>
-                        <button class="tag">ANGULAR</button>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12 text-right">
-                      <button type="submit" class="btn btn-lg btn-gray mb-3">
-                        <i class="fas fa-check text-sea-green mr-2"></i>Xác nhận
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+          <h2>Request detail - user view</h2>
         </div>
       </div>
     </div>
