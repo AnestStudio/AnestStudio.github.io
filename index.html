@@ -4,26 +4,65 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="assets/images/cover/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="assets/images/system/favicon.ico">
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="assets/css/all.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/hola-network/common.css">
-  <link rel="stylesheet" href="assets/css/hola-network/nav.css">
-  <link rel="stylesheet" href="assets/css/hola-network/grip.css">
-  <link rel="stylesheet" href="assets/css/hola-network/index.css">
+  <link rel="stylesheet" href="assets/css/anest/common.css">
+  <link rel="stylesheet" href="assets/css/anest/index.css">
 
   <title>Trang chủ</title>
 </head>
 
 <body>
+  <section id="menu">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg justify-content">
+        <div class="site-branding">
+          <a href="index.html">
+            <img src="assets/images/system/logo.png">
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="site-navigation collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Trang chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-tasks"></i>Khoá học
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#"><i class="far fa-edit"></i>Đang mở đơn đăng ký</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-bars"></i>Tất cả khóa học</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)" data-toggle="modal" data-target="#findMentorModal"><i class="fas fa-user-plus"></i>Tìm gia sư</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-while btn-register" href="javascript:void(0)" data-toggle="modal" data-target="#logoutModal">Đăng ký</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
 
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="assets/js/anest/anest.js"></script>
 </body>
 
 </html>
