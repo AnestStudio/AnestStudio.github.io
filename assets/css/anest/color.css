@@ -1,11 +1,19 @@
 :root {
+  /* Dark mode */
   --dark-text-color: #dfdfdf;
   --background-dark: #121212;
   --background-dark-1: #1d1d1d;
   --background-dark-2: #222222;
   --background-dark-3: #333333;
+  /* Light mode */
+  --light-text-color: #050505;
+  --background-light: #fff;
+  /* Default mode */
+  --text-color: var(--dark-text-color);
+  --bg-color: var(--background-dark);
+  /* Color */
   --white: #ffffff;
-  --tan: #c7af8b;
+  --tan: #e4e6eb;
   --yellow: #ffcf5c;
   --warning: #ffc107;
   --orange: #fc643f;
@@ -21,4 +29,15 @@
   --violet-red: #cb1d5b;
   --danger: #dc3545;
   --red: #c72626;
+}
+
+.theme-switch {
+  display: none;
+}
+
+.theme-switch:checked~#page {
+  transition: .5s;
+  --text-color: var(--light-text-color);
+  --bg-color: var(--background-light);
+  --tan: #333;
 }

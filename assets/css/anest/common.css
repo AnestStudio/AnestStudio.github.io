@@ -2,8 +2,13 @@
 body {
   font-size: 17px;
   line-height: 1.75;
-  color: var(--main-text-color);
-  background-color: var(--background-dark);
+}
+
+#page {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  transition: .5s;
 }
 
 h1,
@@ -192,6 +197,10 @@ h6 {
   color: #ddd;
   padding: 5px 30px 5px 16px;
   transition: .3s;
+}
+
+#menu .dropdown-menu .dropdown-item label {
+  cursor: pointer;
 }
 
 #menu .dropdown-menu .dropdown-item:hover {
