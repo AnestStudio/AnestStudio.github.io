@@ -46,10 +46,26 @@
   color: var(--violet-red);
 }
 
+.color-danger {
+  color: var(--danger);
+}
+
+.color-warning {
+  color: var(--warning);
+}
+
+.color-info {
+  color: var(--info);
+}
+
 .color-red {
   color: var(--red);
 }
 
 .color-green {
   color: var(--green);
+}
+
+.color-purple {
+  color: var(--purple);
 }

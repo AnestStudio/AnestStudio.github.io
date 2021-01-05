@@ -17,22 +17,22 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--tan);
+  color: var(--text-highlight-color);
   font-weight: 500;
   word-break: break-word;
   word-wrap: break-word;
 }
 
 .background-dark-1 {
-  background-color: var(--background-dark-1) !important;
+  background-color: var(--background-color-1) !important;
 }
 
 .background-dark-2 {
-  background-color: var(--background-dark-2) !important;
+  background-color: var(--background-color-2) !important;
 }
 
 .background-dark-3 {
-  background-color: var(--background-dark-3) !important;
+  background-color: var(--background-color-3) !important;
 }
 
 .text-main {

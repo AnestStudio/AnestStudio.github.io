@@ -23,9 +23,10 @@
 }
 
 #cover .content {
-  padding: 3.5rem 5rem;
+  padding: 5rem 5rem;
   overflow: hidden;
   border-radius: var(--border-radius);
+  background-color: var(--background-color-1);
 }
 
 #cover .content h1 {
@@ -34,7 +35,7 @@
   letter-spacing: 5px;
   font-style: normal;
   text-transform: uppercase;
-  color: #c7af8b;
+  color: var(--text-highlight-color);
 }
 
 #cover .content p {
@@ -42,8 +43,9 @@
   letter-spacing: 1px;
   font-style: normal;
   text-transform: uppercase;
-  color: #c7af8b;
   font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-highlight-color);
 }
 
 #cover .content .wrap {
@@ -87,6 +89,36 @@
   top: -15px;
 }
 
+
+/* --- sescsion 2 --- */
+
+.btn-category {
+  padding: 40px 15px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+}
+
+.btn-category:hover {
+  background-color: var(--background-color-2) !important;
+}
+
+.box .icon {
+  height: 62px;
+  position: relative;
+}
+
+.box h5 {
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 20px 0 0;
+}
+
+
+/* --- responsive --- */
+
 @media (max-width: 991.98px) {
   .image-1,
   .image-2,
@@ -116,5 +148,9 @@
   }
   #cover .content h1 {
     font-size: 2.5rem;
+  }
+  .g-4,
+  .gy-4 {
+    --bs-gutter-y: 1rem;
   }
 }
