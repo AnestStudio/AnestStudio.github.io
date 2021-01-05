@@ -13,6 +13,7 @@
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #d63384;
+  --pink-orange: #ff647c;
   --violet-red: #cb1d5b;
   --danger: #dc3545;
   --red: #c72626;
@@ -22,12 +23,16 @@
   color: var(--white);
 }
 
+.color-tan {
+  color: var(--tan);
+}
+
 .color-yellow {
   color: var(--yellow);
 }
 
-.color-tan {
-  color: var(--tan);
+.color-warning {
+  color: var(--warning);
 }
 
 .color-orange {
@@ -38,8 +43,32 @@
   color: var(--aquamarine);
 }
 
+.color-green {
+  color: var(--green);
+}
+
+.color-info {
+  color: var(--info);
+}
+
 .color-violet-blue {
   color: var(--violet-blue);
+}
+
+.color-blue {
+  color: var(--blue);
+}
+
+.color-purple {
+  color: var(--purple);
+}
+
+.color-pink {
+  color: var(--pink);
+}
+
+.color-pink-orange {
+  color: var(--pink-orange);
 }
 
 .color-violet-red {
@@ -50,30 +79,6 @@
   color: var(--danger);
 }
 
-.color-warning {
-  color: var(--warning);
-}
-
-.color-info {
-  color: var(--info);
-}
-
 .color-red {
   color: var(--red);
-}
-
-.color-pink {
-  color: var(--pink);
-}
-
-.color-blue {
-  color: var(--blue);
-}
-
-.color-green {
-  color: var(--green);
-}
-
-.color-purple {
-  color: var(--purple);
 }

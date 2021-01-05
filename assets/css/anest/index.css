@@ -23,7 +23,7 @@
 }
 
 #cover .content {
-  padding: 5rem 5rem;
+  padding: 6rem 5rem;
   overflow: hidden;
   border-radius: var(--border-radius);
   background-color: var(--background-color-1);
@@ -39,7 +39,7 @@
 }
 
 #cover .content p {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   letter-spacing: 1px;
   font-style: normal;
   text-transform: uppercase;
@@ -90,14 +90,14 @@
 }
 
 
-/* --- sescsion category --- */
+/* --- section category --- */
 
 #category .container {
   margin-top: 1.5rem;
 }
 
 #category .container .btn-category {
-  padding: 40px 5px;
+  padding: 45px 5px;
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -155,6 +155,9 @@
   }
   #cover .content h1 {
     font-size: 2.85rem;
+  }
+  #cover .content p {
+    margin: 2rem 0 1rem;
   }
   #category .container {
     margin-top: 1rem;

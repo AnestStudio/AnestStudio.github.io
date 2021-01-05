@@ -18,7 +18,7 @@
   <title>Trang chủ</title>
 </head>
 
-<body>
+<body onload="startTime()">
   <input type="checkbox" id="theme-switch" class="theme-switch">
   <div id="page">
     <section id="menu">
@@ -100,7 +100,7 @@
     </section>
 
     <section id="category">
-      <div class="container pb-5">
+      <div class="container">
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-3 g-md-4 g-lg-4">
           <div class="col">
             <a href="#" class="btn-category background-dark-1">
@@ -116,19 +116,9 @@
             <a href="#" class="btn-category background-dark-1">
               <div class="box text-center">
                 <div class="icon">
-                  <i style="font-size: 52px;" class="fas fa-house-user color-pink"></i>
+                  <i style="font-size: 52px;" class="fas fa-house-user color-danger"></i>
                 </div>
                 <h5>Nhà trọ</h5>
-              </div>
-            </a>
-          </div>
-          <div class="col">
-            <a href="#" class="btn-category background-dark-1">
-              <div class="box text-center">
-                <div class="icon">
-                  <i style="font-size: 55px;" class="fas fa-pizza-slice color-danger"></i>
-                </div>
-                <h5>Ăn - Uống</h5>
               </div>
             </a>
           </div>
@@ -156,7 +146,27 @@
             <a href="#" class="btn-category background-dark-1">
               <div class="box text-center">
                 <div class="icon">
-                  <i style="font-size: 58px;" class="fab fa-xbox color-green"></i>
+                  <i style="font-size: 55px;" class="fas fa-pizza-slice color-pink"></i>
+                </div>
+                <h5>Ăn - Uống</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="btn-category background-dark-1">
+              <div class="box text-center">
+                <div class="icon">
+                  <i style="font-size: 55px;" class="fas fa-cart-plus color-pink-orange"></i>
+                </div>
+                <h5>Mua sắm</h5>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="btn-category background-dark-1">
+              <div class="box text-center">
+                <div class="icon">
+                  <i style="font-size: 55px;" class="fab fa-xbox color-green"></i>
                 </div>
                 <h5>Vui chơi - Giải trí</h5>
               </div>
@@ -176,7 +186,7 @@
             <a href="#" class="btn-category background-dark-1">
               <div class="box text-center">
                 <div class="icon">
-                  <i style="font-size: 55px;" class="fas fa-bars color-violet-blue"></i>
+                  <i style="font-size: 55px;" class="fas fa-list-ul color-violet-blue"></i>
                 </div>
                 <h5>Khác</h5>
               </div>
@@ -185,6 +195,19 @@
         </div>
       </div>
     </section>
+
+    <!-- <section id="footer">
+      <div class="container">
+        <div class="d-flex">
+          <div class="left">
+            <i class="far fa-clock fa-fw me-2"></i><span id="clock"></span>
+          </div>
+          <div class="right">
+            <span>Copyright © 2019 ANEST</span>
+          </div>
+        </div>
+      </div>
+    </section> -->
   </div>
 
   <!-- Modal logout-->

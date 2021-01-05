@@ -181,101 +181,18 @@ h6 {
 /* ----- Footer ----- */
 
 #footer {
-  background-color: #1d1d1d;
-  color: #bdbdbd;
-  font-size: 17px;
+  margin-top: 1.5rem;
 }
 
-#footer .f-top {
-  padding-top: 80px;
-  padding-bottom: 80px;
+#footer .container .d-flex {
+  justify-content: space-between;
+  background-color: var(--background-color-1);
+  border-radius: var(--border-radius);
 }
 
-#footer .f-top img {
-  height: 45px;
-  margin-bottom: 7px;
-}
-
-#footer h6 {
-  margin-bottom: 10px;
-  margin-top: 20px;
-  font-size: 1.15rem;
-}
-
-#footer h6:hover {
-  color: #ffcf5c;
-}
-
-#footer .info ul,
-#footer .social ul {
-  padding: 0;
-}
-
-#footer .info ul li,
-#footer .social ul li {
-  list-style: none;
-  padding: .15rem 0;
-}
-
-#footer .course ul {
-  padding-left: 18px;
-}
-
-#footer .course ul li {
-  padding: .15rem 0;
-}
-
-#footer .social ul li a {
-  color: #bdbdbd;
-  margin-right: 20px;
-}
-
-#footer .social ul li a:hover {
-  color: #ffcf5c;
-  text-decoration: none;
-}
-
-#footer .social ul li a i {
-  font-size: 40px;
-}
-
-#footer .social ul li a.btn {
-  color: #fff;
-}
-
-#footer .social ul li a.btn i {
-  font-size: 16px;
-}
-
-#signature {
-  background-color: #121212;
-  color: #bdbdbd;
-  font-size: 15px;
-}
-
-#signature .f-bot {
-  padding: 8px 0;
-}
-
-#signature .f-bot span {
-  padding: 2px 0;
-  display: inline-block;
-}
-
-#signature .f-bot .copyright {
-  text-align: right;
-}
-
-@media (max-width: 575.98px) {
-  #signature .f-bot .clock {
-    display: none;
-  }
-  #signature .f-bot .copyright {
-    text-align: left;
-  }
-  #footer .f-top {
-    padding: 3rem 0 2.5rem;
-  }
+#footer .container .d-flex .left,
+#footer .container .d-flex .right {
+  padding: 10px 15px;
 }
 
 
