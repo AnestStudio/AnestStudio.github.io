@@ -1,7 +1,7 @@
 /* ----- Cover ----- */
 
 #cover {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
 }
 
 #cover .container {
@@ -90,9 +90,13 @@
 }
 
 
-/* --- sescsion 2 --- */
+/* --- sescsion category --- */
 
-.btn-category {
+#category .container {
+  margin-top: 1.5rem;
+}
+
+#category .container .btn-category {
   padding: 40px 5px;
   display: flex;
   justify-content: center;
@@ -100,16 +104,16 @@
   border-radius: var(--border-radius);
 }
 
-.btn-category:hover {
+#category .container .btn-category:hover {
   background-color: var(--background-color-2) !important;
 }
 
-.box .icon {
+#category .container .box .icon {
   height: 62px;
   position: relative;
 }
 
-.box h5 {
+#category .container .box h5 {
   font-size: 17px;
   font-weight: 500;
   text-transform: uppercase;
@@ -143,13 +147,19 @@
 }
 
 @media (max-width: 575.98px) {
+  #cover {
+    padding-top: 0.5rem;
+  }
   #cover .content {
     padding: 1rem 2rem;
   }
   #cover .content h1 {
     font-size: 2.5rem;
   }
-  .box h5 {
+  #category .container {
+    margin-top: 1rem;
+  }
+  #category .container .box h5 {
     font-size: 15px;
   }
 }
