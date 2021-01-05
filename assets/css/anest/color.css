@@ -66,6 +66,10 @@
   color: var(--pink);
 }
 
+.color-blue {
+  color: var(--blue);
+}
+
 .color-green {
   color: var(--green);
 }
