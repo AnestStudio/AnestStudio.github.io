@@ -1,0 +1,63 @@
+:root {
+  /* Common */
+  --border-radius: 12px;
+  /* Dark mode */
+  --background-dark: #18191a;
+  --background-dark-1: #242526;
+  --background-dark-2: #3a3b3c;
+  --background-dark-3: #4e4f50;
+  --dark-text-color: #e4e6eb;
+  --dark-text-color-1: #e4e6eb;
+  --dark-sub-menu-text-color: #ddd;
+  --dark-nav-link-border-color: #3a3b3c;
+  --dark-dropdown-background-color: #242526;
+  --dark-dropdown-border-color: #3a3b3c;
+  --dark-dropdown-item-text-color: #ddd;
+  --dark-dropdown-item-text-color-hover: #ffc107;
+  /* Light mode */
+  --background-light: #fff;
+  --background-light-1: #fff;
+  --background-light-2: #fff;
+  --background-light-3: #fff;
+  --light-text-color: #020202;
+  --light-text-color-1: #65676b;
+  --light-sub-menu-text-color: #ddd;
+  --light-nav-link-border-color: #808080;
+  --light-dropdown-background-color: #e4e6eb;
+  --light-dropdown-border-color: #ccc;
+  --light-dropdown-item-text-color: #050505;
+  --light-dropdown-item-text-color-hover: #ffc107;
+  /* Default mode */
+  --background-color: var(--background-dark);
+  --background-color-1: var(--background-dark-1);
+  --background-color-2: var(--background-dark-2);
+  --background-color-3: var(--background-dark-3);
+  --text-color: var(--dark-text-color);
+  --text-color-1: var(--dark-text-color-1);
+  --sub-menu-text-color: var(--dark-sub-menu-text-color);
+  --nav-link-border-color: var(--dark-nav-link-border-color);
+  --dropdown-background-color: var(--dark-dropdown-background-color);
+  --dropdown-border-color: var(--dark-dropdown-border-color);
+  --dropdown-item-text-color: var(--dark-dropdown-item-text-color);
+  --dropdown-item-text-color-hover: var(--dark-dropdown-item-text-color-hover);
+}
+
+.theme-switch {
+  display: none;
+}
+
+.theme-switch:checked~#page {
+  transition: .5s;
+  --background-color: var(--background-light);
+  --background-color-1: var(--background-light-1);
+  --background-color-2: var(--background-light-2);
+  --background-color-3: var(--background-light-3);
+  --text-color: var(--light-text-color);
+  --text-color-1: var(--light-text-color-1);
+  --sub-menu-text-color: var(--light-sub-menu-text-color);
+  --nav-link-border-color: var(--light-nav-link-border-color);
+  --dropdown-background-color: var(--light-dropdown-background-color);
+  --dropdown-border-color: var(--light-dropdown-border-color);
+  --dropdown-item-text-color: var(--light-dropdown-item-text-color);
+  --dropdown-item-text-color-hover: var(--light-dropdown-item-text-color-hover);
+}

@@ -1,0 +1,120 @@
+/* ----- Cover ----- */
+
+#cover {
+  padding-top: 3rem;
+}
+
+#cover .container {
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6 {
+  position: absolute;
+  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  will-change: transform;
+}
+
+#cover .content {
+  padding: 3.5rem 5rem;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+#cover .content h1 {
+  font-size: 3.5rem;
+  margin-top: .75rem;
+  letter-spacing: 5px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #c7af8b;
+}
+
+#cover .content p {
+  margin: 1rem 0;
+  letter-spacing: 1px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #c7af8b;
+  font-size: 1rem;
+}
+
+#cover .content .wrap {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#cover .content img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#cover .content .image-1 {
+  left: -75px;
+  bottom: -10px;
+}
+
+#cover .content .image-2 {
+  left: -11px;
+  bottom: -141px;
+}
+
+#cover .content .image-3 {
+  left: auto;
+  right: -91px;
+  bottom: -280px;
+}
+
+#cover .content .image-4 {
+  left: 7px;
+  top: 35px;
+}
+
+#cover .content .image-5 {
+  left: -155px;
+  top: -15px;
+}
+
+@media (max-width: 991.98px) {
+  .image-1,
+  .image-2,
+  .image-3,
+  .image-4,
+  .image-5,
+  .image-6 {
+    display: none !important;
+  }
+  #cover .content {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #cover .content {
+    padding: 1.5rem 3rem;
+  }
+  #cover .content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #cover .content {
+    padding: 1rem 2rem;
+  }
+  #cover .content h1 {
+    font-size: 2.5rem;
+  }
+}

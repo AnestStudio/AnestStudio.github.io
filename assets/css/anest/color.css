@@ -1,19 +1,6 @@
 :root {
-  /* Dark mode */
-  --dark-text-color: #dfdfdf;
-  --background-dark: #121212;
-  --background-dark-1: #1d1d1d;
-  --background-dark-2: #222222;
-  --background-dark-3: #333333;
-  /* Light mode */
-  --light-text-color: #050505;
-  --background-light: #fff;
-  /* Default mode */
-  --text-color: var(--dark-text-color);
-  --bg-color: var(--background-dark);
-  /* Color */
   --white: #ffffff;
-  --tan: #e4e6eb;
+  --tan: #c7af8b;
   --yellow: #ffcf5c;
   --warning: #ffc107;
   --orange: #fc643f;
@@ -31,13 +18,38 @@
   --red: #c72626;
 }
 
-.theme-switch {
-  display: none;
+.color-while {
+  color: var(--white);
 }
 
-.theme-switch:checked~#page {
-  transition: .5s;
-  --text-color: var(--light-text-color);
-  --bg-color: var(--background-light);
-  --tan: #333;
+.color-yellow {
+  color: var(--yellow);
+}
+
+.color-tan {
+  color: var(--tan);
+}
+
+.color-orange {
+  color: var(--orange);
+}
+
+.color-aquamarine {
+  color: var(--aquamarine);
+}
+
+.color-violet-blue {
+  color: var(--violet-blue);
+}
+
+.color-violet-red {
+  color: var(--violet-red);
+}
+
+.color-red {
+  color: var(--red);
+}
+
+.color-green {
+  color: var(--green);
 }
