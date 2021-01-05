@@ -42,10 +42,6 @@ h6 {
 
 /*----- Nav bar -----*/
 
-.navbar-toggler-icon {
-  color: #fff;
-}
-
 #menu {
   padding: 2rem 0 1rem;
 }
@@ -93,7 +89,7 @@ h6 {
   display: block;
   height: 2px;
   border-radius: 1px;
-  background-color: var(--tan);
+  background-color: var(--text-highlight-color);
   width: 35px;
   transition: all 0.25s ease;
 }
@@ -149,7 +145,7 @@ h6 {
 #menu .site-navigation ul li .nav-link {
   font-size: 17px;
   display: block;
-  padding: 7px 15px;
+  padding: 7px 12px;
   color: var(--text-color);
   text-decoration: none;
   font-weight: 500;

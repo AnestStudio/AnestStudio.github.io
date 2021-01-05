@@ -22,7 +22,7 @@
   --light-text-highlight-color: #133996;
   --light-text-color: #333;
   --light-text-color-1: #65676b;
-  --light-nav-link-border-color: #808080;
+  --light-nav-link-border-color: var(--background-light-2);
   --light-dropdown-background-color: #e4e6eb;
   --light-dropdown-border-color: #ccc;
   --light-dropdown-item-text-color: #050505;
