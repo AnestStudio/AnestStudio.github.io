@@ -165,7 +165,7 @@ h6 {
 
 #menu .dropdown-menu .dropdown-item {
   color: var(--dropdown-item-text-color);
-  padding: 5px 30px 5px 16px;
+  padding: 6px 30px 6px 18px;
   transition: .3s;
 }
 
