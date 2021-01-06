@@ -30,7 +30,7 @@
 }
 
 #cover .content h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin-top: .75rem;
   letter-spacing: 5px;
   font-style: normal;
@@ -111,6 +111,10 @@
 #category .container .box .icon {
   height: 62px;
   position: relative;
+}
+
+#category .container .box .icon i {
+  opacity: .85;
 }
 
 #category .container .box h5 {
