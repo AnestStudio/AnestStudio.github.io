@@ -169,4 +169,7 @@
   #category .container .box h5 {
     font-size: 15px;
   }
+  #category .container .btn-category {
+    padding: 30px 5px;
+  }
 }
