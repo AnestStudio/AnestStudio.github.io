@@ -2,10 +2,13 @@
   /* Common */
   --border-radius: 18px;
   /* Dark mode */
-  --background-dark: #18191a;
-  --background-dark-1: #242526;
-  --background-dark-2: #3a3b3c;
-  --background-dark-3: #4e4f50;
+  --background-dark: rgb(0 0 0 / 80%);
+  --background-dark-1: #1d2226;
+  --background-dark-1-opacity: rgb(33 33 33 / 50%) !important;
+  --background-dark-2: #3c4044;
+  --background-dark-2-opacity: rgb(55 55 55 / 50%) !important;
+  --background-dark-3: #000;
+  --background-dark-sidebar-color: rgb(33 33 33 / 75%);
   --dark-text-highlight-color: #c7af8b;
   --dark-text-color: #e4e6eb;
   --dark-text-color-1: #fff;
@@ -15,23 +18,29 @@
   --dark-dropdown-item-text-color: #ddd;
   --dark-dropdown-item-text-color-hover: #ffc107;
   /* Light mode */
-  --background-light: #fff;
+  --background-light: rgb(255 255 255 / 40%);
   --background-light-1: #bfebf3;
-  --background-light-2: #92e4f3;
+  --background-light-1-opacity: rgb(255 255 255 / 40%) !important;
+  --background-light-2: #fff;
+  --background-light-2-opacity: #fff;
   --background-light-3: #fff;
+  --background-light-sidebar-color: rgb(255 255 255 / 75%);
   --light-text-highlight-color: #133996;
-  --light-text-color: #333;
+  --light-text-color: #222;
   --light-text-color-1: #65676b;
   --light-nav-link-border-color: var(--background-light-2);
-  --light-dropdown-background-color: #e4e6eb;
-  --light-dropdown-border-color: #ccc;
+  --light-dropdown-background-color: #eaf6fe;
+  --light-dropdown-border-color: #bfbfbf;
   --light-dropdown-item-text-color: #050505;
   --light-dropdown-item-text-color-hover: #ffc107;
   /* Default mode */
   --background-color: var(--background-dark);
   --background-color-1: var(--background-dark-1);
+  --background-color-1-opacity: var(--background-dark-1-opacity);
   --background-color-2: var(--background-dark-2);
+  --background-color-2-opacity: var(--background-dark-2-opacity);
   --background-color-3: var(--background-dark-3);
+  --background-sidebar-color: var(--background-dark-sidebar-color);
   --text-highlight-color: var(--dark-text-highlight-color);
   --text-color: var(--dark-text-color);
   --text-color-1: var(--dark-text-color-1);
@@ -50,8 +59,11 @@
   transition: .5s;
   --background-color: var(--background-light);
   --background-color-1: var(--background-light-1);
+  --background-color-1-opacity: var(--background-light-1-opacity);
   --background-color-2: var(--background-light-2);
+  --background-color-2-opacity: #fff;
   --background-color-3: var(--background-light-3);
+  --background-sidebar-color: var(--background-light-sidebar-color);
   --text-highlight-color: var(--light-text-highlight-color);
   --text-color: var(--light-text-color);
   --text-color-1: var(--light-text-color-1);

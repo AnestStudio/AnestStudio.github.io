@@ -2,6 +2,8 @@
 body {
   font-size: 17px;
   line-height: 1.75;
+  background-size: cover;
+  background-image: url(../../../assets/images/system/bg-default.jpg);
 }
 
 #page {
@@ -21,6 +23,14 @@ h6 {
   font-weight: 500;
   word-break: break-word;
   word-wrap: break-word;
+}
+
+.bg-filter {
+  backdrop-filter: blur(20px) brightness(150%);
+}
+
+.background-dark-1-opacity {
+  background-color: var(--background-color-1-opacity) !important;
 }
 
 .background-dark-1 {
@@ -74,9 +84,10 @@ h6 {
     height: 100%;
     overflow-x: hidden;
     padding: 35px 20px;
-    background: var(--background-color-2);
     transition: all 0.35s;
     z-index: 1;
+    background: var(--background-sidebar-color);
+    backdrop-filter: blur(20px) brightness(100%);
   }
 }
 
