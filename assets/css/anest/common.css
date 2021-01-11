@@ -11,6 +11,7 @@ body {
   color: var(--text-color);
   min-height: 100vh;
   transition: .5s;
+  padding-bottom: 50px;
 }
 
 h1,
