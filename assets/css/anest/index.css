@@ -27,6 +27,7 @@
   overflow: hidden;
   border-radius: var(--border-radius);
   background-color: var(--background-color-1-opacity);
+  transition: .5s;
 }
 
 #cover .content h1 {
@@ -102,10 +103,12 @@
   justify-content: center;
   text-decoration: none;
   border-radius: var(--border-radius);
+  transition: .5s;
 }
 
 #category .container .btn-category:hover {
   background-color: var(--background-color-2-opacity) !important;
+  transform: scale(1.04);
 }
 
 #category .container .box .icon {

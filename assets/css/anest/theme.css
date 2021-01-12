@@ -8,6 +8,7 @@
   --background-dark-2: #3c4044;
   --background-dark-2-opacity: rgb(55 55 55 / 50%) !important;
   --background-dark-3: #000;
+  --background-dark-3-opacity: rgb(77 77 77 / 50%) !important;
   --background-dark-sidebar-color: rgb(33 33 33 / 75%);
   --dark-text-highlight-color: #c7af8b;
   --dark-text-color: #e4e6eb;
@@ -20,10 +21,11 @@
   /* Light mode */
   --background-light: rgb(255 255 255 / 40%);
   --background-light-1: #bfebf3;
-  --background-light-1-opacity: rgb(255 255 255 / 40%) !important;
+  --background-light-1-opacity: rgb(255 255 255 / 60%) !important;
   --background-light-2: #fff;
-  --background-light-2-opacity: #fff;
+  --background-light-2-opacity: rgb(255 255 255 / 80%) !important;
   --background-light-3: #fff;
+  --background-light-3-opacity: rgb(255 255 255 / 90%) !important;
   --background-light-sidebar-color: rgb(255 255 255 / 75%);
   --light-text-highlight-color: #133996;
   --light-text-color: #222;
@@ -40,6 +42,7 @@
   --background-color-2: var(--background-dark-2);
   --background-color-2-opacity: var(--background-dark-2-opacity);
   --background-color-3: var(--background-dark-3);
+  --background-color-3-opacity: var(--background-dark-3-opacity);
   --background-sidebar-color: var(--background-dark-sidebar-color);
   --text-highlight-color: var(--dark-text-highlight-color);
   --text-color: var(--dark-text-color);
@@ -61,7 +64,7 @@
   --background-color-1: var(--background-light-1);
   --background-color-1-opacity: var(--background-light-1-opacity);
   --background-color-2: var(--background-light-2);
-  --background-color-2-opacity: #fff;
+  --background-color-2-opacity: var(--background-light-2-opacity);
   --background-color-3: var(--background-light-3);
   --background-sidebar-color: var(--background-light-sidebar-color);
   --text-highlight-color: var(--light-text-highlight-color);
