@@ -59,6 +59,14 @@
   color: var(--blue);
 }
 
+.color-primary {
+  color: var(--primary);
+}
+
+.color-indigo {
+  color: var(--indigo);
+}
+
 .color-purple {
   color: var(--purple);
 }
