@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola Land - Food detail</title>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="assets/css/all.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/hola-land/main.css">
+  <link rel="stylesheet" href="assets/css/hola-land/common.css">
+  <link rel="stylesheet" href="assets/css/hola-land/grid.css">
+  <link rel="stylesheet" href="assets/css/hola-land/form.css">
+  <link rel="stylesheet" href="assets/css/hola-land/food.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand mr-auto" href="index.html">Hola Land</a>
+
+      <div class="navbar-btn-group">
+        <ul class="m-0 p-0">
+          <li class="navbar-search">
+            <form class="input-group">
+              <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="search">
+              <button class="btn-search" type="submit" id="search"><i class="bi bi-search"></i></button>
+            </form>
+          </li>
+          <li class="navbar-btn dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0)" id="language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-bag-plus m-0"></i>
+            </a>
+            <span class="notification-dot">3</span>
+            <ul class="dropdown-menu notification-dropdown" aria-labelledby="language">
+              <li class="dropdown-item">
+                <a href="">
+                  <div class="media">
+                    <span class="me-3">
+                      <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
+                    </span>
+                    <div class="media-body">
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-item notification-preview">
+                <a href="">
+                  <div class="media">
+                    <span class="me-3">
+                      <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                    </span>
+                    <div class="media-body">
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-item notification-preview">
+                <a href="">
+                  <div class="media">
+                    <span class="me-3">
+                      <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                    </span>
+                    <div class="media-body">
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-item btn-link">
+                <a href="cart.html" class="text-end">
+                  Xem tất cả
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar-btn dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0)" id="language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="far fa-bell m-0 fa-fw"></i>
+            </a>
+            <span class="notification-dot">8</span>
+            <ul class="dropdown-menu notification-dropdown" aria-labelledby="language">
+              <li class="dropdown-item">
+                <a href="">
+                  <div class="media">
+                    <span class="me-3">
+                      <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
+                    </span>
+                    <div class="media-body">
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-item notification-preview">
+                <a href="">
+                  <div class="media">
+                    <span class="me-3">
+                      <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                    </span>
+                    <div class="media-body">
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-item notification-preview">
+                <a href="">
+                  <div class="media">
+                    <span class="me-3">
+                      <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                    </span>
+                    <div class="media-body">
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-item btn-link">
+                <a href="" class="text-end">
+                  Xem tất cả
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar-btn dropdown pointer-events-none">
+            <a class="dropdown-toggle" href="javascript:void(0)" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <!-- <i class="fas fa-caret-down m-0 fa-fw"></i> -->
+              <i class="far fa-user m-0 fa-fw"></i>
+            </a>
+            <ul class="dropdown-menu navbar-dropdown" aria-labelledby="userDropdown">
+              <div class="username">
+                <div>
+                  <i class="far fa-user fa-fw"></i>
+                </div>
+                <div>
+                  <span>Nguyễn Văn A</span>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="profile.html"><i class="far fa-eye fa-fw"></i>Trang cá nhân</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="far fa-comment fa-fw"></i>Đóng góp ý kiến</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="far fa-question-circle fa-fw"></i>Trợ giúp & hỗ trợ</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-fw"></i>Đăng xuất</a>
+            </ul>
+          </li>
+          <li class="navbar-btn dropdown pointer-events-none">
+            <a class="dropdown-toggle" href="javascript:void(0)" id="funtionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-caret-down m-0 fa-fw"></i>
+            </a>
+            <ul class="dropdown-menu navbar-dropdown" aria-labelledby="funtionDropdown">
+              <a class="dropdown-item" href="signin.html"><i class="fas fa-sign-in-alt fa-fw"></i>Đăng nhập</a>
+              <a class="dropdown-item" href="signin.html"><i class="far fa-edit fa-fw"></i>Đăng ký tài khoản</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="far fa-comment fa-fw"></i>Liên hệ & hỗ trợ</a>
+            </ul>
+          </li>
+          <li class="navbar-btn btn-sidebar-menu">
+            <button id="btn-open-sidebar" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- Start: Sidebar -->
+      <div id="sidebar" class="sidebar">
+        <ul class="nav navbar-nav menu">
+          <li>
+            <div class="switch-theme">
+              <div>
+                <span class="label-theme"><i class="fas fa-moon fa-fw"></i>Chế độ tối</span>
+              </div>
+              <div class="btn-switch-theme">
+                <!-- <input class="form-check-input" type="checkbox" id="switch" /> -->
+                <input class="switch-button" type="checkbox" id="switch" />
+                <label for="switch"></label>
+              </div>
+            </div>
+          </li>
+          <li><a href="#"><i class="fas fa-university fa-fw"></i>FPT University</a></li>
+          <li><a href="#"><i class="fas fa-graduation-cap fa-fw"></i>Học tập</a></li>
+          <li><a href="#"><i class="fas fa-user-check fa-fw"></i>Công việc</a></li>
+          <li><a href="#"><i class="fas fa-cart-plus fa-fw"></i>Mua sắm</a></li>
+          <li><a href="#"><i class="fas fa-pizza-slice fa-fw"></i>Dịch vụ Ăn - Uống</a></li>
+          <li><a href="#"><i class="fab fa-xbox fa-fw"></i>Vui chơi - Giải trí</a></li>
+          <li><a href="#"><i class="fas fa-bus-alt fa-fw"></i>Giao thông</a></li>
+          <li><a href="#"><i class="fas fa-bars fa-fw"></i>Khác</a></li>
+        </ul>
+      </div>
+      <!-- End: Sidebar -->
+    </div>
+  </nav>
+
+  <div style="overflow: hidden;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="col-left">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="title fix-pd fix-mb-title">Menu</h1>
+              </div>
+            </div>
+            <ul class="nav navbar-nav sub-menu">
+              <li>
+                <a href="food.html">
+                  <i class="fas fa-chevron-left fa-fw"></i>Quay lại
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9 col-xl-9 col-xxl-9">
+          <div class="col-right">
+            <!-- Online store -->
+            <div class="online-store">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="title fix-mb-title">Thông tin cửa hàng</h1>
+                </div>
+              </div>
+              <!-- Online store info -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="label-info online-store-title">
+                    <div class="row">
+                      <div class="col-lg-12 col-xl-9">
+                        <div class="flex">
+                          <div class="icon-circle">
+                            <img class="media-object" src="assets/images/system/v.png" alt="">
+                          </div>
+                          <div class="content-body">
+                            <h3>Quán cơm Phương Nguyễn</h3>
+                            <div class="description">
+                              Chuyên cơm - bún - phở và đồ ăn vặt.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-xl-3">
+                        <div class="rate-area">
+                          <div>
+                            <h1>4.5</h1>
+                            <div class="star-rate">
+                              <i class="fas fa-star checked"></i>
+                              <i class="fas fa-star checked"></i>
+                              <i class="fas fa-star checked"></i>
+                              <i class="fas fa-star checked"></i>
+                              <i class="fas fa-star"></i>
+                            </div>
+                            <div class="reviews">132 đánh giá</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- Tabs - Pills -->
+                  <div class="menu">
+                    <ul class="row nav nav-pills" id="pills-tab" role="tablist">
+                      <li class="nav-item col-sm-12 col-md-3" role="presentation">
+                        <a class="nav-link active" id="pills-food-tab" data-bs-toggle="pill" data-bs-target="#pills-food" type="button" role="tab" aria-controls="pills-food" aria-selected="true">Thực đơn<sup class="ms-2 main-text">8</sup></a>
+                      </li>
+                      <li class="nav-item col-sm-12 col-md-3" role="presentation">
+                        <a class="nav-link" id="pills-comment-tab" data-bs-toggle="pill" data-bs-target="#pills-comment" type="button" role="tab" aria-controls="pills-comment" aria-selected="false">Bình luận<sup class="ms-2 main-text">23</sup></a>
+                      </li>
+                      <li class="nav-item col-sm-12 col-md-3" role="presentation">
+                        <a class="nav-link" id="pills-report-tab" data-bs-toggle="pill" data-bs-target="#pills-report" type="button" role="tab" aria-controls="pills-report" aria-selected="false">Báo cáo<sup class="ms-2 main-text">10</sup></a>
+                      </li>
+                      <li class="nav-item col-sm-12 col-md-3" role="presentation">
+                        <a href="javascript:void(0)" class="nav-link" data-bs-toggle="modal" data-bs-target="#rateFoodModal">Đánh giá<sup class="ms-2 main-text">4.5</sup></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Tab content -->
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-food" role="tabpanel" aria-labelledby="pills-food-tab">
+                      <!-- Tags -->
+                      <div class="row m-mb-20">
+                        <div class="col-md-12">
+                          <div class="list-tag">
+                            <div class="tags">
+                              <a href="#" class="tag">Cơm</a>
+                              <a href="#" class="tag">Bánh mỳ</a>
+                              <a href="#" class="tag">Đồ ăn vặt</a>
+                              <a href="#" class="tag">Đồ ăn nhanh</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- List food -->
+                      <div class="list-food">
+                        <div class="row">
+                          <div class="col-lg-12 col-xl-6 col-xxl-6">
+                            <div class="food label-info m-mb-16">
+                              <div class="flex-sb">
+                                <div class="flex">
+                                  <div class="icon-circle">
+                                    <img class="media-object" src="assets/images/food/ride.jpg" alt="">
+                                  </div>
+                                  <div class="content-body">
+                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#foodDetailModal">
+                                      Cơm hến Xào
+                                    </a>
+                                    <div class="food-info">
+                                      <p>Giá: 35.000<sup>đ</sup> &nbsp;&#8226;&nbsp; Đã bán: 50</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="flex">
+                                  <a href="javascript:void(0)" class="btn-more mx-0" onclick="showToast()">
+                                    <i class="fas fa-plus text-success"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12 col-xl-6 col-xxl-6">
+                            <div class="food label-info m-mb-16">
+                              <div class="flex-sb">
+                                <div class="flex">
+                                  <div class="icon-circle">
+                                    <img class="media-object" src="assets/images/food/ride.jpg" alt="">
+                                  </div>
+                                  <div class="content-body">
+                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#foodDetailModal">
+                                      Cơm hến Xào
+                                    </a>
+                                    <div class="food-info">
+                                      <p>Giá: 35.000<sup>đ</sup> &nbsp;&#8226;&nbsp; Đã bán: 50</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="flex">
+                                  <a href="javascript:void(0)" class="btn-more mx-0" onclick="showToast()">
+                                    <i class="fas fa-plus text-success"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12 col-xl-6 col-xxl-6">
+                            <div class="food label-info m-mb-16">
+                              <div class="flex-sb">
+                                <div class="flex">
+                                  <div class="icon-circle">
+                                    <img class="media-object" src="assets/images/food/ride.jpg" alt="">
+                                  </div>
+                                  <div class="content-body">
+                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#foodDetailModal">
+                                      Cơm hến Xào
+                                    </a>
+                                    <div class="food-info">
+                                      <p>Giá: 35.000<sup>đ</sup> &nbsp;&#8226;&nbsp; Đã bán: 50</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="flex">
+                                  <a href="javascript:void(0)" class="btn-more mx-0" onclick="showToast()">
+                                    <i class="fas fa-plus text-success"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12 col-xl-6 col-xxl-6">
+                            <div class="food label-info m-mb-16">
+                              <div class="flex-sb">
+                                <div class="flex">
+                                  <div class="icon-circle">
+                                    <img class="media-object" src="assets/images/food/ride.jpg" alt="">
+                                  </div>
+                                  <div class="content-body">
+                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#foodDetailModal">
+                                      Cơm hến Xào
+                                    </a>
+                                    <div class="food-info">
+                                      <p>Giá: 35.000<sup>đ</sup> &nbsp;&#8226;&nbsp; Đã bán: 50</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="flex">
+                                  <a href="javascript:void(0)" class="btn-more mx-0" onclick="showToast()">
+                                    <i class="fas fa-plus text-success"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-comment" role="tabpanel" aria-labelledby="pills-comment-tab">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="list-comment">
+                            <div class="panel pb-1">
+                              <div class="comment flex">
+                                <div class="icon-circle">
+                                  <img class="media-object" src="assets/images/system/v.png" alt="">
+                                  <div class="star-rate">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                  </div>
+                                </div>
+                                <div class="comment-area">
+                                  <div class="comment-content">
+                                    <h3>Nguyễn Văn A</h3>
+                                    <p>Giống thiệt, một giọt nước đóng chai và một giọt nước ao :)))))))</p>
+                                  </div>
+                                  <div class="time">
+                                    <p>22-09-2021 18:30:22</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="comment flex">
+                                <div class="icon-circle">
+                                  <img class="media-object" src="assets/images/system/v.png" alt="">
+                                  <div class="star-rate">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star"></i>
+                                  </div>
+                                </div>
+                                <div class="comment-area">
+                                  <div class="comment-content">
+                                    <h3>Nguyễn Văn Vinh</h3>
+                                    <p>Giống thiệt, một giọt nước đóng chai và một giọt nước ao :))))))). Giống thiệt , một giọt nước đóng chai và một giọt nước ao :)))))))</p>
+                                  </div>
+                                  <div class="time">
+                                    <p>22-09-2021 8:30:22</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="comment flex">
+                                <div class="icon-circle">
+                                  <img class="media-object" src="assets/images/system/v2.png" alt="">
+                                  <div class="star-rate">
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                    <i class="fas fa-star checked"></i>
+                                  </div>
+                                </div>
+                                <div class="comment-area">
+                                  <div class="comment-content">
+                                    <h3>Nguyễn Ngọc Minh Anh</h3>
+                                    <p>Giống thiệt, một giọt nước đóng chai và một giọt nước ao :))))))). Giống thiệt , một giọt nước đóng chai.</p>
+                                  </div>
+                                  <div class="time">
+                                    <p>22-09-2021 18:30:22</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-report" role="tabpanel" aria-labelledby="pills-report-tab">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="list-comment">
+                            <div class="panel pb-1">
+                              <div class="comment flex">
+                                <div class="icon-circle">
+                                  <img class="media-object" src="assets/images/system/v.png" alt="">
+                                </div>
+                                <div class="comment-area">
+                                  <div class="comment-content">
+                                    <h3>Nguyễn Ngọc Mỹ Linh</h3>
+                                    <p>Giống thiệt, một giọt nước đóng chai và một giọt nước ao :)))))))</p>
+                                    <p class="order-report">
+                                      Đơn hàng: <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#orderDetailReportModal">#000022</a>
+                                      <i class="bi bi-calendar3-week ms-2 me-1"></i>15-12-2020
+                                      <i class="far fa-clock ms-2 me-1"></i>18:08:33
+                                    </p>
+                                  </div>
+                                  <div class="time">
+                                    <p>22-09-2021 18:30:22</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="comment flex">
+                                <div class="icon-circle">
+                                  <img class="media-object" src="assets/images/system/v.png" alt="">
+                                </div>
+                                <div class="comment-area">
+                                  <div class="comment-content">
+                                    <h3>Nguyễn Văn Vinh</h3>
+                                    <p>Giống thiệt, một giọt nước đóng chai và một giọt nước ao :))))))). Giống thiệt , một giọt nước đóng chai và một giọt nước ao :)))))))</p>
+                                    <p class="order-report">
+                                      Đơn hàng: <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#orderDetailReportModal">#000028</a>
+                                      <i class="bi bi-calendar3-week ms-2 me-1"></i>19-12-2020
+                                      <i class="far fa-clock ms-2 me-1"></i>18:08:00
+                                    </p>
+                                  </div>
+                                  <div class="time">
+                                    <p>29-09-2021 18:30:22</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal food detail -->
+  <div class="modal fade" id="foodDetailModal" tabindex="-1" aria-labelledby="foodDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="foodDetailModalLabel">Thông tin đồ ăn</h5>
+        </div>
+        <div class="modal-body">
+          <div class="flex">
+            <div class="icon-circle">
+              <img class="media-object" src="assets/images/food/ride.jpg" alt="">
+            </div>
+            <div class="content-body">
+              <h3>Cơm hến xào</h3>
+              <p class="price">Giá: 40.000<sup>đ</sup></p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" onclick="showToast()" class="btn btn-sm btn-success me-2" data-bs-dismiss="modal">
+            <i class="fas fa-plus"></i>Thêm vào giỏ hàng
+          </a>
+          <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal rate -->
+  <div class="modal fade" id="rateFoodModal" tabindex="-1" aria-labelledby="rateFoodModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="rateFoodModalLabel">Đánh giá</h5>
+        </div>
+        <div class="modal-body">
+          <form class="row">
+            <div class="form-group col-md-12">
+              <fieldset class="fieldset-rate">
+                <legend>Điểm đánh giá</legend>
+                <div class="custom-radio">
+                  <div class="form-check">
+                    <input class="form-check-input me-2" type="radio" name="rate" id="one-star" value="1">
+                    <label class="form-check-label" for="one-star">1<i class="fas fa-star ms-1 checked"></i></label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-2" type="radio" name="rate" id="two-star" value="2">
+                    <label class="form-check-label" for="two-star">2<i class="fas fa-star ms-1 checked"></i></label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-2" type="radio" name="rate" id="three-star" value="3">
+                    <label class="form-check-label" for="three-star">3<i class="fas fa-star ms-1 checked"></i></label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-2" type="radio" name="rate" id="four-star" value="4">
+                    <label class="form-check-label" for="four-star">4<i class="fas fa-star ms-1 checked"></i></label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input me-2" type="radio" name="rate" id="five-star" value="5">
+                    <label class="form-check-label" for="five-star">5<i class="fas fa-star ms-1 checked"></i></label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form-group col-md-12 m-0">
+              <fieldset>
+                <legend>Ý kiến đánh giá</legend>
+                <textarea class="form-control" rows="3"></textarea>
+              </fieldset>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary me-2">
+            <i class="fas fa-check text-success"></i>Xác nhận
+          </a>
+          <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal order detail -->
+  <div class="modal fade" id="orderDetailReportModal" tabindex="-1" aria-labelledby="orderDetailReportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header flex-sb">
+          <h5 class="modal-title" id="orderDetailReportModalLabel">
+            Chi tiết đơn hàng <span class="text-info">#000028</span>
+          </h5>
+          <div class="report-order">
+            <i class="bi bi-calendar3-week ms-2 me-1"></i>19-12-2020
+            <i class="far fa-clock ms-2 me-1"></i>18:08:00
+          </div>
+        </div>
+        <div class="modal-body">
+          <table class="table mb-0">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tên đồ ăn</th>
+                <th scope="col" class="text-center">Số lượng</th>
+                <th scope="col" class="text-center">Đơn giá</th>
+                <th scope="col" class="text-end">Tổng tiền</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><a href="">Cơm hến xào</a></td>
+                <td class="text-center">1</td>
+                <td class="text-center">35.000<sup>đ</sup></td>
+                <td class="text-end">35.000<sup>đ</sup></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><a href="">Trà ô long</a></td>
+                <td class="text-center">2</td>
+                <td class="text-center">25.000<sup>đ</sup></td>
+                <td class="text-end">50.000<sup>đ</sup></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/hola-land/hola-land.js"></script>
+  <script>
+    function showToast() {
+      const toast = new bootstrap.Toast(document.getElementById('test-toast'));
+      toast.show();
+    }
+  </script>
+
+  <!-- Toast success -->
+  <div class="position-fixed bottom-0 end-0 p-4" style="z-index: 11">
+    <div id="test-toast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Thêm món ăn thành công!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-3 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
