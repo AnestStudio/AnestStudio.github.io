@@ -1,0 +1,9 @@
+/* Bank - ATM ======================================================================================================*/
+
+.label-info .flex .icon-bank img {
+  border-radius: var(--secondary-border-radius);
+  margin-right: 20px;
+  margin-bottom: 4px;
+  width: 90px;
+  height: 90px;
+}
