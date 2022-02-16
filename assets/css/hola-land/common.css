@@ -870,6 +870,22 @@
   height: 52px;
 }
 
+.label-info .flex .icon-m img {
+  border-radius: var(--secondary-border-radius);
+  margin-right: 20px;
+  margin-bottom: 4px;
+  width: 68px;
+  height: 68px;
+}
+
+.label-info .flex .icon-l img {
+  border-radius: var(--secondary-border-radius);
+  margin-right: 20px;
+  margin-bottom: 4px;
+  width: 84px;
+  height: 84px;
+}
+
 .label-info .flex .icon-v i {
   width: 52px;
   height: 52px;
@@ -1209,6 +1225,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+/* Map ==============================================================================================================*/
+
+#gmap {
+  height: 55vh;
+  width: 100%;
+  color: #000;
+  border-radius: var(--secondary-border-radius);
 }
 
 
