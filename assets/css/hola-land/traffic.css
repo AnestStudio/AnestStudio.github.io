@@ -1,13 +1,13 @@
 @charset "utf-8";
 
-/* List bus */
+/* LIST BUS ===========================================================================================================*/
 
 .bus-name {
   font-weight: var(--font-weight-5);
 }
 
 
-/* Timeline css */
+/* TIMELINE */
 
 .timeline {
   margin: 0 auto;
@@ -58,7 +58,7 @@
 }
 
 
-/* List motorbike taxi drivers */
+/* LIST MOTORBIKE TAXI DRIVERS ========================================================================================*/
 
 .list-motorbike-taxi-drivers .label-info:hover {
   transform: scale(1.02, 1.02);

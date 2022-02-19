@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* List online store =========================================================================*/
+/* LIST ONLINE STORE ==================================================================================================*/
 
 .list-online-store .label-info:hover {
   transform: scale(1.02, 1.02);
@@ -83,10 +83,10 @@
 }
 
 
-/* Online store info =========================================================================*/
+/* ONLINE STORE INFO ==================================================================================================*/
 
 
-/* Title area */
+/* TITLE AREA */
 
 .online-store .label-info.online-store-title:hover {
   transform: none;
@@ -159,7 +159,7 @@
 }
 
 
-/* Tabs - Pills */
+/* TABS - PILLS */
 
 .tab-content {
   margin-top: 20px;
@@ -172,7 +172,7 @@
 }
 
 
-/* List tag */
+/* LIST TAG */
 
 .list-tag .tags {
   padding: 16px 0;
@@ -191,7 +191,7 @@
 }
 
 
-/* List food */
+/* LIST FOOD */
 
 .list-food .label-info .flex {
   justify-content: start;
@@ -203,7 +203,7 @@
 }
 
 
-/* Food detail modal */
+/* FOOD DETAIL MODAL */
 
 #foodDetailModal .modal-body {
   margin: 5px 0;
@@ -234,7 +234,7 @@
 }
 
 
-/* Comment */
+/* COMMENT */
 
 .list-comment .comment.flex {
   display: flex;
@@ -304,7 +304,7 @@
 }
 
 
-/* Rate modal*/
+/* RATE MODAL */
 
 .custom-radio {
   justify-content: space-between;
@@ -323,7 +323,7 @@
 }
 
 
-/* Online store manage food =========================================================================*/
+/* ONLINE STORE MANAGE FOOD ===========================================================================================*/
 
 .list-food .label-info:hover .btn-more {
   background-color: var(--icon-button-background);
@@ -334,7 +334,7 @@
 }
 
 
-/* Online store order ===============================================================================*/
+/* ONLINE STORE ORDER =================================================================================================*/
 
 .contact-mobile,
 .report-order {

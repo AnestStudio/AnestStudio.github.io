@@ -1,4 +1,6 @@
-/* List tag */
+@charset "utf-8";
+
+/* LIST TAG ===========================================================================================================*/
 
 .list-tag .tags .tag:hover {
   background-color: var(--label-button-background);
@@ -11,6 +13,4 @@
 }
 
 
-/*
- * Works
- */
+/* Works */

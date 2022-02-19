@@ -55,7 +55,7 @@
 }
 
 
-/* Navbar ============================================================================================================*/
+/* NAVBAR ============================================================================================================*/
 
 .navbar {
   padding: 20px 10px;
@@ -86,7 +86,7 @@
 }
 
 
-/* Navbar search */
+/* NAVBAR SEARCH */
 
 .navbar .navbar-btn-group .navbar-search {
   width: 240px;
@@ -134,7 +134,7 @@
 }
 
 
-/* Navbar button */
+/* NAVBAR BUTTON */
 
 .navbar .navbar-btn-group .navbar-btn {
   width: 40px;
@@ -180,7 +180,7 @@
 }
 
 
-/* Navbar dropdown menu */
+/* NAVBAR DROPDOWN MENU */
 
 .navbar .navbar-btn-group .navbar-btn ul.dropdown-menu {
   background-color: var(--primary-background);
@@ -197,7 +197,7 @@
 }
 
 
-/* Navbar dropdown menu notification */
+/* NAVBAR DROPDOWN MENU NOTIFICATION */
 
 .navbar .navbar-btn-group .navbar-btn .notification-dot {
   position: absolute;
@@ -269,7 +269,7 @@
 }
 
 
-/* Navbar dropdown menu base */
+/* NAVBAR DROPDOWN MENU BASE */
 
 .navbar .navbar-btn-group .navbar-btn ul.dropdown-menu.navbar-dropdown {
   padding: 8px 0;
@@ -306,7 +306,7 @@
 }
 
 
-/* Button open sidebar menu */
+/* BUTTON OPEN SIDEBAR MENU */
 
 .navbar .navbar-btn-group .navbar-btn.btn-sidebar-menu {
   width: 50px;
@@ -401,7 +401,7 @@
 }
 
 
-/* Sidebar ===========================================================================================================*/
+/* SIDEBAR ===========================================================================================================*/
 
 .sidebar {
   height: calc(100% - 105px);
@@ -438,7 +438,7 @@
 }
 
 
-/* Sidebar items*/
+/* SIDEBAR ITEMS */
 
 .sidebar>ul>li>div.switch-theme {
   display: flex;
@@ -470,7 +470,7 @@
 }
 
 
-/* Sidebar checkbox switch theme */
+/* SIDEBAR CHECKBOX SWITCH THEME */
 
 .sidebar>ul>li .switch-theme .btn-switch-theme {
   display: flex;
@@ -495,7 +495,7 @@
 }
 
 
-/* Sidebar switches */
+/* SIDEBAR SWITCH */
 
 .sidebar>ul>li .switch-theme input.switch-button {
   height: 0;
@@ -533,7 +533,7 @@
 }
 
 
-/* Sidebar link */
+/* SIDEBAR LINK */
 
 .sidebar>ul>li a {
   font-weight: var(--font-weight-4);
@@ -580,7 +580,7 @@
 }
 
 
-/* Left sidebar ======================================================================================================*/
+/* LEFT SIDEBAR ======================================================================================================*/
 
 .col-left>ul.sub-menu>li a {
   font-weight: var(--font-weight-4);
@@ -636,7 +636,7 @@
 }
 
 
-/* Colors ==============================================================================================================*/
+/* COLORS ==============================================================================================================*/
 
 .main-text {
   color: var(--main-text);
@@ -646,8 +646,16 @@
   color: var(--accent-text);
 }
 
+.color-success {
+  color: var(--main-text) !important;
+}
 
-/* Util ==============================================================================================================*/
+.color-danger {
+  color: var(--danger-text) !important;
+}
+
+
+/* UTIL ==============================================================================================================*/
 
 .text-ellipsis {
   white-space: nowrap;
@@ -697,7 +705,7 @@
 }
 
 
-/* Tags ==============================================================================================================*/
+/* TAGS ==============================================================================================================*/
 
 .list-tag .tags .tag {
   padding: 8px 20px;
@@ -755,10 +763,10 @@
 }
 
 
-/* Tabs - Pills ================================================================================================*/
+/* TABS - PILLS ======================================================================================================*/
 
 
-/*----- Sub menu pills -----*/
+/*----- SUB MENU PILLS -----*/
 
 .menu .nav-link {
   padding: 8px 12px;
@@ -790,10 +798,10 @@
 }
 
 
-/* Label info - Panel ================================================================================================*/
+/* LABEL - PANEL =====================================================================================================*/
 
 
-/* For link a */
+/* FOR LINK */
 
 .label-info {
   padding: 14px 16px 10px;
@@ -832,7 +840,7 @@
 }
 
 
-/* Type - Category*/
+/* TYPE - CATEGORY */
 
 .label-info .flex .icon i {
   font-size: 25px;
@@ -852,7 +860,7 @@
 }
 
 
-/* Image icon - avatar content */
+/* IMAGE ICON - AVATAR CONTENT */
 
 .label-info .flex .icon-circle img {
   border-radius: 50%;
@@ -911,7 +919,7 @@
 }
 
 
-/* Title - Link */
+/* TITLE - LINK */
 
 .label-info .flex .content-body h4 {
   font-size: 16px;
@@ -945,7 +953,7 @@
 }
 
 
-/* For text content */
+/* FOR TEXT CONTENT */
 
 .panel {
   border-radius: var(--primary-border-radius);
@@ -999,7 +1007,7 @@
 }
 
 
-/* Form control ======================================================================================================*/
+/* FORM CONTROL ======================================================================================================*/
 
 .form-control:focus {
   box-shadow: 0 0 0 4px var(--shadow-button);
@@ -1014,7 +1022,7 @@
 }
 
 
-/* Modal =============================================================================================================*/
+/* MODAL =============================================================================================================*/
 
 .modal-backdrop.show {
   opacity: .75;
@@ -1075,7 +1083,7 @@
 }
 
 
-/* Button ============================================================================================================*/
+/* BUTTON ============================================================================================================*/
 
 .btn {
   border: none;
@@ -1228,7 +1236,7 @@
 }
 
 
-/* Map ==============================================================================================================*/
+/* Map ===============================================================================================================*/
 
 #gmap {
   height: 55vh;

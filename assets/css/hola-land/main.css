@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/**/
+/* HTML ===============================================================================================================*/
 
 html {
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -98,6 +98,9 @@ html[data-theme='dark'] {
   --third-border-radius: 8px;
 }
 
+
+/* CUSTOMIZE CSS ======================================================================================================*/
+
 body {
   font-family: var(--font);
   background-color: var(--body-background);
@@ -109,6 +112,9 @@ body {
   line-height: 1.65;
 }
 
+
+/* HEADER */
+
 h1,
 h2,
 h3,
@@ -117,6 +123,9 @@ h5,
 h6 {
   line-height: 1.5;
 }
+
+
+/* LINK */
 
 a,
 a:hover {
@@ -129,6 +138,9 @@ i.fab {
   margin-right: 12px;
 }
 
+
+/* PRE */
+
 pre {
   white-space: pre-wrap;
   font-size: 16px;
@@ -136,6 +148,9 @@ pre {
   margin-bottom: 0;
   font-family: var(--font);
 }
+
+
+/* TABLE */
 
 .table {
   color: var(--primary-text);
@@ -167,12 +182,4 @@ tr {
 
 hr {
   margin: 8px 0 12px 0;
-}
-
-.color-success {
-  color: var(--main-text) !important;
-}
-
-.color-danger {
-  color: var(--danger-text) !important;
 }
