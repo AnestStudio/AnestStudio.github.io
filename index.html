@@ -1,299 +1,511 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-bs-theme="light">
 
 <head>
   <!-- Required meta tags -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hola Land</title>
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="assets/css/all.css">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="assets/css/font-awesome/all.css" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/hola-land/main.css">
-  <link rel="stylesheet" href="assets/css/hola-land/common.css">
-  <link rel="stylesheet" href="assets/css/hola-land/grid.css">
-  <link rel="stylesheet" href="assets/css/hola-land/index.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+
+  <title>RUBI STORE</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand mr-auto" href="index.html">Hola Land</a>
+<body onkeydown="showSearchForm(event)">
+  <nav class="navbar navbar-expand-lg bg-black">
+    <div class="container">
 
-      <div class="navbar-btn-group">
-        <ul class="m-0 p-0">
-          <li class="navbar-search">
-            <form class="input-group">
-              <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="search">
-              <button class="btn-search" type="submit" id="search"><i class="bi bi-search"></i></button>
-            </form>
-          </li>
-          <li class="navbar-btn dropdown">
-            <a class="dropdown-toggle" href="javascript:void(0)" id="language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="far fa-bell m-0 fa-fw"></i>
-            </a>
-            <span class="notification-dot">8</span>
-            <ul class="dropdown-menu notification-dropdown" aria-labelledby="language">
-              <li class="dropdown-item">
-                <a href="">
-                  <div class="media">
-                    <span class="me-3">
-                      <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
-                    </span>
-                    <div class="media-body">
-                      <h6 class="media-heading">John Smith</h6>
-                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
-                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="dropdown-item notification-preview">
-                <a href="">
-                  <div class="media">
-                    <span class="me-3">
-                      <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
-                    </span>
-                    <div class="media-body">
-                      <h6 class="media-heading">John Smith</h6>
-                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
-                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="dropdown-item notification-preview">
-                <a href="">
-                  <div class="media">
-                    <span class="me-3">
-                      <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
-                    </span>
-                    <div class="media-body">
-                      <h6 class="media-heading">John Smith</h6>
-                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
-                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="dropdown-item btn-link">
-                <a href="" class="text-end">
-                  Xem tất cả
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="navbar-btn dropdown pointer-events-none">
-            <a class="dropdown-toggle" href="javascript:void(0)" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <!-- <i class="fas fa-caret-down m-0 fa-fw"></i> -->
-              <i class="far fa-user m-0 fa-fw"></i>
-            </a>
-            <ul class="dropdown-menu navbar-dropdown" aria-labelledby="userDropdown">
-              <div class="username">
-                <div>
-                  <i class="far fa-user fa-fw"></i>
-                </div>
-                <div>
-                  <span>Nguyễn Văn A</span>
-                </div>
-              </div>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="profile.html"><i class="far fa-eye fa-fw"></i>Trang cá nhân</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#"><i class="far fa-comment fa-fw"></i>Đóng góp ý kiến</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#"><i class="far fa-question-circle fa-fw"></i>Trợ giúp & hỗ trợ</a>
-              <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-fw"></i>Đăng xuất</a>
-            </ul>
-          </li>
-          <li class="navbar-btn dropdown pointer-events-none">
-            <a class="dropdown-toggle" href="javascript:void(0)" id="funtionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fas fa-caret-down m-0 fa-fw"></i>
-            </a>
-            <ul class="dropdown-menu navbar-dropdown" aria-labelledby="funtionDropdown">
-              <a class="dropdown-item" href="signin.html"><i class="fas fa-sign-in-alt fa-fw"></i>Đăng nhập</a>
-              <a class="dropdown-item" href="signin.html"><i class="far fa-edit fa-fw"></i>Đăng ký tài khoản</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#"><i class="far fa-comment fa-fw"></i>Liên hệ & hỗ trợ</a>
-            </ul>
-          </li>
-          <li class="navbar-btn btn-sidebar-menu">
-            <button id="btn-open-sidebar" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse d-lg-flex justify-content-lg-between" id="navbarContent">
+        <div class="d-lg-flex">
+          <a class="navbar-brand text-warning" href="#">FIT NESS</a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">PHÒNG TẬP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">DỊCH VỤ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">KIẾN THỨC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">LIÊN HỆ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-lg-flex justify-content-lg-end align-items-center">
+          <form role="search" class="d-block me-3">
+            <button type="button" class="btn btn-outline-secondary d-flex justify-content-between align-items-center" style="--bs-btn-padding-x: 0.5rem;" data-bs-toggle="modal" data-bs-target="#searchModal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search me-1" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>Tìm kiếm
+              <span class="text-primary-emphasis bg-warning d-inline-block ms-5 key-search">CTRL-Q</span>
             </button>
-          </li>
-        </ul>
-      </div>
-      <!-- Start: Sidebar -->
-      <div id="sidebar" class="sidebar">
-        <ul class="nav navbar-nav menu">
-          <li>
-            <div class="switch-theme">
-              <div>
-                <span class="label-theme"><i class="fas fa-moon fa-fw"></i>Chế độ tối</span>
+          </form>
+
+          <ul class="navbar-nav">
+            <li class="nav-item d-flex align-items-center">
+              <div class="dropdown">
+                <a class="nav-link text-white" href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-shopping-bag"></i>
+                  <sup>
+                    <span class="badge rounded-pill text-bg-danger">0</span>
+                  </sup>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" style="width: 350px">
+                  <li class="px-3 py-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center">
+                        <img class="rounded-2" src="assets/images/products/Giay_Duramo_SL_trang_IE7262_01_standard.avif" width="50">
+                        <div>
+                          <p class="ms-2 my-0 text-white">Giày Ultra adidas 4D</p>
+                          <p class="ms-2 my-0 text-white" style="font-size: 14px;">Số lượng: 1</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="ms-2 my-0">&nbsp;</p>
+                        <p class="ms-2 my-0 text-white" style="font-size: 14px;">2.500.000<sup>đ</sup></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="px-3 py-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center">
+                        <img class="rounded-2" src="assets/images/products/Giay_Duramo_SL_trang_IE7262_01_standard.avif" width="50">
+                        <div>
+                          <p class="ms-2 my-0 text-white">Giày Duramo SLD</p>
+                          <p class="ms-2 my-0 text-white" style="font-size: 14px;">Số lượng: 2</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="ms-2 my-0">&nbsp;</p>
+                        <p class="ms-2 my-0 text-white" style="font-size: 14px;">5.000.000<sup>đ</sup></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="px-3 py-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center">
+                        <img class="rounded-2" src="assets/images/products/Giay_Ultra_adidas_4D_DJen_HP9737_02_standard.avif" width="50">
+                        <div>
+                          <p class="ms-2 my-0 text-white">Giày Ultra adidas 4D</p>
+                          <p class="ms-2 my-0 text-white" style="font-size: 14px;">Số lượng: 1</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="ms-2 my-0">&nbsp;</p>
+                        <p class="ms-2 my-0 text-white" style="font-size: 14px;">4.000.000<sup>đ</sup></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-end" href="#">Xem giỏ hàng</a></li>
+                </ul>
               </div>
-              <div class="btn-switch-theme">
-                <!-- <input class="form-check-input" type="checkbox" id="switch" /> -->
-                <input class="switch-button" type="checkbox" id="switch" />
-                <label for="switch"></label>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <div class="dropdown me-1">
+                <a class="nav-link text-white" href="javascript:void(0)" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-user"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt fa-fw me-2"></i>Đăng nhập</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-edit fa-fw me-2"></i>Đăng ký</a></li>
+                  <!-- <li><a class="dropdown-item" href="#"><i class="fas fa-user fa-fw me-2"></i>Thông tin tài khoản</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-list fa-fw me-2"></i>Lịch sử đơn hàng</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Đăng xuất</a></li> -->
+                </ul>
               </div>
-            </div>
-          </li>
-          <li><a href="#"><i class="fas fa-university fa-fw"></i>FPT University</a></li>
-          <li><a href="#"><i class="fas fa-graduation-cap fa-fw"></i>Học tập</a></li>
-          <li><a href="#"><i class="fas fa-user-check fa-fw"></i>Công việc</a></li>
-          <li><a href="#"><i class="fas fa-cart-plus fa-fw"></i>Mua sắm</a></li>
-          <li><a href="#"><i class="fas fa-pizza-slice fa-fw"></i>Dịch vụ Ăn - Uống</a></li>
-          <li><a href="#"><i class="fab fa-xbox fa-fw"></i>Vui chơi - Giải trí</a></li>
-          <li><a href="#"><i class="fas fa-bus-alt fa-fw"></i>Giao thông</a></li>
-          <li><a href="#"><i class="fas fa-bars fa-fw"></i>Khác</a></li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <!-- End: Sidebar -->
     </div>
   </nav>
 
-  <div class="container fix-mt-index">
-    <div class="row">
-      <div class="col-12">
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <section id="cover">
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col">
+          <h1 class="title mb-3">Danh sách phòng tập<span class="ms-2 title-quantity">[40]</span></h1>
+          <p class="title-des">
+            Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sub-nav" class="sub-nav bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex justify-content-lg-between">
+            <ul class="nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Phòng tập gần bạn<sup><i class="fas fa-map-marker-alt ms-1"></i></sup></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-body-secondary" href="#">Phòng tập nổi bật<sup><i class="fas fa-star ms-1"></i></sup></a>
+              </li>
+            </ul>
+            <ul class="nav align-items-center">
+              <li class="nav-item dropdown">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-warning dropdown-toggle text-body-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sắp xếp theo
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item text-body-secondary" href="#"><i class="fas fa-sort-amount-down-alt fa-fw me-1"></i>Giá Thấp - Cao</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-body-secondary" href="#"><i class="fas fa-sort-amount-down fa-fw me-1"></i>Giá Cao - Thấp</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="banner">
-                <h1 class="text-ellipsis">Hola Land</h1>
-                <p>Section partners with university students in Computer Science related fields of study to research and write about topics that are relevant to engineers in the modern technology landscape. You can find more information and program guidelines
-                  in the GitHub repository. If you're currently enrolled in a Computer Science related field of study and are interested in participating in the program, please complete the registration form by clciking this link,
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTbj3kqvEJEb5RLjqJurfbHa8ckzQx0CjRzaizblue9ZOK5A/viewform">Join Section</a> or check out section on Github <a href="https://docs.google.com">Section</a>
-                </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="card">
+            <img src="assets/images/products/img.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title name">
+                <a class="text-body text-decoration-none" href="prduct-detail.html">M-Fitness</a>
+              </h5>
+              <div class="text-body">
+                <div class="rate text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <span class="reviews">1324 đánh giá</span>
+                </div>
+              </div>
+              <div class="row mt-1 info">
+                <div class="col">
+                  <span class="tag" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Tổng sức chứa">
+                    <i class="fas fa-user-friends me-1"></i>100 người
+                  </span>
+                  <span class="tag" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Tổng số chi nhánh">
+                    <i class="fas fa-map-marker-alt me-1"></i>3 chi nhánh
+                  </span>
+                  <span class="tag" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Các gói tập cung cấp">
+                    <i class="far fa-clone fa-fw me-1"></i>3 gói tập
+                  </span>
+                </div>
+              </div>
+              <div class="row mt-2 service">
+                <div class="col">
+                  <h6 class="tag-header">Dịch vụ - Loại hình tập luyện</h6>
+                  <span class="tag">Gym</span>
+                  <span class="tag">Yoga</span>
+                  <span class="tag">Dance</span>
+                  <span class="tag">Zumba</span>
+                  <span class="tag">Aerobic</span>
+                </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="banner">
-                <h1 class="text-ellipsis">Sự kiện chào mừng K17</h1>
-                <p>Section partners with university students in Computer Science related fields of study to research and write about topics that are relevant to engineers in the modern technology landscape. You can find more information and program guidelines
-                  in the GitHub repository. If you're currently enrolled in a Computer Science related field of study and are interested in participating in the program, please complete the registration form by clciking this link,
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTbj3kqvEJEb5RLjqJurfbHa8ckzQx0CjRzaizblue9ZOK5A/viewform">Join Section</a> or check out section on Github <a href="https://docs.google.com">Section</a>
-                </p>
+            <div class="card-footer">
+              <div class="text-body">
+                <i class="fas fa-map-marker-alt me-1"></i>1,3km
+              </div>
+              <div class="price">
+                50.000<sup>đ</sup>/giờ
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="banner">
-                <h1 class="text-ellipsis">Sự kiện Open talk Blockchain</h1>
-                <p>Section partners with university students in Computer Science related fields of study to research and write about topics that are relevant to engineers in the modern technology landscape. You can find more information and program guidelines
-                  in the GitHub repository. If you're currently enrolled in a Computer Science related field of study and are interested in participating in the program, please complete the registration form by clciking this link,
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTbj3kqvEJEb5RLjqJurfbHa8ckzQx0CjRzaizblue9ZOK5A/viewform">Join Section</a> or check out section on Github <a href="https://docs.google.com">Section</a>
-                </p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="card">
+            <img src="assets/images/products/img.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title name">
+                <a class="text-body text-decoration-none" href="prduct-detail.html">California Fitness & Yoga</a>
+              </h5>
+              <div class="text-body">
+                <div class="rate text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="reviews">2324 đánh giá</span>
+                </div>
+              </div>
+              <div class="row mt-1 info">
+                <div class="col">
+                  <span class="tag" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Tổng sức chứa">
+                    <i class="fas fa-user-friends me-1"></i>200 người
+                  </span>
+                  <span class="tag" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Tổng số chi nhánh">
+                    <i class="fas fa-map-marker-alt me-1"></i>30 chi nhánh
+                  </span>
+                  <span class="tag" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Các gói tập cung cấp">
+                    <i class="far fa-clone fa-fw me-1"></i>4 gói tập
+                  </span>
+                </div>
+              </div>
+              <div class="row mt-2 service">
+                <div class="col">
+                  <h6 class="tag-header">Dịch vụ - Loại hình tập luyện</h6>
+                  <span class="tag">Gym</span>
+                  <span class="tag">Yoga</span>
+                  <span class="tag">Dance</span>
+                  <span class="tag">Zumba</span>
+                  <span class="tag">Aerobic</span>
+                  <span class="tag">Boxing</span>
+                  <span class="tag">Sauna</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="text-body">
+                <i class="fas fa-map-marker-alt me-1"></i>1,3km
+              </div>
+              <div class="price">
+                50.000<sup>đ</sup>/giờ
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="card">
+            <img src="assets/images/products/img.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title name">
+                <a class="text-body text-decoration-none" href="prduct-detail.html">Elite Fitness</a>
+              </h5>
+              <div class="text-body">
+                <div class="rate text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="reviews">889 đánh giá</span>
+                </div>
+              </div>
+              <div class="row mt-1 info">
+                <div class="col">
+                  <span class="tag" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Tổng sức chứa">
+                    <i class="fas fa-user-friends me-1"></i>80 người
+                  </span>
+                  <span class="tag" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Tổng số chi nhánh">
+                    <i class="fas fa-map-marker-alt me-1"></i>2 chi nhánh
+                  </span>
+                  <span class="tag" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Các gói tập cung cấp">
+                    <i class="far fa-clone fa-fw me-1"></i>2 gói tập
+                  </span>
+                </div>
+              </div>
+              <div class="row mt-2 service">
+                <div class="col">
+                  <h6 class="tag-header">Dịch vụ - Loại hình tập luyện</h6>
+                  <span class="tag">Gym</span>
+                  <span class="tag">Yoga</span>
+                  <span class="tag">Dance</span>
+                  <span class="tag">Zumba</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="text-body">
+                <i class="fas fa-map-marker-alt me-1"></i>3,5km
+              </div>
+              <div class="price">
+                50.000<sup>đ</sup>/giờ
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+          <div class="card">
+            <img src="assets/images/products/img.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title name">
+                <a class="text-body text-decoration-none" href="prduct-detail.html">Golden Wellness Fitness & Spa</a>
+              </h5>
+              <div class="text-body">
+                <div class="rate text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="reviews">445 đánh giá</span>
+                </div>
+              </div>
+              <div class="row mt-1 info">
+                <div class="col">
+                  <span class="tag" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Tổng sức chứa">
+                    <i class="fas fa-user-friends me-1"></i>80 người
+                  </span>
+                  <span class="tag" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Tổng số chi nhánh">
+                    <i class="fas fa-map-marker-alt me-1"></i>4 chi nhánh
+                  </span>
+                  <span class="tag" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Các gói tập cung cấp">
+                    <i class="far fa-clone fa-fw me-1"></i>3 gói tập
+                  </span>
+                </div>
+              </div>
+              <div class="row mt-2 service">
+                <div class="col">
+                  <h6 class="tag-header">Dịch vụ - Loại hình tập luyện</h6>
+                  <span class="tag">Gym</span>
+                  <span class="tag">Yoga</span>
+                  <span class="tag">Dance</span>
+                  <span class="tag">Boxing</span>
+                  <span class="tag">Sauna</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="text-body">
+                <i class="fas fa-map-marker-alt me-1"></i>4,3km
+              </div>
+              <div class="price">
+                50.000<sup>đ</sup>/giờ
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row menu-feature mt-4">
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="fpt-university.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-university fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>FPT University</h4>
-              <p>Campus Hoà Lạc - Câu lạc bộ</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!-- <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="#" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-code fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Học tập</h4>
-              <p>Trao đổi - Giao lưu</p>
-            </div>
-          </div>
-        </a>
-      </div> -->
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="works.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="far fa-address-card fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Công việc</h4>
-              <p>Tìm việc làm - Tuyển người làm</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="shopping.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-cart-plus fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Mua sắm</h4>
-              <p>Siêu thị - Chợ - Tạp hoá</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="food.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-pizza-slice fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Ăn - Uống</h4>
-              <p>Quán ăn - Đặt đồ ăn online</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="entertainment.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fab fa-xbox fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Vui chơi - Giải trí</h4>
-              <p>Địa điểm vui chơi - giải trí</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="traffic.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-bus-alt fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Giao thông</h4>
-              <p>Xe bus - Xe ôm</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="other.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-bars fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Thông tin khác</h4>
-              <p>Ngân hàng - Y tế - Dịch vụ khác</p>
-            </div>
-          </div>
-        </a>
+  </section>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <nav class="my-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </div>
 
-  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/hola-land/hola-land.js"></script>
+  <!-- Footer -->
+  <section id="footer" class="bg-black text-white">
+    <div class="container">
+      <div class="row f-top">
+        <div class="col-12 col-sm-12 col-md-6 info">
+          <img src="assets/images/cover/logo.png">
+          <p>Thông tin liên hệ</p>
+          <ul>
+            <li class="text-warning">
+              <i class="fas fa-phone fa-fw me-2 fa-flip-horizontal"></i>(+84) 0973 876 777
+            </li>
+            <li class="text-warning">
+              <i class="fas fa-phone fa-fw me-2 fa-flip-horizontal"></i>(+84) 0973 876 543
+            </li>
+            <li class="text-warning">
+              <i class="far fa-envelope fa-fw me-2"></i>xxxxxxxxxxxx@gmail.com
+            </li>
+            <li class="text-warning">
+              <i class="fas fa-map-marker-alt fa-fw me-2"></i>Thôn 3 - Thạch Hoà - Thạch Thất - Hà Nội
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 company">
+          <h6>CÔNG TY</h6>
+          <p>&nbsp;</p>
+          <ul>
+            <li>
+              <a href="" class="text-warning text-decoration-none">Về chúng tôi</a>
+            </li>
+            <li>
+              <a href="" class="text-warning text-decoration-none">Chính sách bảo mật</a>
+            </li>
+            <li>
+              <a href="" class="text-warning text-decoration-none">Chính sách thanh toán</a>
+            </li>
+            <li>
+              <a href="" class="text-warning text-decoration-none">Tuyển dụng</a>
+            </li>
+            <li>
+              <a href="" class="text-warning text-decoration-none">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 social">
+          <h6>FOLLOW US</h6>
+          <p>Cập nhật thông tin - khuyến mãi mới nhất</p>
+          <ul>
+            <li>
+              <a href="#" class="text-decoration-none" target="_blank">
+                <i class="fab fa-facebook-square text-primary"></i>
+              </a>
+              <a href="#" class="text-decoration-none" target="_blank">
+                <i class="fab fa-youtube-square text-danger"></i>
+              </a>
+            </li>
+            <li>
+              <a href="courses.html" class="btn btn-warning mt-4"><i class="far fa-edit fa-fw me-1"></i>Đăng ký thành viên</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal search -->
+  <div class="modal fade" style="--bs-modal-margin: 5rem;" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label class="text-dark-emphasis" for="floatingInput">Nhập tên sản phẩm để tìm kiếm</label>
+          </div>
+        </div>
+        <div class="modal-footer pt-0" style="border-top: none;">
+          <button type="button" class="btn btn-warning mt-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search me-1" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>Tìm kiếm
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="assets/js/base.js"></script>
 </body>
 
 </html>

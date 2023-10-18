@@ -1,0 +1,71 @@
+/** 
+ * Title
+ */
+
+.title {
+  font-family: "Noto Sans", "AdihausDIN", "Helvetica", Arial, sans-serif !important;
+  font-size: 48px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.title-quantity {
+  font-size: 14px;
+  font-style: normal;
+  color: #767677;
+  font-weight: 300;
+}
+
+.title-des {
+  max-width: 800px;
+}
+
+
+/** 
+ * Navbar
+ */
+
+.navbar {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.sub-nav .col>div {
+  border-bottom: 1px solid #eee;
+}
+
+
+/** 
+ * Pagination
+ */
+
+.page-link {
+  color: #ffc008;
+}
+
+
+/** 
+ * Tag
+ */
+
+.tag-header {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 14px;
+  padding: 4px 10px;
+  background-color: #eaecef;
+  border: 1px solid #eaecef;
+  border-radius: 20px;
+  margin-right: 3px;
+  margin-top: 8px;
+}
+
+.tag:last-child {
+  margin-right: 0;
+}
