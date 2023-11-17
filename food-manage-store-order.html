@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hola Land</title>
+  <title>Hola Land - Food detail</title>
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="assets/css/all.css">
   <!-- Bootstrap CSS -->
@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="assets/css/hola-land/main.css">
   <link rel="stylesheet" href="assets/css/hola-land/common.css">
   <link rel="stylesheet" href="assets/css/hola-land/grid.css">
-  <link rel="stylesheet" href="assets/css/hola-land/index.css">
+  <link rel="stylesheet" href="assets/css/hola-land/form.css">
+  <link rel="stylesheet" href="assets/css/hola-land/food.css">
 </head>
 
 <body>
@@ -31,6 +32,61 @@
               <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="search">
               <button class="btn-search" type="submit" id="search"><i class="bi bi-search"></i></button>
             </form>
+          </li>
+          <li class="navbar-btn dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0)" id="language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-bag-plus m-0"></i>
+            </a>
+            <span class="notification-dot">3</span>
+            <ul class="dropdown-menu notification-dropdown" aria-labelledby="language">
+              <li class="dropdown-item">
+                <a href="">
+                  <div class="media">
+                    <span class="me-3">
+                      <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
+                    </span>
+                    <div class="media-body">
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-item notification-preview">
+                <a href="">
+                  <div class="media">
+                    <span class="me-3">
+                      <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                    </span>
+                    <div class="media-body">
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-item notification-preview">
+                <a href="">
+                  <div class="media">
+                    <span class="me-3">
+                      <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                    </span>
+                    <div class="media-body">
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-item btn-link">
+                <a href="" class="text-end">
+                  Xem tất cả
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="navbar-btn dropdown">
             <a class="dropdown-toggle" href="javascript:void(0)" id="language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -159,135 +215,84 @@
     </div>
   </nav>
 
-  <div class="container fix-mt-index">
-    <div class="row">
-      <div class="col-12">
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div style="overflow: hidden;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="col-left">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="title fix-pd fix-mb-title">Menu</h1>
+              </div>
+            </div>
+            <ul class="nav navbar-nav sub-menu">
+              <li>
+                <a href="food-manage-store.html">
+                  <i class="fas fa-chevron-left fa-fw"></i>Quay lại
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="banner">
-                <h1 class="text-ellipsis">Hola Land</h1>
-                <p>Section partners with university students in Computer Science related fields of study to research and write about topics that are relevant to engineers in the modern technology landscape. You can find more information and program guidelines
-                  in the GitHub repository. If you're currently enrolled in a Computer Science related field of study and are interested in participating in the program, please complete the registration form by clciking this link,
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTbj3kqvEJEb5RLjqJurfbHa8ckzQx0CjRzaizblue9ZOK5A/viewform">Join Section</a> or check out section on Github <a href="https://docs.google.com">Section</a>
-                </p>
+        </div>
+        <div class="col-md-8 col-lg-9 col-xl-9 col-xxl-9">
+          <div class="col-right">
+            <!-- Manage store -->
+            <div class="manage-store">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="title fix-mb-title">Quản lý đơn hàng</h1>
+                </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="banner">
-                <h1 class="text-ellipsis">Sự kiện chào mừng K17</h1>
-                <p>Section partners with university students in Computer Science related fields of study to research and write about topics that are relevant to engineers in the modern technology landscape. You can find more information and program guidelines
-                  in the GitHub repository. If you're currently enrolled in a Computer Science related field of study and are interested in participating in the program, please complete the registration form by clciking this link,
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTbj3kqvEJEb5RLjqJurfbHa8ckzQx0CjRzaizblue9ZOK5A/viewform">Join Section</a> or check out section on Github <a href="https://docs.google.com">Section</a>
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="banner">
-                <h1 class="text-ellipsis">Sự kiện Open talk Blockchain</h1>
-                <p>Section partners with university students in Computer Science related fields of study to research and write about topics that are relevant to engineers in the modern technology landscape. You can find more information and program guidelines
-                  in the GitHub repository. If you're currently enrolled in a Computer Science related field of study and are interested in participating in the program, please complete the registration form by clciking this link,
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTbj3kqvEJEb5RLjqJurfbHa8ckzQx0CjRzaizblue9ZOK5A/viewform">Join Section</a> or check out section on Github <a href="https://docs.google.com">Section</a>
-                </p>
+              <div class="row">
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="far fa-check-square"></i>
+                      </div>
+                      <div class="number">
+                        <h4>20</h4>
+                      </div>
+                    </div>
+                    <div class="description">
+                      Tổng số đơn hàng
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="fas fa-list-ul"></i>
+                      </div>
+                      <div class="number">
+                        <h4>20</h4>
+                      </div>
+                    </div>
+                    <div class="description">
+                      Tổng số sản phẩm
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="#" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="fas fa-tasks"></i>
+                      </div>
+                      <div class="number">
+                        <h4>3</h4>
+                      </div>
+                    </div>
+                    <div class="description">
+                      Sản phẩm đã bán
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="row menu-feature mt-4">
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="fpt-university.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-university fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>FPT University</h4>
-              <p>Campus Hoà Lạc - Câu lạc bộ</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!-- <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="#" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-code fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Học tập</h4>
-              <p>Trao đổi - Giao lưu</p>
-            </div>
-          </div>
-        </a>
-      </div> -->
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="works.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="far fa-address-card fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Công việc</h4>
-              <p>Tìm việc làm - Tuyển người làm</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="shopping.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-cart-plus fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Mua sắm</h4>
-              <p>Siêu thị - Chợ - Tạp hoá</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="food.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-pizza-slice fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Ăn - Uống</h4>
-              <p>Quán ăn - Đặt đồ ăn online</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="entertainment.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fab fa-xbox fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Vui chơi - Giải trí</h4>
-              <p>Địa điểm vui chơi - giải trí</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="traffic.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-bus-alt fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Giao thông</h4>
-              <p>Xe bus - Xe ôm</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="other.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-bars fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Thông tin khác</h4>
-              <p>Ngân hàng - Y tế - Dịch vụ khác</p>
-            </div>
-          </div>
-        </a>
       </div>
     </div>
   </div>

@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* LIST REQUEST =======================================================================================================*/
+
+.list-request .label-info .flex {
+  justify-content: start;
+}
+
+.list-request .label-info .flex .content-body .request-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* REQUEST DETAIL */
+
+.request-detail .request-title h3 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  font-weight: var(--font-weight-4);
+  line-height: 1;
+}
+
+.request-detail .request-title p {
+  margin-bottom: 0;
+  color: var(--secondary-text);
+}
+
+.request-detail .request-title .apply-area {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+}
+
+.request-detail .request-title .apply-area .apply-area-btn {
+  width: 100%;
+}
+
+.request-detail .request-title .btn-apply a,
+.request-detail .request-title .btn-save-request a {
+  font-weight: var(--font-weight-5);
+  font-size: 14px;
+  width: 100%;
+}
+
+.request-detail .row-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--secondary-text);
+}
+
+
+/* PREVIEW MODAL */
+
+.modal-preview {
+  max-width: 1000px;
+}
+
+.preview-bg {
+  background-color: var(--body-background);
+  padding: 20px 20px 4px 20px !important;
+}
+
+
+/* RESPONSIVE =========================================================================================================*/
+
+@media (max-width: 1200px) {
+  .request-detail .request-title .btn-apply {
+    margin-top: 20px;
+  }
+}

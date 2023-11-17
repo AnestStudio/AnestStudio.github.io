@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hola Land</title>
+  <title>Hola Land - Tìm kiếm</title>
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="assets/css/all.css">
   <!-- Bootstrap CSS -->
@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="assets/css/hola-land/main.css">
   <link rel="stylesheet" href="assets/css/hola-land/common.css">
   <link rel="stylesheet" href="assets/css/hola-land/grid.css">
-  <link rel="stylesheet" href="assets/css/hola-land/index.css">
+  <link rel="stylesheet" href="assets/css/hola-land/search.css">
 </head>
 
 <body>
@@ -159,135 +159,140 @@
     </div>
   </nav>
 
-  <div class="container fix-mt-index">
-    <div class="row">
-      <div class="col-12">
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div style="overflow: hidden;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="col-left">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="title fix-pd fix-mb-title">Menu</h1>
+              </div>
+            </div>
+            <ul class="nav navbar-nav sub-menu">
+              <li>
+                <a href="search.html">
+                  <i class="fas fa-chevron-left fa-fw"></i>Quay lại
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="banner">
-                <h1 class="text-ellipsis">Hola Land</h1>
-                <p>Section partners with university students in Computer Science related fields of study to research and write about topics that are relevant to engineers in the modern technology landscape. You can find more information and program guidelines
-                  in the GitHub repository. If you're currently enrolled in a Computer Science related field of study and are interested in participating in the program, please complete the registration form by clciking this link,
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTbj3kqvEJEb5RLjqJurfbHa8ckzQx0CjRzaizblue9ZOK5A/viewform">Join Section</a> or check out section on Github <a href="https://docs.google.com">Section</a>
-                </p>
+        </div>
+        <div class="col-md-8 col-lg-9 col-xl-9 col-xxl-9">
+          <div class="col-right">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="title fix-mb-title">Kết quả tìm kiếm cho "Ăn - uống"</h1>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="banner">
-                <h1 class="text-ellipsis">Sự kiện chào mừng K17</h1>
-                <p>Section partners with university students in Computer Science related fields of study to research and write about topics that are relevant to engineers in the modern technology landscape. You can find more information and program guidelines
-                  in the GitHub repository. If you're currently enrolled in a Computer Science related field of study and are interested in participating in the program, please complete the registration form by clciking this link,
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTbj3kqvEJEb5RLjqJurfbHa8ckzQx0CjRzaizblue9ZOK5A/viewform">Join Section</a> or check out section on Github <a href="https://docs.google.com">Section</a>
-                </p>
+
+            <div class="row">
+              <div class="col-12">
+                <h1 class="title fix-mb-title">Danh sách thẻ</h1>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="banner">
-                <h1 class="text-ellipsis">Sự kiện Open talk Blockchain</h1>
-                <p>Section partners with university students in Computer Science related fields of study to research and write about topics that are relevant to engineers in the modern technology landscape. You can find more information and program guidelines
-                  in the GitHub repository. If you're currently enrolled in a Computer Science related field of study and are interested in participating in the program, please complete the registration form by clciking this link,
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTbj3kqvEJEb5RLjqJurfbHa8ckzQx0CjRzaizblue9ZOK5A/viewform">Join Section</a> or check out section on Github <a href="https://docs.google.com">Section</a>
-                </p>
+            <!-- Tags -->
+            <div class="row m-mb-20">
+              <div class="col-md-12">
+                <div class="list-tag">
+                  <div class="tags">
+                    <a href="#" class="tag">Cơm</a>
+                    <a href="#" class="tag">Bánh mỳ</a>
+                    <a href="#" class="tag">Đồ ăn vặt</a>
+                    <a href="#" class="tag">Đồ ăn nhanh</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <h1 class="title fix-mb-title fix-mt-title">Danh sách đồ ăn</h1>
+              </div>
+            </div>
+            <!-- List food -->
+            <div class="list-food">
+              <div class="row">
+                <div class="col-lg-12 col-xl-6 col-xxl-6">
+                  <div class="food label-info m-mb-16">
+                    <div class="flex-sb">
+                      <div class="flex">
+                        <div class="icon-circle">
+                          <img class="media-object" src="assets/images/food/ride.jpg" alt="">
+                        </div>
+                        <div class="content-body">
+                          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#foodDetailModal">
+                            Cơm hến Xào
+                          </a>
+                          <div class="food-info">
+                            <p>Giá: 35.000<sup>đ</sup> &nbsp;&#8226;&nbsp; Đã bán: 50</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-xl-6 col-xxl-6">
+                  <div class="food label-info m-mb-16">
+                    <div class="flex-sb">
+                      <div class="flex">
+                        <div class="icon-circle">
+                          <img class="media-object" src="assets/images/food/ride.jpg" alt="">
+                        </div>
+                        <div class="content-body">
+                          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#foodDetailModal">
+                            Cơm hến Xào
+                          </a>
+                          <div class="food-info">
+                            <p>Giá: 35.000<sup>đ</sup> &nbsp;&#8226;&nbsp; Đã bán: 50</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-xl-6 col-xxl-6">
+                  <div class="food label-info m-mb-16">
+                    <div class="flex-sb">
+                      <div class="flex">
+                        <div class="icon-circle">
+                          <img class="media-object" src="assets/images/food/ride.jpg" alt="">
+                        </div>
+                        <div class="content-body">
+                          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#foodDetailModal">
+                            Cơm hến Xào
+                          </a>
+                          <div class="food-info">
+                            <p>Giá: 35.000<sup>đ</sup> &nbsp;&#8226;&nbsp; Đã bán: 50</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-xl-6 col-xxl-6">
+                  <div class="food label-info m-mb-16">
+                    <div class="flex-sb">
+                      <div class="flex">
+                        <div class="icon-circle">
+                          <img class="media-object" src="assets/images/food/ride.jpg" alt="">
+                        </div>
+                        <div class="content-body">
+                          <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#foodDetailModal">
+                            Cơm hến Xào
+                          </a>
+                          <div class="food-info">
+                            <p>Giá: 35.000<sup>đ</sup> &nbsp;&#8226;&nbsp; Đã bán: 50</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="row menu-feature mt-4">
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="fpt-university.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-university fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>FPT University</h4>
-              <p>Campus Hoà Lạc - Câu lạc bộ</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <!-- <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="#" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-code fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Học tập</h4>
-              <p>Trao đổi - Giao lưu</p>
-            </div>
-          </div>
-        </a>
-      </div> -->
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="works.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="far fa-address-card fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Công việc</h4>
-              <p>Tìm việc làm - Tuyển người làm</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="shopping.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-cart-plus fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Mua sắm</h4>
-              <p>Siêu thị - Chợ - Tạp hoá</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="food.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-pizza-slice fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Ăn - Uống</h4>
-              <p>Quán ăn - Đặt đồ ăn online</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="entertainment.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fab fa-xbox fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Vui chơi - Giải trí</h4>
-              <p>Địa điểm vui chơi - giải trí</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="traffic.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-bus-alt fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Giao thông</h4>
-              <p>Xe bus - Xe ôm</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-        <a href="other.html" class="card-feature m-mb-20">
-          <div class="card-feature-content">
-            <i class="fas fa-bars fa-fw"></i>
-            <div class="card-feature-title">
-              <h4>Thông tin khác</h4>
-              <p>Ngân hàng - Y tế - Dịch vụ khác</p>
-            </div>
-          </div>
-        </a>
       </div>
     </div>
   </div>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola Land</title>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="assets/css/all.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/hola-land/main.css">
+  <link rel="stylesheet" href="assets/css/hola-land/common.css">
+  <link rel="stylesheet" href="assets/css/hola-land/grid.css">
+  <link rel="stylesheet" href="assets/css/hola-land/fpt-university.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand mr-auto" href="index.html">Hola Land</a>
+
+      <div class="navbar-btn-group">
+        <ul class="m-0 p-0">
+          <li class="navbar-search">
+            <form class="input-group">
+              <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="search">
+              <button class="btn-search" type="submit" id="search"><i class="bi bi-search"></i></button>
+            </form>
+          </li>
+          <li class="navbar-btn dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0)" id="language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="far fa-bell m-0 fa-fw"></i>
+            </a>
+            <span class="notification-dot">8</span>
+            <ul class="dropdown-menu notification-dropdown" aria-labelledby="language">
+              <li class="dropdown-item">
+                <a href="">
+                  <div class="media">
+                    <span class="me-3">
+                      <img class="media-object" src="assets/images/system/v2.png" alt="" width="50">
+                    </span>
+                    <div class="media-body">
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-item notification-preview">
+                <a href="">
+                  <div class="media">
+                    <span class="me-3">
+                      <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                    </span>
+                    <div class="media-body">
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-item notification-preview">
+                <a href="">
+                  <div class="media">
+                    <span class="me-3">
+                      <img class="media-object" src="assets/images/system/v.png" alt="" width="50">
+                    </span>
+                    <div class="media-body">
+                      <h6 class="media-heading">John Smith</h6>
+                      <p class="text-small text-muted mb-1">Yesterday at 4:32 PM</p>
+                      <p class="text mb-0">Lorem ipsum dolor sit amet...</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="dropdown-item btn-link">
+                <a href="" class="text-end">
+                  Xem tất cả
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar-btn dropdown pointer-events-none">
+            <a class="dropdown-toggle" href="javascript:void(0)" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <!-- <i class="fas fa-caret-down m-0 fa-fw"></i> -->
+              <i class="far fa-user m-0 fa-fw"></i>
+            </a>
+            <ul class="dropdown-menu navbar-dropdown" aria-labelledby="userDropdown">
+              <div class="username">
+                <div>
+                  <i class="far fa-user fa-fw"></i>
+                </div>
+                <div>
+                  <span>Nguyễn Văn A</span>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="profile.html"><i class="far fa-eye fa-fw"></i>Trang cá nhân</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="far fa-comment fa-fw"></i>Đóng góp ý kiến</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="far fa-question-circle fa-fw"></i>Trợ giúp & hỗ trợ</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-fw"></i>Đăng xuất</a>
+            </ul>
+          </li>
+          <li class="navbar-btn dropdown pointer-events-none">
+            <a class="dropdown-toggle" href="javascript:void(0)" id="funtionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-caret-down m-0 fa-fw"></i>
+            </a>
+            <ul class="dropdown-menu navbar-dropdown" aria-labelledby="funtionDropdown">
+              <a class="dropdown-item" href="signin.html"><i class="fas fa-sign-in-alt fa-fw"></i>Đăng nhập</a>
+              <a class="dropdown-item" href="signin.html"><i class="far fa-edit fa-fw"></i>Đăng ký tài khoản</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="far fa-comment fa-fw"></i>Liên hệ & hỗ trợ</a>
+            </ul>
+          </li>
+          <li class="navbar-btn btn-sidebar-menu">
+            <button id="btn-open-sidebar" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- Start: Sidebar -->
+      <div id="sidebar" class="sidebar">
+        <ul class="nav navbar-nav menu">
+          <li>
+            <div class="switch-theme">
+              <div>
+                <span class="label-theme"><i class="fas fa-moon fa-fw"></i>Chế độ tối</span>
+              </div>
+              <div class="btn-switch-theme">
+                <!-- <input class="form-check-input" type="checkbox" id="switch" /> -->
+                <input class="switch-button" type="checkbox" id="switch" />
+                <label for="switch"></label>
+              </div>
+            </div>
+          </li>
+          <li><a href="#"><i class="fas fa-university fa-fw"></i>FPT University</a></li>
+          <li><a href="#"><i class="fas fa-graduation-cap fa-fw"></i>Học tập</a></li>
+          <li><a href="#"><i class="fas fa-user-check fa-fw"></i>Công việc</a></li>
+          <li><a href="#"><i class="fas fa-cart-plus fa-fw"></i>Mua sắm</a></li>
+          <li><a href="#"><i class="fas fa-pizza-slice fa-fw"></i>Dịch vụ Ăn - Uống</a></li>
+          <li><a href="#"><i class="fab fa-xbox fa-fw"></i>Vui chơi - Giải trí</a></li>
+          <li><a href="#"><i class="fas fa-bus-alt fa-fw"></i>Giao thông</a></li>
+          <li><a href="#"><i class="fas fa-bars fa-fw"></i>Khác</a></li>
+        </ul>
+      </div>
+      <!-- End: Sidebar -->
+    </div>
+  </nav>
+
+  <div style="overflow: hidden;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+          <div class="col-left">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="title fix-pd fix-mb-title">Menu</h1>
+              </div>
+            </div>
+            <ul class="nav navbar-nav sub-menu">
+              <li>
+                <a href="index.html">
+                  <i class="fas fa-chevron-left fa-fw"></i>Quay lại
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9 col-xl-9 col-xxl-9">
+          <div class="col-right">
+            <!-- List club type -->
+            <div class="list-club-type">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="title fix-mb-title">Danh mục câu lạc bộ</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="#" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="fas fa-code"></i>
+                      </div>
+                      <div class="number">
+                        <h4>10</h4>
+                      </div>
+                    </div>
+                    <div class="description">
+                      Lập trình - Học thuật
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="#" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="fas fa-skating"></i>
+                      </div>
+                      <div class="number">
+                        <h4>8</h4>
+                      </div>
+                    </div>
+                    <div class="description">
+                      Thể thao
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="#" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="fas fa-music"></i>
+                      </div>
+                      <div class="number">
+                        <h4>25</h4>
+                      </div>
+                    </div>
+                    <div class="description">
+                      Văn hoá - nghệ thuật
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="#" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="fab fa-xbox"></i>
+                      </div>
+                      <div class="number">
+                        <h4>25</h4>
+                      </div>
+                    </div>
+                    <div class="description">
+                      Giải trí - Phong trào
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+                  <a href="#" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon">
+                        <i class="fas fa-hands-helping"></i>
+                      </div>
+                      <div class="number">
+                        <h4>25</h4>
+                      </div>
+                    </div>
+                    <div class="description">
+                      Cộng đồng
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- List club -->
+            <div class="list-club">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="title fix-mt-title fix-mb-title">Danh sách câu lạc bộ</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                  <a href="javascript:void(0)" class="label-info m-mb-16" data-bs-toggle="modal" data-bs-target="#clubInfoModal">
+                    <div class="flex">
+                      <div class="icon-circle">
+                        <img class="media-object" src="assets/images/system/v.png" alt="">
+                      </div>
+                      <div class="content-body ">
+                        <h4>CLB Kinh doanh</h4>
+                        <p>Số thành viên: ~70</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                  <a href="javascript:void(0)" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon-circle">
+                        <img class="media-object" src="assets/images/system/v.png" alt="">
+                      </div>
+                      <div class="content-body ">
+                        <h4>I-Skate Club 🛹</h4>
+                        <p>Số thành viên: ~50</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                  <a href="javascript:void(0)" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon-circle">
+                        <img class="media-object" src="assets/images/system/v.png" alt="">
+                      </div>
+                      <div class="content-body ">
+                        <h4>CLB Nhạc cụ truyền thống - FTIC</h4>
+                        <p>Số thành viên: ~50</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                  <a href="javascript:void(0)" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon-circle">
+                        <img class="media-object" src="assets/images/system/v.png" alt="">
+                      </div>
+                      <div class="content-body ">
+                        <h4>CLB Nhạc cụ truyền thống - FTIC</h4>
+                        <p>Số thành viên: ~50</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                  <a href="javascript:void(0)" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon-circle">
+                        <img class="media-object" src="assets/images/system/v.png" alt="">
+                      </div>
+                      <div class="content-body ">
+                        <h4>CLB Nhạc cụ truyền thống - FTIC</h4>
+                        <p>Số thành viên: ~50</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                  <a href="javascript:void(0)" class="label-info m-mb-16">
+                    <div class="flex">
+                      <div class="icon-circle">
+                        <img class="media-object" src="assets/images/system/v.png" alt="">
+                      </div>
+                      <div class="content-body ">
+                        <h4>CLB Nhạc cụ truyền thống - FTIC</h4>
+                        <p>Số thành viên: ~50</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade club-info" id="clubInfoModal" tabindex="-1" aria-labelledby="clubInfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="clubInfoModalLabel">Câu lạc bộ Kinh doanh - FPTU Business Club</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <h2 class="sub-title-small">WoW!!!</h2>
+              <div class="img">
+                <img class="media-object" src="assets/images/club/business_club.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="description">
+                <h2 class="sub-title-small">Giới thiệu</h2>
+                <p>FPTU Business Club là nơi để tất cả thành viên không chỉ được hết mình đóng góp ý tưởng với những dự án kinh doanh sáng tạo, độc đáo; được trau dồi thêm kiến thức về chuyên môn mà còn là nơi để mọi người có thể giúp đỡ lẫn nhau cả trong
+                  lĩnh vực học tập, cuộc sống. Nơi mà tất cả mọi người hoạt động như một gia đình, qua những buổi giao lưu sinh hoạt để các thành viên thấu hiểu về nhau hơn.</p>
+                <h2 class="sub-title-small">Thành tích</h2>
+                <p>CLB xuất sắc 2 kỳ liên tiếp Fall 2016 và Spring 2017</p>
+                <h2 class="sub-title-small">Thông tin liên hệ</h2>
+                <div class="contact">
+                  <div class="row-info mt-0">
+                    <div><i class="fas fa-user fa-fw"></i>Người liên hệ</div>
+                    <div>Nghiêm Hải Đăng</div>
+                  </div>
+                  <div class="row-info">
+                    <div><i class="fas fa-phone-alt fa-fw"></i>Số điện thoại</div>
+                    <div>0973663526</div>
+                  </div>
+                  <div class="row-info">
+                    <div><i class="far fa-envelope fa-fw"></i>Email</div>
+                    <div>nghiemhaidang3009@gmail.com</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-sm btn-facebook me-2"><i class="bi bi-facebook"></i>FPTU Business Club</a>
+          <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/hola-land/hola-land.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* FPTU ===============================================================================================================*/
+
+.fptu img {
+  width: 100%;
+  border-radius: var(--primary-border-radius);
+}
+
+
+/* LIST CLUB ==========================================================================================================*/
+
+.list-club .label-info .flex {
+  justify-content: start;
+}
+
+.club-info .modal-content .modal-body .flex {
+  display: flex;
+}
+
+.club-info .modal-content .modal-body .img img {
+  width: 100%;
+  border-radius: var(--primary-border-radius);
+  transition: 0.5s;
+  margin-bottom: 18px;
+}
+
+.club-info .modal-content .modal-body .img img:hover {
+  transform: scale(1.01, 1.01);
+}
+
+.club-info .modal-content .modal-body .description p,
+.club-info .modal-content .modal-body .description .pre,
+.club-info .modal-content .modal-body .description .contact {
+  background-color: var(--secondary-background);
+  padding: 14px 20px;
+  border-radius: var(--primary-border-radius);
+  color: var(--secondary-text);
+  margin-bottom: 16px;
+}
+
+.club-info .modal-content .modal-body .description .row-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--secondary-text);
+  margin-top: 4px;
+}
+
+@media (max-width: 575.98px) {
+  .club-info .modal-content .modal-body .description p,
+  .club-info .modal-content .modal-body .description .pre,
+  .club-info .modal-content .modal-body .description .contact {
+    padding: 10px 16px;
+  }
+}
